@@ -1,0 +1,840 @@
+# Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS)
+
+## Basic Information
+- **Full Name**: Bharatiya Nagarik Suraksha Sanhita (Indian Citizen Security Code)
+- **Short Name**: BNSS
+- **Year of Enactment**: 2023
+- **Act Number**: Act No. 46 of 2023
+- **Effective Date**: July 1, 2024
+- **Status**: CURRENT LAW (Active)
+- **Jurisdiction**: All of India
+- **Type**: Procedural Criminal Law
+- **Total Sections**: 531 sections
+- **Chapters**: 38 chapters
+- **Schedules**: 5 schedules
+- **PDF Source**: https://www.indiacode.nic.in/bitstream/123456789/21920/1/the_bharatiya_nagarik_suraksha_sanhita%2c_2023.pdf
+
+## Purpose and Scope
+BNSS replaces the colonial-era Code of Criminal Procedure (CrPC) 1973 with a modernized procedural framework. It revolutionizes HOW criminal justice is administered in India through technology integration, faster timelines, and victim-centric approach.
+
+## Why BNSS Was Enacted
+
+### 1. Technology Integration
+- Complete digitalization of criminal justice system
+- E-FIR, e-filing, e-summons
+- Video conferencing for trials
+- Electronic evidence handling
+- Digital signatures and authentication
+- Online case tracking
+
+### 2. Speed and Efficiency
+- **Strict timelines** at every stage
+- Charge sheet within 90 days (clear deadline)
+- Judgment within 30-45 days of trial conclusion
+- Fast-track courts provisions
+- Reduced adjournments
+- Time-bound justice delivery
+
+### 3. Victim-Centric Approach
+- Enhanced victim rights
+- Mandatory victim impact statements
+- Better compensation provisions
+- Regular case status updates to victims
+- Victim participation at critical stages
+- Protection during proceedings
+
+### 4. Modern Policing
+- Mandatory forensic investigation for serious crimes
+- Audio-visual recording of procedures
+- Zero FIR (can file anywhere)
+- Better investigation standards
+- Scientific evidence emphasis
+
+### 5. Decolonization
+- Remove colonial mindset
+- Indian terminology and approach
+- Citizen-friendly procedures
+- Accessibility and transparency
+
+## Structure
+- **38 Chapters** (one more than CrPC's 37)
+- **531 Sections** (47 more than CrPC's 484)
+- **5 Schedules** containing forms and classifications
+- Reorganized for better logical flow
+
+## Revolutionary Changes from CrPC
+
+### 1. Zero FIR (Section 173)
+**GAME-CHANGING PROVISION**
+- FIR can be registered at ANY police station (not just jurisdictional)
+- No police station can refuse FIR
+- FIR must be transferred to jurisdictional station within 15 days
+- Ensures no victim is turned away
+- Major reform for accessible justice
+
+### 2. E-FIR (Section 173)
+- **Online FIR registration**
+- Can file FIR electronically
+- Digital signature valid
+- 24/7 accessibility
+- Reduces need to visit police station physically
+
+### 3. Mandatory Forensic Investigation (Section 176)
+- For offences with 7+ years punishment: **Forensic investigation mandatory**
+- Visit by forensic experts to crime scene
+- Scientific evidence collection
+- Improves investigation quality
+- Reduces wrongful convictions
+
+### 4. Audio-Visual Recording (Throughout BNSS)
+- Recording of arrest (Section 43)
+- Recording of statements (Section 183)
+- Recording of confessions (Section 183)
+- Recording of search and seizure
+- Prevents manipulation and torture
+
+### 5. Strict Timelines
+- **Charge sheet: 90 days maximum** (Section 193)
+- **Judgment: 30 days after arguments** (Section 399)
+- **Trial completion: Time-bound**
+- Default bail if timelines violated
+- Accountability for delays
+
+### 6. Video Conferencing (Multiple Sections)
+- Bail hearings via video (Section 479-482)
+- Evidence recording via video (Section 265)
+- Witness examination remotely
+- Reduces need for physical presence
+- Convenient for all parties
+
+### 7. Summary Trials Extended (Section 282-291)
+- For offences with up to **3 years** punishment (CrPC had 2 years)
+- Faster disposal of minor cases
+- Simplified procedure
+- Reduces case backlog
+
+### 8. Community Service (Section 4)
+- Alternative punishment option
+- For petty offences
+- Reformative justice
+- Reduces prison burden
+
+### 9. Victim Rights Enhanced
+- **Victim impact statement mandatory** (Section 360)
+- Regular case updates to victim
+- Better compensation (Section 391)
+- Victim can engage counsel
+- Participation in proceedings
+
+### 10. Organized Crime Provisions (Section 111)
+- Specific procedures for organized crime
+- Better tools to tackle syndicates
+- Enhanced powers for investigation
+
+## Key Chapters (Detailed)
+
+### Chapter I: Preliminary (Sections 1-2)
+- Title, extent, commencement
+- Definitions (includes digital/electronic terms)
+
+### Chapter II: Constitution of Criminal Courts (Sections 3-27)
+**Court Hierarchy** (Same as CrPC but digitally enabled):
+1. Supreme Court
+2. High Courts
+3. Courts of Session
+4. Magistrates (CJM, JMFC I, JMFC II)
+
+**Technology Integration**:
+- Courts equipped with video conferencing
+- Digital filing systems
+- Electronic case management
+
+### Chapter III: Powers of Courts (Sections 28-38)
+- Sentencing powers unchanged from CrPC
+- Sessions Court: Death, life, any term
+- Magistrate First Class: Up to 3 years
+- Magistrate Second Class: Up to 1 year
+
+### Chapter IV: Jurisdiction of Courts (Sections 39-50)
+- Territorial jurisdiction rules
+- Special jurisdiction provisions
+- Transfer of cases
+
+### Chapter V: Powers of Arrest (Sections 35-60)
+**CRITICAL - Enhanced Protections**
+
+**Section 35**: Arrest without warrant
+- Similar to CrPC 41 but with more safeguards
+- Audio-visual recording mandatory
+- Cannot arrest for offences with less than 3 years if conditions met
+
+**Section 41**: Notice of appearance
+- For offences with less than 7 years punishment
+- Notice instead of arrest (similar to CrPC 41A)
+- If person appears, no arrest
+
+**Section 46**: Rights of arrested person (ENHANCED)
+- **Must inform** grounds of arrest
+- Right to bail (if bailable)
+- Right to consult lawyer **immediately**
+- **Inform family/friend within 12 hours** (CrPC was 8-12 hours)
+- Right to medical examination
+- Audio-visual recording of arrest memo
+
+**Section 50**: Medical examination
+- At request of arrested person
+- To record pre-existing injuries
+- Prevents false torture allegations
+
+**Section 54**: 24-hour rule
+- Must produce before magistrate within 24 hours
+- Excludes journey time
+
+**Important**: Audio-visual recording of arrest makes police accountable
+
+### Chapter VI: Processes to Compel Appearance (Sections 61-90)
+**Electronic Summons and Warrants**
+
+**Section 205**: Summons via electronic means
+- Email, SMS, WhatsApp
+- Digital service of summons
+- Faster and more efficient
+
+**Section 73-82**: Warrants
+**Section 83-85**: Proclamation and attachment (for absconding accused)
+
+### Chapter VII-XI: Public Order and Security (Sections 129-172)
+- Similar to CrPC provisions
+- Section 163: Prohibitory orders (like CrPC 144)
+- Maintenance (Section 144-147) - similar to CrPC 125
+
+### Chapter XII: Information to Police and Investigation (Sections 173-193)
+**MOST TRANSFORMED CHAPTER**
+
+**Section 173: FIR (Zero FIR + E-FIR)**
+- **Zero FIR**: Register at ANY police station
+- **E-FIR**: Online registration possible
+- Free copy to informant (physical or electronic)
+- Transfer to jurisdictional station within 15 days
+- No police station can refuse
+
+**Section 174**: Information about non-cognizable offence
+- Cannot investigate without magistrate order
+
+**Section 176: Police power to investigate + MANDATORY FORENSICS**
+- Police can investigate cognizable offence
+- **MANDATORY forensic investigation for offences with 7+ years punishment**
+- Forensic team visit to scene
+- Scientific evidence collection
+- Major improvement in investigation quality
+
+**Section 180: Examination of witnesses**
+- Similar to CrPC 161
+- Cannot be on oath
+- Statement during investigation
+
+**Section 183: Recording of confessions and statements**
+- Magistrate can record
+- **Audio-visual recording mandatory**
+- Must be voluntary
+- Major safeguard against coercion
+
+**Section 184: Search and seizure**
+- Similar powers as CrPC
+- Audio-visual recording encouraged
+
+**Section 187: Remand (Critical Section)**
+- **Like CrPC 167 but with strict timelines**
+- Accused produced within 24 hours
+- Police custody maximum 15 days at a time
+- Total custody limits:
+  - **60 days** for offences with up to 10 years
+  - **90 days** for death/life/10+ years offences
+- **After 60/90 days: Default bail** if charge sheet not filed
+- **Video conferencing for remand hearings allowed**
+
+**Section 193: Charge Sheet (90-Day Deadline)**
+- **Police MUST file charge sheet within 90 days**
+- Clear timeline (CrPC was ambiguous)
+- If not filed within 90 days: Default bail
+- Strict accountability
+- Major reform for speedy justice
+
+### Chapter XIII: Jurisdiction (Sections 194-206)
+- Where offences may be tried
+
+### Chapter XIV: Conditions for Initiation of Proceedings (Sections 207-223)
+**Taking Cognizance**
+
+**Section 210: Cognizance by magistrate**
+- Similar to CrPC 190
+- Can take cognizance from:
+  1. Complaint
+  2. Police report (charge sheet)
+  3. Information from any person
+  4. Own knowledge
+- **Electronic filing accepted**
+
+**Section 218**: Sanction for prosecution of public servants
+- Similar to CrPC 197
+- Prior government sanction needed
+
+### Chapter XV-XVII: Trial Procedures (Sections 224-291)
+**Enhanced with Technology**
+
+**Section 256-265**: Trial before Sessions Court
+- **Section 265: Video conferencing for evidence**
+- Witnesses can testify via video link
+- Remote testimony allowed
+- Reduces travel, delays
+
+**Section 266-281**: Trial before Magistrates (Warrant Cases)
+**Section 282-291**: Summary Trials
+- **Extended to 3 years** (was 2 years in CrPC)
+- Fast-track disposal
+- Simplified procedure
+
+### Chapter XVIII: Judgment (Sections 399-401)
+**REVOLUTIONARY TIMELINE**
+
+**Section 399: Judgment within 30 days**
+- **After conclusion of arguments, judgment MUST be delivered within 30 days**
+- Can extend by 15 days with reasons (total 45 days max)
+- Strict timeline to prevent indefinite delays
+- Accountability of judges
+- Major reform for speedy justice
+
+**Section 400**: Copy of judgment
+- Electronic copy to accused
+- Digital delivery
+
+**Section 401**: Judgment in open court
+- Must be delivered publicly
+- Can't be in chambers
+
+### Chapter XIX-XXV: Various Procedures (Sections 292-378)
+- Appeals, revisions, references
+- Similar structure as CrPC but digitalized
+
+### Chapter XXVI: Bail and Bonds (Sections 479-490)
+**Technology-Enabled Bail**
+
+**Section 479: Bail in bailable offences**
+- Similar to CrPC 436
+- Right to bail
+- Electronic bail bonds accepted
+
+**Section 480: Bail in non-bailable offences**
+- Similar to CrPC 437
+- Court discretion
+- Factors: nature of offence, evidence, likelihood of absconding
+- **Video conferencing for bail hearings**
+
+**Section 482: Anticipatory bail**
+- Similar to CrPC 438
+- Pre-arrest bail
+- Sessions Court or High Court
+- **Can be filed electronically**
+- **Video hearing possible**
+
+**Section 483**: Powers of High Court/Sessions Court for bail
+- Similar to CrPC 439
+
+**Electronic Bonds**: All bail bonds can be electronic with digital signatures
+
+### Chapter XXVII: Victim Rights and Compensation (Sections 357-392)
+**MAJOR VICTIM-CENTRIC REFORMS**
+
+**Section 360: Victim Impact Statement (NEW)**
+- **Mandatory victim impact statement** before sentencing
+- Victim can tell how crime affected them
+- Court considers impact in sentencing
+- Major reform for victim participation
+
+**Section 391: Compensation to victims (ENHANCED)**
+- Court can award compensation from fine
+- **State must compensate victims**
+- For physical, mental, financial loss
+- Interim compensation during trial
+- Rehabilitation support
+- **Better than CrPC 357**
+
+**Section 392**: Victim assistance
+- State to provide assistance
+- Legal aid, counseling, support services
+
+**Victim Updates**: Throughout BNSS, provisions for regular case status updates to victims
+
+### Chapter XXVIII: Appeals (Sections 408-436)
+**Electronic Filing**
+
+**Section 410**: Appeal from conviction
+- Similar to CrPC 374
+- 30 days to file
+- **Electronic filing accepted**
+- **Video hearings possible**
+
+**Section 413**: Appeal by state
+- Against acquittal
+- Against inadequate sentence
+
+### Chapter XXIX: Reference and Revision (Sections 437-447)
+**Section 443**: High Court revisional powers
+- Similar to CrPC 397-401
+- Can call for records
+- Can examine correctness
+
+### Chapter XXX: Transfer (Sections 448-454)
+**Section 449**: Transfer of cases
+- For fair trial
+- By High Court or Supreme Court
+
+### Chapter XXXI: Execution of Sentences (Sections 455-478)
+- How sentences executed
+- Suspension, remission
+
+### Chapter XXXII-XXXVIII: Various Provisions (Sections 491-531)
+- Property disposal
+- Preventive actions
+- Irregularities
+- Miscellaneous
+
+## Five Schedules
+
+### Schedule I: Classification of Offences (UPDATED)
+- Cognizable/non-cognizable
+- Bailable/non-bailable
+- Which court can try
+- Compoundable/non-compoundable
+- **Updated for BNS sections** (not IPC)
+
+### Schedule II: Powers of Magistrates
+- Sentencing powers of different magistrates
+
+### Schedule III: Forms (DIGITALIZED)
+- Standard forms for procedures
+- **Digital forms with e-signatures**
+- FIR format, warrant format, bail bond format
+- All forms technology-enabled
+
+### Schedule IV: Appeals and Revisions
+- Forms for appellate procedures
+
+### Schedule V: Fees and Costs
+- Court fees structure
+
+## Technology Integration Throughout BNSS
+
+### 1. E-Filing (Multiple Sections)
+- Complaints
+- Bail applications
+- Appeals
+- All documents
+- Digital signatures valid
+
+### 2. E-Service (Section 205 and others)
+- Summons via email/SMS
+- Notices electronically
+- Warrants digitally transmitted
+
+### 3. Video Conferencing (Throughout)
+- Bail hearings
+- Evidence recording
+- Witness examination
+- Remand proceedings
+- Appeal hearings
+- Reduces physical presence requirement
+
+### 4. Audio-Visual Recording (Throughout)
+- Arrest procedures
+- Statement recording
+- Confession recording
+- Search and seizure
+- Prevents manipulation
+
+### 5. Electronic Evidence (Section 176, 184)
+- Digital evidence handling
+- Forensic analysis
+- Electronic records
+- Works with BSA provisions
+
+### 6. Online Case Tracking
+- Victims can track case status
+- Accused can track proceedings
+- Transparency and accessibility
+
+### 7. Digital Signatures (Throughout)
+- All documents can be digitally signed
+- E-stamps valid
+- Electronic authentication
+
+## Strict Timelines (Major Reform)
+
+### Investigation Stage
+- **Forensic team**: Must visit scene within 24-48 hours (for serious crimes)
+- **Remand**: Cannot exceed 60/90 days
+- **Charge sheet: 90 days maximum** (Section 193)
+
+### Trial Stage
+- **Cognizance**: Promptly after charge sheet
+- **Charge framing**: Within reasonable time
+- **Trial**: Time-bound proceedings
+- **Judgment: 30 days after arguments** (Section 399)
+
+### Appeal Stage
+- **Filing**: 30 days from conviction
+- **Hearing**: Time-bound
+- **Decision**: Within reasonable period
+
+**Default Bail**: If timelines violated (90 days charge sheet deadline), accused gets bail automatically
+
+## Forensic Investigation (Section 176)
+
+### When Mandatory
+- Offences punishable with **7 years or more**
+- Examples: Murder, rape, robbery, serious hurt, etc.
+
+### What It Includes
+- Crime scene visit by forensic experts
+- Scientific evidence collection
+- Photography, videography
+- Fingerprint analysis
+- DNA collection (if needed)
+- Ballistics (if firearms involved)
+- Digital forensics (for cyber crimes)
+
+### Benefits
+- Better quality investigation
+- Reduces wrongful convictions
+- Scientific approach
+- Courts rely on forensic evidence
+
+### Infrastructure
+- Every district to have forensic facility
+- Mobile forensic vans
+- Trained forensic personnel
+- State-of-art laboratories
+
+## Victim Rights Under BNSS (Enhanced)
+
+### 1. Right to File Zero FIR (Section 173)
+- At any police station
+- Cannot be refused
+
+### 2. Right to E-FIR (Section 173)
+- Online filing
+- 24/7 accessibility
+
+### 3. Right to Free Copy (Section 173)
+- Physical or electronic
+- Immediately
+
+### 4. Right to Be Informed
+- Case progress updates
+- Court dates
+- Investigation status
+
+### 5. Right to Victim Impact Statement (Section 360)
+- Before sentencing
+- Tell how crime affected
+
+### 6. Right to Compensation (Section 391)
+- From convicted person's fine
+- From state compensation fund
+- Interim compensation during trial
+
+### 7. Right to Assistance (Section 392)
+- Legal aid
+- Counseling
+- Support services
+
+### 8. Right to Participation
+- At critical stages
+- Engage own counsel
+- Present evidence
+
+### 9. Right to Protection
+- During trial
+- From accused and associates
+- Witness protection
+
+### 10. Right to Speedy Justice
+- Time-bound trial
+- Fast-track courts
+- No unnecessary delays
+
+## Rights of Accused Under BNSS (Enhanced)
+
+### 1. Right to Know Grounds of Arrest (Section 46)
+- Immediately on arrest
+- In writing
+- Audio-visual recording
+
+### 2. Right to Bail (Sections 479-482)
+- Automatic in bailable offences
+- Video bail hearings
+- Electronic bonds
+
+### 3. Right to Legal Aid (Section 303)
+- Free legal representation
+- At state expense
+
+### 4. Right to Be Produced Within 24 Hours (Section 54)
+- Video production allowed
+
+### 5. Right to Medical Examination (Section 50)
+- Record injuries
+- Prevent torture allegations
+
+### 6. Right to Inform Family (Section 46)
+- Within 12 hours
+- Any person of choice
+
+### 7. Right to Consult Lawyer
+- Immediately on arrest
+- Privacy for consultation
+
+### 8. Right to Fair Trial
+- Impartial proceedings
+- Due process
+
+### 9. Right to Cross-Examine Witnesses
+- Via video if needed
+
+### 10. Right to Be Heard (Section 356)
+- Like CrPC 313
+- Explain incriminating circumstances
+
+### 11. Right to Speedy Trial
+- Time-bound proceedings
+- Default bail if delayed
+
+### 12. Right to Appeal (Section 410)
+- Electronic filing
+- Video hearings
+
+## CrPC to BNSS Section Mapping (Key Sections)
+
+| CrPC | BNSS | Provision |
+|------|------|-----------|
+| 41 | 35 | Arrest without warrant |
+| 41A | 41 | Notice of appearance |
+| 154 | 173 | FIR (now Zero FIR + E-FIR) |
+| 156 | 176 | Investigation (+ mandatory forensics) |
+| 161 | 180 | Examination of witnesses |
+| 164 | 183 | Recording confessions (+ A/V recording) |
+| 167 | 187 | Remand (+ video conferencing) |
+| 173 | 193 | Charge sheet (90-day deadline) |
+| 190 | 210 | Cognizance |
+| 313 | 356 | Accused examination |
+| 354 | 399 | Judgment (30-day deadline) |
+| 357 | 391 | Victim compensation (enhanced) |
+| 436 | 479 | Bail in bailable offences |
+| 437 | 480 | Bail in non-bailable offences |
+| 438 | 482 | Anticipatory bail |
+| 439 | 483 | High Court/Sessions bail powers |
+| 482 | 528 | High Court inherent powers |
+
+**Important**: Section numbers are DIFFERENT. Cannot use CrPC sections in BNSS cases.
+
+## Summary Trials (Section 282-291)
+
+### Extended Scope
+- **Up to 3 years punishment** (CrPC was 2 years)
+- More cases eligible for fast-track
+
+### Procedure
+- Simplified trial
+- Quick disposal
+- Less formalities
+- Immediate judgment possible
+
+### Benefits
+- Reduces backlog
+- Speedy justice for minor cases
+- Less burden on courts
+
+## Community Service (Section 4)
+
+### When Applicable
+- Petty offences
+- First-time offenders
+- Non-violent crimes
+- As alternative to imprisonment
+
+### Duration
+- Hours as ordered by court
+- Can range from few hours to weeks
+
+### Type of Service
+- Cleaning public places
+- Assisting in hospitals
+- Teaching in schools
+- Traffic management
+- Other community work
+
+### Benefits
+- Reformative justice
+- No jail record
+- Contributes to society
+- Reduces prison overcrowding
+
+## Organized Crime (Section 111)
+
+### Definition
+- Continuing unlawful activity
+- By organized syndicate
+- For economic/political gain
+
+### Enhanced Powers
+- Longer custody periods
+- Better investigation tools
+- Property attachment
+- Witness protection
+
+### Punishment
+- Death or life imprisonment
+- Minimum fine ₹10 lakhs
+- Property confiscation
+
+## Related Laws
+- **Works With**: BNS (defines crimes)
+- **Works With**: BSA (evidence rules)
+- **Replaces**: CrPC 1973
+- **Special Procedures**: POCSO, NDPS have their own procedures
+
+## Search Keywords
+BNSS, Bharatiya Nagarik Suraksha Sanhita, new criminal procedure 2023, zero FIR, e-FIR, forensic investigation, video conferencing, Section 173, Section 187, Section 193, 90-day charge sheet, Section 399, 30-day judgment, bail, anticipatory bail, victim rights, victim impact statement, audio-visual recording, digital filing
+
+## Common User Queries
+- "What is BNSS?"
+- "What is zero FIR?"
+- "How to file e-FIR?"
+- "What is 90-day charge sheet rule?"
+- "Can bail hearing be online?"
+- "What is victim impact statement?"
+- "What is mandatory forensic investigation?"
+- "How is BNSS different from CrPC?"
+- "When did BNSS come into effect?"
+- "What is Section 173 BNSS?"
+- "What is Section 187 remand?"
+- "What is Section 399 judgment deadline?"
+
+## Critical Points for RAG System
+
+1. **Effective Date**: July 1, 2024 - Check case date
+2. **Section Numbers Different**: BNSS ≠ CrPC sections
+3. **Zero FIR**: Revolutionary provision, emphasize
+4. **Technology Focus**: E-filing, video conferencing throughout
+5. **Strict Timelines**: 90 days charge sheet, 30 days judgment
+6. **Victim-Centric**: Major reforms for victim rights
+7. **Mandatory Forensics**: For 7+ years offences
+8. **Audio-Visual Recording**: Throughout procedures
+9. **Cannot Mix**: Cannot use CrPC sections in BNSS cases
+10. **Mapping Essential**: Provide CrPC-BNSS mapping
+
+## Implementation Challenges
+
+### Infrastructure
+- Internet connectivity in rural areas
+- Video conferencing equipment in all courts
+- Digital literacy of police, lawyers, judges
+- Forensic laboratories in every district
+
+### Training
+- Police training on new procedures
+- Judicial officers on timelines
+- Lawyers on electronic filing
+- Public awareness
+
+### Technology
+- Robust systems for e-filing
+- Secure video conferencing
+- Data protection and privacy
+- System downtime issues
+
+### Compliance
+- Meeting 90-day deadlines
+- Forensic investigation coverage
+- Audio-visual recording everywhere
+- Default bail management
+
+## Advantages Over CrPC
+
+### 1. Speed
+- Time-bound justice
+- Clear deadlines
+- Default bail provisions
+
+### 2. Technology
+- Complete digitalization
+- Reduces physical presence
+- Convenient and efficient
+
+### 3. Accessibility
+- Zero FIR anywhere
+- E-FIR 24/7
+- Video hearings from anywhere
+
+### 4. Quality
+- Mandatory forensics
+- Scientific investigation
+- Better evidence
+
+### 5. Victim Focus
+- More rights
+- Better compensation
+- Active participation
+
+### 6. Transparency
+- Audio-visual recording
+- Online tracking
+- Accountability
+
+### 7. Modern
+- Suits 21st century needs
+- Technology-neutral
+- Future-ready
+
+## Transition from CrPC to BNSS
+
+### Critical Date: July 1, 2024
+
+**Before July 1, 2024**:
+- All procedures under CrPC
+- CrPC sections apply
+- Old system
+
+**On/After July 1, 2024**:
+- All NEW procedures under BNSS
+- BNSS sections apply
+- New system
+
+### For Ongoing Cases
+- **FIR filed before July 1**: CrPC continues
+- **FIR filed after July 1**: BNSS applies
+- **Pending investigations**: Complete under old law
+- **Trials started**: Continue under CrPC
+- **New arrests**: BNSS procedures
+
+### What Changed
+- Learn new section numbers
+- Implement technology
+- Follow strict timelines
+- Enhanced victim rights
+- Mandatory forensics
+
+## Legislative History
+- **Introduced**: August 2023
+- **Passed**: December 2023
+- **Presidential Assent**: December 25, 2023
+- **Came into Force**: July 1, 2024
+- **Replaced**: CrPC 1973 (after 50 years)
+
+## Implementation Status
+- Fully operational since July 1, 2024
+- Police adopting new procedures
+- Courts implementing timelines
+- Technology infrastructure being built
+- Training programs ongoing
+- Parallel tracking with CrPC for old cases

@@ -1,0 +1,684 @@
+# Bharatiya Nyaya Sanhita, 2023 (BNS)
+
+## Basic Information
+- **Full Name**: Bharatiya Nyaya Sanhita (Indian Justice Code)
+- **Short Name**: BNS
+- **Year of Enactment**: 2023
+- **Act Number**: Act No. 45 of 2023
+- **Effective Date**: July 1, 2024
+- **Status**: CURRENT LAW (Active)
+- **Jurisdiction**: All of India
+- **Type**: Substantive Criminal Law
+- **Total Sections**: 358 sections
+- **Chapters**: 20 chapters
+- **Schedules**: 9 schedules
+- **PDF Source**: https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf
+
+## Purpose and Scope
+BNS replaces the colonial-era Indian Penal Code (IPC) 1860 with a modernized criminal code. It defines criminal offences and prescribes punishments, incorporating new-age crimes while updating archaic provisions to reflect contemporary Indian values and needs.
+
+## Why BNS Was Enacted
+
+### 1. Decolonization of Law
+- Remove colonial mindset from criminal law
+- Replace "King's Peace" with "Public Order"
+- Indian-centric terminology and approach
+- Reflect modern Indian society
+
+### 2. Modernization
+- Add crimes that didn't exist in 1860 (cyber crimes, terrorism, organized crime)
+- Remove obsolete provisions
+- Update punishments to current standards
+- Simplify language for accessibility
+
+### 3. Fill Legal Gaps
+- Mob lynching (not explicitly covered in IPC)
+- Snatching (separate from theft/robbery)
+- Organized crime syndicates
+- Modern forms of fraud and cheating
+
+### 4. Gender Justice
+- Gender-neutral provisions where appropriate
+- Better protection for women
+- Addressing new forms of violence
+
+### 5. Victim-Centric Approach
+- More focus on victim rights
+- Community service as alternative punishment
+- Restorative justice elements
+
+## Structure
+- **20 Chapters** organized by type of offence
+- **358 Sections** (reduced from IPC's 511 sections through consolidation)
+- **9 Schedules** containing supplementary provisions
+- Logical reorganization for better clarity
+
+## Key Chapters
+
+### Chapter I: Preliminary (Sections 1-2)
+- Short title, commencement
+- Application: Extends to whole of India
+- Applies to Indian citizens anywhere in world
+
+### Chapter II: General Explanations (Sections 3-43)
+**Fundamental Definitions and Principles**
+
+**Important Sections**:
+- **Section 3**: Punishment of offences committed beyond India
+- **Section 4**: Extension to extra-territorial offences
+- **Section 5**: Certain laws not affected by this Act
+- **Section 6-13**: Definitions (document, movable property, wrongful gain/loss, etc.)
+- **Section 14**: Gender pronouns (includes transgender)
+- **Section 15-23**: Explanations of mental element (voluntarily, intentionally, knowingly)
+- **Section 24-34**: Joint and constructive liability
+- **Section 35-43**: Definitions of various terms
+
+### Chapter III: Punishments (Sections 4-10)
+**Types of Punishments Available**
+
+1. **Death** - For gravest offences (murder, terrorism)
+2. **Imprisonment for Life** - Until natural death
+3. **Imprisonment** - Rigorous or simple, with/without hard labor
+4. **Forfeiture of Property** - Confiscation
+5. **Fine** - Monetary penalty
+6. **Community Service** - NEW in BNS (reformative justice)
+
+**Important Sections**:
+- **Section 4**: Punishments under BNS
+- **Section 5**: Commutation of sentence
+- **Section 6**: Sentence may be without hard labour
+- **Section 7**: Amount of fine, liability in default
+- **Section 8**: Sentence of imprisonment in default of fine
+- **Section 9**: Limit of imprisonment for non-payment of fine
+- **Section 10**: Imprisonment and fine (fractions of terms)
+
+### Chapter IV: General Exceptions (Sections 14-38)
+**When Acts Are Not Crimes**
+
+**Important Exceptions**:
+- **Section 14**: Act of judge when acting judicially
+- **Section 15**: Act done pursuant to judgment/order of court
+- **Section 16**: Mistake of fact (honest and reasonable)
+- **Section 17**: Accident (no criminal intent)
+- **Section 18**: Infancy (child under 7 years)
+- **Section 19**: Child 7-12 years (immature understanding)
+- **Section 20**: Unsoundness of mind (insanity defense)
+- **Section 21**: Intoxication (involuntary)
+- **Section 22-26**: Private defense of person and property
+- **Section 27-31**: Acts done with consent
+- **Section 32-35**: Communication made in good faith
+- **Section 36**: Acts done in good faith for benefit
+- **Section 37-38**: Trifling acts, petty harm
+
+**Self-Defense Provisions** (Sections 22-26):
+- Right of private defense of body
+- Right of private defense of property
+- Can extend to causing death if necessary
+- Reasonable force permitted
+- Cannot claim defense if time to seek authority's help
+
+### Chapter V: Abetment (Sections 39-48)
+**Helping Someone Commit Crime**
+
+**Important Sections**:
+- **Section 39**: Definition of abetment (instigation, conspiracy, aid)
+- **Section 40**: Abetting in India for offence abroad
+- **Section 41**: Abetment of offence punishable
+- **Section 42**: Abetment when offence not committed
+- **Section 43**: Abetment when different act done
+- **Section 44-48**: Various abetment scenarios and punishments
+
+### Chapter VI: Criminal Conspiracy (Sections 61-62)
+**Planning to Commit Crime**
+
+- **Section 61**: Criminal conspiracy definition
+- **Section 62**: Punishment for criminal conspiracy
+
+**Key Point**: Agreement to commit offence = crime itself (even if not executed)
+
+### Chapter VII: Offences Against the State (Sections 147-178)
+**Crimes Against Nation, Government**
+
+**Important Sections**:
+- **Section 147**: Waging war against Government of India (death/life)
+- **Section 148**: Conspiracy to wage war
+- **Section 149**: Collecting arms to wage war
+- **Section 150**: Concealing with intent to wage war
+- **Section 151**: Acts endangering sovereignty, unity and integrity (NEW - modified sedition)
+- **Section 152**: Acts endangering sovereignty (armed rebellion)
+- **Section 153**: Assaulting President, Governor (2-7 years)
+- **Section 154-178**: Various offences against public tranquility and state
+
+**Section 151-152: Sedition Replacement**
+- **Removed "sedition"** as colonial concept
+- Replaced with "acts endangering sovereignty"
+- Focus on actual harm to nation
+- Criticism of government not punishable
+- Only violence/intention to violence punishable
+
+### Chapter VIII: Offences Against Public Tranquility (Sections 189-195)
+**Crimes Disturbing Public Peace**
+
+**Important Sections**:
+- **Section 189**: Rioting (5 or more persons, unlawful assembly)
+- **Section 190**: Rioting with deadly weapons
+- **Section 191**: Promoting enmity between groups
+- **Section 192**: Imputations prejudicial to national integration
+- **Section 193-195**: Various public tranquility offences
+
+**Mob Lynching** (NEW in BNS):
+- Addressed under organized crime and rioting provisions
+- Stricter punishments for group violence
+- Section 189-190 cover mob violence scenarios
+
+### Chapter IX: Offences by or Relating to Public Servants (Sections 196-203)
+**Corruption, Misuse of Power**
+
+**Important Sections**:
+- **Section 196**: Public servant disobeying law
+- **Section 197**: Public servant framing incorrect record
+- **Section 198-203**: Various offences by public servants
+
+**Note**: Prevention of Corruption Act (special law) primarily covers public servant corruption
+
+### Chapter X: Offences Relating to Elections (Sections 169-177)
+**Electoral Malpractices**
+
+- Bribery, undue influence, personation
+- Maintaining secrecy of voting
+- False statements in election
+- Illegal payments for election expenses
+
+### Chapter XI: Offences Against Human Body (Sections 100-146)
+**MOST IMPORTANT CHAPTER - Murder, Hurt, Assault**
+
+#### Culpable Homicide and Murder (Sections 100-106)
+
+**Section 100**: Culpable Homicide
+- Causing death with intention/knowledge
+- 3 types: (1) Intent to cause death (2) Intent to cause injury likely to cause death (3) Knowledge act likely to cause death
+
+**Section 103**: Murder (equivalent to IPC 302)
+- **Punishment**: Death OR Life imprisonment + fine
+- Culpable homicide is murder if:
+  1. Intent to cause death
+  2. Intent to cause injury likely to cause death
+  3. Knowledge act so dangerous it will likely cause death
+  4. Intent to cause injury sufficient in ordinary course to cause death
+
+**Section 104**: Culpable homicide not amounting to murder
+- **Punishment**: Life/10 years + fine (if 1st/2nd category), 10 years + fine (if 3rd category)
+- 5 Exceptions when culpable homicide not murder:
+  1. Grave and sudden provocation
+  2. Exceeding private defense
+  3. Public servant exceeding lawful powers
+  4. Sudden fight without premeditation
+  5. Consent of deceased (above 18 years)
+
+**Section 105**: Causing death by negligence
+- **Punishment**: 5 years + fine
+- Example: Rash driving causing death
+
+**Section 106**: Abetment of suicide
+- **Punishment**: 10 years + fine
+- If minor/insane/intoxicated: death/life imprisonment
+
+#### Attempt to Murder (Section 109)
+- **Punishment**: 10 years + fine
+- If hurt caused: Life imprisonment possible
+- Equivalent to IPC Section 307
+
+#### Hurt and Grievous Hurt
+
+**Section 114**: Voluntarily causing hurt
+- **Punishment**: 1 year or fine ₹1000 or both
+
+**Section 115**: Voluntarily causing grievous hurt
+- **Punishment**: 7 years + fine
+
+**Grievous Hurt Definition (Section 117)**:
+1. Emasculation
+2. Permanent sight loss
+3. Permanent hearing loss
+4. Loss of any limb/joint
+5. Destruction/permanent impairment of any limb/joint powers
+6. Permanent facial disfigurement
+7. Fracture or dislocation of bone or tooth
+8. Any hurt endangering life or causing severe pain for 20+ days
+
+**Section 118**: Causing hurt by dangerous weapons/means
+- **Punishment**: 3 years + fine
+
+**Section 121**: Voluntarily causing grievous hurt by dangerous means
+- **Punishment**: Life/10 years + fine
+
+#### Assault (Sections 131-134)
+
+**Section 131**: Assault/criminal force
+- **Punishment**: 3 months or fine ₹500 or both
+
+**Section 132**: Assault to dishonor person
+- **Punishment**: 2 years or fine or both
+
+**Section 133**: Assault on woman with intent to outrage modesty
+- **Punishment**: 1-5 years + fine
+
+**Section 134**: Assault/criminal force on woman with intent to disrobe
+- **Punishment**: 3-7 years + fine
+
+#### Kidnapping and Abduction (Sections 135-146)
+
+**Section 135**: Kidnapping from India
+**Section 136**: Kidnapping from lawful guardianship
+**Section 137**: Abduction
+**Section 140**: Kidnapping for ransom (life/10 years + fine)
+**Section 141**: Kidnapping for slavery/forced labor
+**Section 143**: Kidnapping to murder (death/life imprisonment + fine)
+
+### Chapter XII: Offences Against Property (Sections 303-329)
+**Theft, Robbery, Cheating, Criminal Breach of Trust**
+
+#### Theft (Sections 303-308)
+
+**Section 303**: Theft (equivalent to IPC 378)
+- Dishonestly taking movable property without consent
+- **Punishment**: 3 years or fine or both
+- **If from dwelling house**: 7 years + fine
+
+**Section 304**: Punishment for theft
+**Section 305**: Theft in dwelling house
+**Section 306**: Theft by clerk/servant
+**Section 307**: Theft after preparation for causing death
+
+#### Snatching (Section 304) - NEW SPECIFIC PROVISION
+- Suddenly taking property from person
+- **Punishment**: 3 years + fine
+- Made distinct from theft (IPC didn't have specific snatching provision)
+
+#### Robbery and Dacoity (Sections 309-315)
+
+**Section 309**: Robbery (equivalent to IPC 390)
+- Theft + assault/wrongful restraint
+- **Punishment**: 10 years + fine
+
+**Section 310**: Dacoity (equivalent to IPC 391)
+- Robbery by 5 or more persons
+- **Punishment**: Life/10 years + fine
+
+**Section 311**: Robbery/dacoity with murder
+- **Punishment**: Death OR Life imprisonment + fine
+
+**Section 312-315**: Various robbery/dacoity offences
+
+#### Criminal Misappropriation (Section 314)
+- Dishonestly using someone else's property
+- **Punishment**: 2 years or fine or both
+
+#### Criminal Breach of Trust (Sections 316-317)
+- Entrusted with property but dishonestly using/converting it
+- **Punishment**: 3 years or fine or both
+- **If by public servant/banker/merchant/agent**: 7 years + fine
+
+#### Cheating (Sections 318-320)
+
+**Section 318**: Cheating (equivalent to IPC 420)
+- Deception causing delivery of property or consent
+- **Punishment**: 7 years + fine
+
+**Section 319**: Cheating by personation
+- Pretending to be another person
+- **Punishment**: 5 years + fine
+
+**Section 320**: Cheating by impersonation using computer/communication device
+- **Punishment**: 3 years or fine or both
+
+#### Mischief (Sections 324-329)
+- Causing wrongful loss by destroying/damaging property
+- **Punishment**: Varies by severity
+
+### Chapter XIII: Offences Relating to Marriage (Sections 79-83)
+**Bigamy, Cruelty, Dowry**
+
+**Section 79**: Bigamy
+- Marrying while spouse living
+- **Punishment**: 7 years + fine
+
+**Section 80**: Marriage by concealing prior marriage
+- **Punishment**: 10 years + fine
+
+**Section 81**: Performing marriage without lawful marriage
+- **Punishment**: 7 years + fine
+
+**Section 82**: Enticing/taking away married woman
+- **Punishment**: 2 years or fine or both
+
+**Section 83**: Husband/relatives subjecting woman to cruelty
+- **Punishment**: 3 years + fine
+- Equivalent to IPC 498A (dowry harassment)
+
+**Section 84**: Causing death within 7 years of marriage (dowry death)
+- **Punishment**: 7 years to life imprisonment
+
+### Chapter XIV: Defamation (Sections 348-358)
+**Harm to Reputation**
+
+**Section 348**: Definition of defamation
+- Imputation harming reputation
+- By words, signs, or visible representations
+
+**Section 349**: Punishment for defamation
+- **Punishment**: 2 years or fine or both
+
+**Exceptions**: Truth, public good, good faith, conduct of public servant, etc.
+
+### Chapter XV: Offences Against Women and Children (Sections 63-78)
+**Sexual Offences, Harassment**
+
+**Section 63**: Rape (equivalent to IPC 375-376)
+- Sexual intercourse without consent
+- **Punishment**: Minimum 10 years, can extend to life + fine
+- **Aggravated rape**: Death penalty possible
+
+**Section 64**: Rape on woman under 16 years
+- **Punishment**: Minimum 20 years, can extend to life or death + fine
+
+**Section 65**: Punishment for rape
+**Section 66**: Rape by husband on wife (living separately)
+- **Punishment**: 2-7 years
+
+**Section 67-70**: Various sexual offences (voyeurism, stalking, etc.)
+
+**Section 71**: Word, gesture, act intended to insult modesty of woman
+- **Punishment**: 1-3 years + fine
+
+**Section 74**: Assault/criminal force on woman with intent to disrobe
+**Section 75**: Voyeurism
+**Section 76**: Stalking
+**Section 77**: Sexual harassment
+**Section 78**: Acts of penetration other than rape
+
+**Important Note**: POCSO Act (special law) governs child sexual offences (below 18 years)
+
+### Chapter XVI: Offences Relating to Religion (Sections 298-302)
+**Hurting Religious Feelings**
+
+**Section 298**: Uttering words to wound religious feelings
+- **Punishment**: 1 year or fine or both
+
+**Section 299**: Deliberately insulting religion/religious beliefs
+- **Punishment**: 3 years or fine or both
+
+**Section 300**: Disturbing religious assembly
+**Section 301**: Trespassing on burial ground
+**Section 302**: Offering indignity to human corpse
+
+### Chapter XVII: Offences Against Property (Continued)
+- Forgery (Sections 336-347)
+- Currency notes and bank notes (Sections 178-188)
+- Weights and measures (Section 323)
+
+### Chapter XVIII: Criminal Intimidation, Insult and Annoyance (Sections 351-353)
+**Section 351**: Criminal intimidation
+- **Punishment**: 2 years or fine or both
+- If threat to cause death/grievous hurt: 7 years or fine or both
+
+**Section 352**: Insult intended to provoke breach of peace
+**Section 353**: Statements creating/promoting enmity
+
+### Chapter XIX: Offences Relating to Document and Property Mark (Sections 330-335)
+- Counterfeiting coins, stamps
+- Making false documents
+- Using false documents
+
+### Chapter XX: Miscellaneous Offences (Sections 204-224)
+- Public nuisance
+- Negligent conduct
+- Cyber crimes
+- Organized crime
+
+## New Offences Added in BNS (Not in IPC)
+
+### 1. Organized Crime (Section 111)
+- Definition of organized crime syndicate
+- Criminal activities by organized group
+- **Punishment**: Death OR life imprisonment + fine (minimum ₹10 lakhs)
+- **Targets**: Mafia, gangs, crime syndicates
+
+### 2. Snatching (Section 304)
+- Distinct from theft and robbery
+- Sudden taking from person
+- Common crime not specifically covered in IPC
+
+### 3. Mob Lynching
+- Covered under murder, rioting, unlawful assembly provisions
+- Stricter punishment for group violence
+- Community service for mob participants
+
+### 4. Acts Endangering Sovereignty (Section 151-152)
+- Replaces "sedition" (IPC Section 124A)
+- Focus on actual harm, not mere criticism
+- Armed rebellion, inciting violence against state
+- Criticism of government NOT covered
+
+### 5. Terrorism (Specific Definition)
+- Clear definition of terrorist act
+- Punishment provisions
+- Financing terrorism
+
+### 6. Petty Organized Crime
+- Street gangs, petty extortion rackets
+- Lesser than organized crime but still covered
+
+### 7. Hit and Run (Section 106)
+- Specific provision for causing death by negligence and fleeing
+- **Punishment**: 10 years + fine
+- Addresses rash driving deaths
+
+## Major Changes from IPC
+
+### 1. Removed Provisions
+- **Adultery** (IPC 497): Decriminalized, no longer crime
+- **Sedition** (IPC 124A): Replaced with "acts endangering sovereignty"
+- **Attempt to Suicide** (IPC 309): Already removed in 2017
+- Various colonial-era obsolete provisions
+
+### 2. Increased Punishments
+- Gang rape: Death penalty possible
+- Rape of minor below 16: Minimum 20 years
+- Acid attack: Stricter punishment
+- Mob lynching: Severe punishment
+
+### 3. Gender-Neutral Provisions
+- Rape laws remain women-centric (as per judicial interpretation)
+- Some provisions made gender-neutral where appropriate
+- Transgender included in gender definitions
+
+### 4. Community Service
+- **NEW punishment option**
+- Alternative to imprisonment for minor offences
+- Reformative justice approach
+- Reduces prison overcrowding
+
+### 5. Technology Crimes
+- Better provisions for cyber offences
+- Digital fraud explicitly covered
+- Online harassment provisions
+- Using technology for crimes
+
+### 6. Victim Rights
+- Victim compensation enhanced
+- Victim impact statements
+- Victim participation in proceedings
+
+## IPC to BNS Section Mapping (Most Important)
+
+| IPC Section | BNS Section | Offence |
+|-------------|-------------|---------|
+| 120B | 61-62 | Criminal conspiracy |
+| 124A | 151-152 | Sedition (now "acts endangering sovereignty") |
+| 141-149 | 189-195 | Unlawful assembly, rioting |
+| 299-300 | 100-101 | Culpable homicide |
+| 302 | 103 | Murder |
+| 304 | 104 | Culpable homicide not murder |
+| 307 | 109 | Attempt to murder |
+| 375-376 | 63-70 | Rape and sexual offences |
+| 378 | 303 | Theft |
+| 390 | 309 | Robbery |
+| 392 | 309 | Punishment for robbery |
+| 395 | 310 | Dacoity |
+| 406 | 316 | Criminal breach of trust |
+| 415 | 318 | Cheating |
+| 420 | 318 | Cheating and dishonesty |
+| 467-471 | 336-347 | Forgery |
+| 498A | 83-84 | Cruelty, dowry death |
+| 499-502 | 348-358 | Defamation |
+
+**Important**: Section numbers COMPLETELY DIFFERENT. Cannot use IPC sections in BNS cases.
+
+## Punishments Overview
+
+### Capital Punishment (Death)
+- Murder with aggravating circumstances
+- Gang rape with murder
+- Organized crime causing death
+- Terrorism
+- Waging war against India
+- Rape of minor below 16 (if causing death)
+
+### Life Imprisonment
+- Murder
+- Waging war
+- Organized crime
+- Rape (can be life)
+- Kidnapping for ransom
+- Dacoity with murder
+
+### Imprisonment (Years)
+- Varies by offence: 6 months to 20 years
+- Rigorous (with hard labor) or simple
+- Maximum: Death or life, minimum as specified
+
+### Fine
+- Monetary penalty
+- Can be sole punishment or with imprisonment
+- Amount varies by offence
+- Imprisonment in default of payment
+
+### Forfeiture
+- Confiscation of property used in crime
+- Property acquired through crime
+
+### Community Service (NEW)
+- Hours of social work
+- For minor offences
+- Alternative to imprisonment
+- Reformative approach
+
+## Related Laws
+
+### Works Together With
+- **BNSS** (Bharatiya Nagarik Suraksha Sanhita): Procedures
+- **BSA** (Bharatiya Sakshya Adhiniyam): Evidence
+- **POCSO Act**: Child sexual offences (overrides BNS)
+- **NDPS Act**: Drug offences (special law)
+- **Prevention of Corruption Act**: Public servant corruption
+- **SC/ST Act**: Atrocities against SC/ST
+- **Domestic Violence Act**: Women protection
+
+### Special Laws Override BNS
+When conflict, special law prevails:
+- POCSO (children below 18)
+- NDPS (drugs)
+- Prevention of Corruption (public servants)
+- SC/ST Act (caste atrocities)
+
+## Important Principles
+
+### 1. Mens Rea (Mental Element)
+- Criminal intent must be proved
+- Voluntarily, intentionally, knowingly, fraudulently
+- Exceptions: Strict liability offences
+
+### 2. Actus Reus (Physical Act)
+- Physical act or omission required
+- Mere thought not punishable
+
+### 3. Presumption of Innocence
+- Accused innocent until proven guilty
+- Burden on prosecution
+
+### 4. Proportionality
+- Punishment proportionate to offence
+- Aggravating and mitigating factors
+
+### 5. Joint Liability
+- Common intention: All equally liable
+- Abetment: Helper also liable
+- Conspiracy: Planner also liable
+
+## Transition from IPC to BNS
+
+### Critical Date: July 1, 2024
+
+**Before July 1, 2024**:
+- All cases under IPC
+- IPC sections apply
+- IPC punishments
+
+**On/After July 1, 2024**:
+- All NEW cases under BNS
+- BNS sections apply
+- BNS punishments
+
+### For Ongoing Cases
+- **FIR filed before July 1**: IPC applies till end
+- **FIR filed after July 1**: BNS applies
+- **Pending trials**: Continue under IPC
+- **Appeals**: Law at time of conviction applies
+
+### What Police/Lawyers Must Do
+- Learn new section numbers (completely different)
+- Update FIR formats
+- Reference BNS sections
+- Cannot use IPC sections for new cases
+
+## Search Keywords
+BNS, Bharatiya Nyaya Sanhita, Indian Justice Code, new criminal law 2023, murder, theft, robbery, cheating, rape, assault, kidnapping, organized crime, sedition replacement, mob lynching, snatching, community service, Section 103 BNS, Section 303 BNS, Section 309 BNS, acts endangering sovereignty, criminal conspiracy, dowry death, defamation
+
+## Common User Queries
+- "What is BNS?"
+- "What is punishment for murder in BNS?"
+- "BNS Section 103 equivalent to IPC?"
+- "What is the difference between IPC and BNS?"
+- "When did BNS come into effect?"
+- "Is sedition still a crime in India?"
+- "What is organized crime in BNS?"
+- "What is community service punishment?"
+- "BNS Section for theft/robbery/cheating?"
+- "Can old IPC sections be used?"
+
+## Critical Points for RAG System
+
+1. **Effective Date**: July 1, 2024 - ALWAYS check case date
+2. **Section Numbers Different**: IPC 302 ≠ BNS 302 (completely different crimes)
+3. **Mapping Essential**: Provide IPC-BNS mapping for user queries
+4. **New Crimes**: Organized crime, snatching, specific mob lynching provisions
+5. **Sedition Gone**: Replaced with "acts endangering sovereignty"
+6. **Community Service**: New punishment option
+7. **Cannot Mix**: Cannot use IPC sections in BNS cases
+8. **Special Laws**: POCSO, NDPS override BNS provisions
+
+## Legislative History
+- **Introduced**: August 2023
+- **Passed**: December 2023
+- **Presidential Assent**: December 25, 2023
+- **Came into Force**: July 1, 2024
+- **Replaced**: Indian Penal Code 1860 (after 164 years)
+
+## Implementation Status
+- Fully operational since July 1, 2024
+- Police using BNS sections for new FIRs
+- Courts trying cases under BNS
+- Lawyers adapting to new sections
+- Training programs conducted nationwide
+- Old IPC cases continue parallelly

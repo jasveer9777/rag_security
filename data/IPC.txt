@@ -1,0 +1,92 @@
+# Indian Penal Code, 1860 (IPC)
+
+## Basic Information
+- **Full Name**: Indian Penal Code
+- **Year of Enactment**: 1860
+- **Effective Date**: January 1, 1862
+- **Status**: REPLACED by Bharatiya Nyaya Sanhita (BNS) 2023 on July 1, 2024
+- **Jurisdiction**: All of India
+- **Type**: Substantive Criminal Law
+- **Total Sections**: 511 sections (originally)
+- **PDF Source**: https://www.indiacode.nic.in/bitstream/123456789/15289/1/ipc_act.pdf
+
+## Purpose and Scope
+The Indian Penal Code defines criminal offences and prescribes punishments for crimes committed in India. It is the primary criminal code of India covering all substantive aspects of criminal law.
+
+## Structure
+- **23 Chapters** organized by type of offence
+- Covers offences from murder to defamation to property crimes
+- Defines mens rea (mental element) and actus reus (physical act) for crimes
+
+## Key Chapters
+1. **Chapter I**: Introduction (Sections 1-5)
+2. **Chapter II**: General Explanations (Sections 6-52A)
+3. **Chapter III**: Punishments (Sections 53-75)
+4. **Chapter IV**: General Exceptions (Sections 76-106)
+5. **Chapter V**: Abetment (Sections 107-120)
+6. **Chapter VI**: Offences Against the State (Sections 121-130)
+7. **Chapter XVI**: Offences Affecting Human Body (Sections 299-377)
+   - Murder (302), Culpable Homicide (299-304)
+   - Hurt and Grievous Hurt (319-338)
+   - Assault (351-358)
+8. **Chapter XVII**: Offences Against Property (Sections 378-462)
+   - Theft (378-382)
+   - Robbery (390-402)
+   - Cheating (415-420)
+9. **Chapter X**: Contempt of Lawful Authority (Sections 172-190)
+10. **Chapter XXI**: Defamation (Sections 499-502)
+
+## Important Sections (Most Referenced)
+- **Section 120B**: Criminal Conspiracy
+- **Section 141-149**: Unlawful Assembly
+- **Section 299-304**: Culpable Homicide and Murder
+- **Section 302**: Punishment for Murder (Death or Life Imprisonment)
+- **Section 304**: Culpable Homicide not amounting to Murder
+- **Section 307**: Attempt to Murder
+- **Section 375-376**: Rape and Punishment for Rape
+- **Section 378**: Theft
+- **Section 392**: Robbery
+- **Section 395**: Dacoity
+- **Section 406**: Criminal Breach of Trust
+- **Section 415-420**: Cheating
+- **Section 420**: Cheating and Dishonestly Inducing Delivery of Property
+- **Section 467-471**: Forgery
+- **Section 498A**: Cruelty by Husband or Relatives
+- **Section 499-502**: Defamation
+
+## Punishments Defined
+- Death Penalty
+- Life Imprisonment
+- Imprisonment (Rigorous or Simple)
+- Forfeiture of Property
+- Fine
+
+## Related Laws
+- **Replaced By**: Bharatiya Nyaya Sanhita (BNS) 2023
+- **Works With**: Code of Criminal Procedure (CrPC) - for procedure
+- **Works With**: Indian Evidence Act - for proving crimes
+- **Special Laws**: Many special acts override IPC provisions
+
+## Historical Context
+- Drafted by Lord Macaulay in 1860
+- Based on English Common Law
+- One of the first codifications of criminal law in the world
+- Remained largely unchanged for 160+ years until BNS replaced it
+
+## Important Notes for RAG System
+1. **Cross-References**: Many sections reference other sections
+2. **Illustrations**: Each section contains examples/illustrations
+3. **Explanations**: Sections have detailed explanations
+4. **Exceptions**: Most offences have exceptions listed
+5. **Case Law**: Extensive judicial interpretation over 160 years
+6. **Amendment History**: Multiple amendments over the years
+
+## Search Keywords
+criminal law, offences, punishment, murder, theft, robbery, cheating, assault, hurt, defamation, culpable homicide, abetment, conspiracy, criminal breach of trust, forgery, rape, dowry death, cruelty
+
+## Transition Note
+For cases registered BEFORE July 1, 2024: Use IPC
+For cases registered ON/AFTER July 1, 2024: Use BNS (Bharatiya Nyaya Sanhita)
+
+## BNS Mapping Reference
+Most IPC sections have equivalent BNS sections with similar or modified provisions. Check section-wise mapping for accurate correspondence.

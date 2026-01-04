@@ -1,0 +1,376 @@
+# Narcotic Drugs and Psychotropic Substances Act, 1985 (NDPS Act)
+
+## Basic Information
+- **Full Name**: The Narcotic Drugs and Psychotropic Substances Act
+- **Short Name**: NDPS Act
+- **Year of Enactment**: 1985
+- **Act Number**: Act No. 61 of 1985
+- **Effective Date**: November 14, 1985
+- **Status**: ACTIVE (Current Law)
+- **Jurisdiction**: All of India
+- **Type**: Special Criminal Law (Drug Control)
+- **Total Sections**: 85 sections
+- **Chapters**: 7 chapters
+- **PDF Source**: https://www.indiacode.nic.in/bitstream/123456789/1791/5/a1985-61.pdf
+
+## Purpose and Scope
+NDPS Act is India's primary law for controlling and regulating operations related to narcotic drugs and psychotropic substances. It aims to prevent drug abuse and illegal trafficking.
+
+### Why NDPS Was Enacted
+1. **International Obligations**: UN conventions on drug control
+2. **Health Crisis**: Rising drug addiction problem
+3. **Illegal Trafficking**: Curb drug smuggling
+4. **IPC Inadequacy**: General criminal law insufficient
+5. **Comprehensive Control**: Production to consumption
+
+## What It Covers
+1. **Narcotic Drugs**: Opium, cannabis, coca, poppy, etc.
+2. **Psychotropic Substances**: LSD, MDMA, amphetamines, etc.
+3. **Controlled Substances**: Precursor chemicals used in drug manufacture
+4. **All Operations**: Cultivation, production, possession, sale, transport, consumption
+
+## Structure
+- **7 Chapters** covering control, offences, procedures
+- **85 Sections** creating comprehensive drug control framework
+- **3 Schedules**: List of controlled substances
+
+## Key Chapters
+
+### Chapter I: Preliminary (Sections 1-3)
+- Definitions of drugs, psychotropic substances
+- Application and extent
+
+### Chapter II: Authorities and Officers (Sections 4-16)
+- Narcotics Control Bureau (NCB)
+- Officers' powers and duties
+- Central Authority designation
+
+### Chapter III: Prohibition, Control and Regulation (Sections 7-27A)
+- **Section 8**: Prohibition on cultivation, production, possession, transport, sale, etc.
+- Exceptions for medical/scientific use
+- Licensing provisions
+- Government control over licit operations
+
+### Chapter IV: Offences and Penalties (Sections 15-39)
+**THE MOST IMPORTANT CHAPTER**
+- Contains all offences and their punishments
+- Categorized by quantity (small, commercial, other)
+
+### Chapter V: Procedure (Sections 40-59)
+- Investigation procedures
+- Search and seizure powers
+- Special courts
+- Bail provisions (very restrictive)
+
+### Chapter VI: Forfeiture and Disposal of Property (Sections 60-68A)
+- Illegally acquired property can be confiscated
+- Attachment and seizure procedures
+
+### Chapter VII: Miscellaneous (Sections 69-85)
+- Power to make rules
+- Burden of proof
+- Protection of officers
+
+## Three Important Schedules
+
+### Schedule I
+- **Most Dangerous Drugs**
+- Includes: Heroin, cocaine, morphine, LSD, MDMA, opium, hashish
+- Highest penalties
+- Minimal to no bail
+
+### Schedule II  
+- **Less Dangerous but Controlled**
+- Includes: Codeine (moderate doses), certain cannabis preparations
+- Moderate penalties
+- Controlled medical use
+
+### Schedule III
+- **Precursor Chemicals**
+- Used to manufacture drugs
+- Regulated to prevent illegal drug production
+
+## Quantity-Based Classification (CRITICAL)
+
+### 1. Small Quantity
+**Definition**: Quantity for personal consumption (varies by drug)
+**Punishment**: 
+- Up to 6 months rigorous imprisonment OR
+- Fine up to ₹10,000 OR both
+- For first offense, may get rehabilitation instead of jail
+
+**Examples of Small Quantity**:
+- Heroin: Up to 5 grams
+- Cocaine: Up to 2 grams
+- Hashish: Up to 100 grams
+- Ganja: Up to 1 kg
+- Opium: Up to 25 grams
+
+### 2. Commercial Quantity
+**Definition**: Large quantity indicating trafficking (varies by drug)
+**Punishment**: 
+- Minimum 10 years rigorous imprisonment (can extend to 20 years)
+- Fine minimum ₹1 lakh (can extend to ₹2 lakhs)
+- **Very difficult to get bail**
+
+**Examples of Commercial Quantity**:
+- Heroin: 250 grams or more
+- Cocaine: 100 grams or more
+- Hashish: 1 kg or more
+- Ganja: 20 kg or more
+- Opium: 2.5 kg or more
+
+### 3. Quantity Between Small and Commercial
+**Punishment**:
+- Up to 10 years rigorous imprisonment
+- Fine up to ₹1 lakh
+
+## Key Offences and Punishments
+
+### Section 15: Producing, Manufacturing, Possessing, Selling
+**If Commercial Quantity**: 10-20 years + ₹1-2 lakhs fine
+**If Less than Commercial**: Up to 10 years + up to ₹1 lakh fine
+**If Small Quantity**: Up to 6 months + up to ₹10,000 fine
+
+### Section 16: Possession of Psychotropic Substances
+Same punishment structure as Section 15
+
+### Section 18: Possession in Excess of Small Quantity
+Between small and commercial quantity
+**Punishment**: Up to 10 years + up to ₹1 lakh fine
+
+### Section 20: Production, Manufacturing, Transport, Sale, etc.
+For cannabis plant and cannabis (ganja)
+Similar quantity-based punishment structure
+
+### Section 21: Manufacture, Possession, Transport of Cocaine
+Stringent provisions, commercial quantity = 10-20 years
+
+### Section 22: External Dealings (Import/Export)
+**Punishment**: 10-20 years + fine (if commercial quantity)
+Covers smuggling across borders
+
+### Section 23: Illegal Import, Export, Transhipment
+Very serious offence, minimum 10 years if commercial quantity
+
+### Section 24: Financing Drug Trafficking
+**Punishment**: 10-20 years + fine
+Covers money laundering for drug trade
+
+### Section 25: Allowing Premises for Drug Activities
+Knowingly allowing premises to be used for drug offences
+**Punishment**: Up to 10 years + fine
+
+### Section 27: Consumption of Drugs
+Consumption of any drug (except medical use)
+**Punishment**: Up to 6 months + fine OR rehabilitation
+**First offense**: May get rehabilitation treatment instead
+
+### Section 27A: Financing Illicit Traffic
+Financial operations for drug trafficking
+**Punishment**: 10-20 years + fine
+
+### Section 29: Abetment and Criminal Conspiracy
+Helping or planning drug offences
+**Punishment**: Same as the principal offence
+
+## Special Powers of Officers
+
+### Section 41: Power to Search and Seize
+- Officers can search persons, vehicles, vessels
+- Can seize drugs, materials, documents
+- Can arrest without warrant
+- Must inform superior within 48 hours
+
+### Section 42: Power of Entry, Search and Seizure
+- Can enter and search any premises
+- Requires prior authorization (except in emergencies)
+- Can break open doors if necessary
+
+### Section 43: Power to Stop and Search Vehicles
+Can stop and search any vehicle suspected of carrying drugs
+
+### Section 44: Power to Arrest
+- Can arrest without warrant
+- Must produce before magistrate within 24 hours
+
+### Section 50: Condition for Search of Persons
+**VERY IMPORTANT**: Person to be informed of:
+- Right to be searched before Gazetted Officer or Magistrate
+- If person so requires, must be taken to nearest officer/magistrate
+- Violation of Section 50 can make arrest illegal
+
+## Bail Provisions (Very Restrictive)
+
+### Section 37: Bail
+**Conditions for bail**:
+1. Public prosecutor must be given opportunity to oppose
+2. Court must be satisfied:
+   - There are reasonable grounds to believe accused is NOT GUILTY
+   - Accused is not likely to commit any offence while on bail
+3. For commercial quantity: Bail very difficult, almost never granted
+4. Twin conditions must be satisfied
+
+**Practical Effect**: Getting bail in NDPS cases is extremely difficult
+
+## Burden of Proof (Section 35)
+
+**Presumption of Guilt**: If drugs found in possession/on premises
+- Accused presumed to be conscious possessor
+- Burden shifts to accused to prove innocence
+- Reversal of normal criminal law burden
+
+This makes NDPS prosecution easier and defense harder
+
+## Punishment for Death Penalty
+
+### Section 31A: Death Penalty or Life Imprisonment
+**For repeat offenders**: If convicted twice under certain sections and commits again:
+- Death penalty OR life imprisonment possible
+- Applies to serious drug trafficking
+
+## Medical and Scientific Use (Exceptions)
+
+### Lawful Activities Under NDPS
+1. Medical prescription and use
+2. Scientific research
+3. Licensed cultivation (poppy, cannabis for medical use)
+4. Licensed manufacturing (pharmaceutical companies)
+5. Government-authorized trade
+
+**Requires**: Proper licenses, documentation, government permission
+
+## Rehabilitation and Treatment
+
+### Section 64A: Treatment and Rehabilitation
+- First-time offenders (personal consumption)
+- Can be sent for medical treatment instead of jail
+- Rehabilitation centers for drug addicts
+- Focus on cure, not just punishment
+
+## Forfeiture Provisions
+
+### Section 68: Forfeiture of Illegally Acquired Property
+- Property acquired from drug trafficking can be confiscated
+- Includes cash, vehicles, real estate, investments
+- Attachment and freezing of assets
+- Burden on accused to prove legitimate source
+
+## Investigation and Trial
+
+### Special Courts (Section 36)
+- Designated courts for NDPS cases
+- Sessions Court judges
+- Speedy trial provisions
+
+### Investigation (Section 52)
+- NCB and police have investigation powers
+- Can investigate all NDPS offences
+- Special procedures for drug cases
+
+### No Interference by Courts (Section 32A)
+During investigation and proceedings, courts generally don't interfere
+
+## Controlled Delivery Operations
+
+### Section 50A: Controlled Delivery
+NCB can allow drug consignment to proceed under surveillance
+- To catch entire network
+- To identify all conspirators
+- International cooperation
+
+## Death Penalty vs Life Imprisonment
+
+### When Death Penalty Can Be Given
+- Repeat offenders under Section 31A
+- Extremely large commercial quantities
+- Causing death due to adulterated drugs
+- Rare, but legally possible
+
+Most cases: Life imprisonment maximum (10-20 years for commercial quantity)
+
+## Important Case Law Principles
+1. Section 50 compliance mandatory for valid search
+2. Burden of proof on accused once possession established
+3. Conscious possession must be proved
+4. Quantity determines punishment
+5. Bail extremely difficult in NDPS cases
+6. Statements to NCB officers admissible
+
+## 2021 Amendment Highlights
+- Clarified difference between possession for personal use vs sale
+- Small quantity offenders: Rehab emphasis over punishment
+- Death penalty provisions retained but narrowed
+- Enhanced provisions for financial investigations
+
+## Related Laws
+- **IPC/BNS**: For general criminal provisions
+- **Prevention of Money Laundering Act**: For financial aspects
+- **Customs Act**: For import/export cases
+- **Indian Penal Code Section 328-329**: Administering stupefying drugs
+
+## Agencies Involved
+
+### 1. Narcotics Control Bureau (NCB)
+- Primary agency for NDPS enforcement
+- Central agency under Ministry of Home Affairs
+- Coordinates with state police, customs, international agencies
+
+### 2. State Police
+- Can investigate NDPS cases
+- Drug enforcement wings in major states
+
+### 3. Customs Department
+- For drugs at borders, airports, seaports
+- Import/export violations
+
+### 4. Revenue Intelligence
+- Financial investigations
+- Money laundering in drug trade
+
+## International Cooperation
+- India signatory to UN conventions
+- Mutual Legal Assistance Treaties
+- Extradition for drug offenders
+- Cross-border operations coordination
+
+## Search Keywords
+NDPS, drugs, narcotics, drug trafficking, heroin, cocaine, ganja, hashish, opium, LSD, MDMA, small quantity, commercial quantity, bail in NDPS, Section 37, Narcotics Control Bureau, NCB, drug possession, drug consumption, rehabilitation, Section 50, search and seizure
+
+## Common User Queries
+- "What is NDPS Act?"
+- "What is the punishment for drug possession?"
+- "What is small quantity and commercial quantity?"
+- "Can I get bail in NDPS case?"
+- "What if I'm caught with drugs?"
+- "What is Section 50 of NDPS?"
+- "Is drug consumption illegal?"
+- "What is commercial quantity for heroin/cocaine?"
+- "Can I get rehabilitation instead of jail?"
+- "What are NCB powers?"
+
+## Critical Points for RAG System
+1. **Quantity Classification**: Small vs Commercial is crucial
+2. **Bail Restrictions**: Section 37 makes bail very difficult
+3. **Burden of Proof**: Shifts to accused (Section 35)
+4. **Section 50 Compliance**: Must for valid search
+5. **Stringent Punishment**: 10-20 years for commercial quantity
+6. **Consumption vs Trafficking**: Different treatment
+7. **Rehabilitation**: First offenders may get treatment
+8. **Presumption of Guilt**: Once possession established
+
+## Practical Impact
+- One of the strictest drug laws globally
+- Very high conviction rate
+- Long trials, lengthy pre-trial detention
+- Bail rarely granted in commercial quantity cases
+- Life-changing consequences for accused
+- Focus shifting to treatment for addicts, harsh for traffickers
+
+## Controversial Aspects
+1. Bail provisions considered too harsh
+2. Burden of proof reversal criticized
+3. Long pre-trial detention (years without bail)
+4. Death penalty debate
+5. Small quantity offenders treated too harshly
+6. Need for more rehabilitation centers

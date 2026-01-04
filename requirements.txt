@@ -1,0 +1,23 @@
+# === Core RAG Dependencies ===
+faiss-cpu
+sentence-transformers
+pypdf
+numpy
+pandas
+tqdm
+pyyaml
+
+# === Model Clients ===
+openai
+requests
+python-dotenv
+
+# === Optional NLP/Evaluation Tools ===
+scikit-learn
+
+# === Optional: if you want to build a local API for your RAG later ===
+# fastapi
+# uvicorn
+
+# === Optional: Advanced embeddings (not needed now) ===
+# transformers

@@ -1,0 +1,276 @@
+# Protection of Children from Sexual Offences (POCSO) Act, 2012
+
+## Basic Information
+- **Full Name**: The Protection of Children from Sexual Offences Act
+- **Short Name**: POCSO Act
+- **Year of Enactment**: 2012
+- **Act Number**: Act No. 32 of 2012
+- **Effective Date**: November 14, 2012
+- **Status**: ACTIVE (Current Law)
+- **Jurisdiction**: All of India
+- **Type**: Special Criminal Law (Child Protection)
+- **Total Sections**: 46 sections
+- **Chapters**: 9 chapters
+- **PDF Source**: https://www.indiacode.nic.in/bitstream/123456789/2079/1/AA2012-32.pdf
+
+## Purpose and Scope
+POCSO Act is a comprehensive law to protect children from sexual abuse and exploitation. It defines various forms of sexual offences against children and prescribes stringent punishments.
+
+### Why POCSO Was Needed
+1. **IPC Gaps**: IPC didn't adequately cover child sexual abuse
+2. **Gender Neutral**: Protects both boys and girls
+3. **Child-Centric**: Procedures designed for child victims
+4. **UN Convention**: To comply with UN Convention on Rights of Child
+5. **Comprehensive**: Covers all forms of sexual offences
+
+## Who is a "Child"?
+**Any person below 18 years of age** - This is the most important definition in the Act.
+
+## Structure
+- **9 Chapters** covering offences, procedures, and child protection
+- **46 Sections** creating a complete protective framework
+- **Rules 2020**: POCSO Rules provide detailed implementation guidelines
+
+## Key Chapters
+
+### Chapter I: Preliminary (Sections 1-2)
+- Title, extent, definitions
+
+### Chapter II: Sexual Offences Against Children (Sections 3-12)
+- **Section 3-4**: Penetrative sexual assault (7-life + fine, aggravated: 10-life + fine)
+- **Section 5-6**: Aggravated penetrative sexual assault (20-life or death + fine)
+- **Section 7-8**: Sexual assault (3-5 years + fine)
+- **Section 9-10**: Aggravated sexual assault (5-7 years + fine)
+- **Section 11-12**: Sexual harassment (3 years + fine)
+
+### Chapter III: Use of Child for Pornographic Purposes (Sections 13-15)
+- Using child for pornography: 5-7 years + fine
+- Aggravated: 10 years + fine
+- Storage of child pornography: 3 years + fine (can extend to 5)
+
+### Chapter IV: Abetment and Attempt (Section 16-18)
+- Abetment of POCSO offences
+- Attempt to commit offences
+
+### Chapter V: Reporting of Cases (Sections 19-21)
+- **Mandatory Reporting**: Any person knowing of offence MUST report
+- Failure to report: 6 months imprisonment + fine
+- Media restrictions on reporting identity
+
+### Chapter VI: Procedure and Powers (Sections 22-33)
+- Special Courts establishment
+- Child-friendly procedures
+- Medical examination protocols
+- Evidence recording procedures
+
+### Chapter VII: Special Court (Sections 28-37)
+- Designated Special Courts to try POCSO cases
+- Fast track: Trial to be completed within 1 year
+- In-camera trials (closed to public)
+
+### Chapter VIII: Punishment for False Complaint (Section 40)
+- False complaint/information: Imprisonment + fine
+
+### Chapter IX: Miscellaneous (Sections 38-46)
+- Overrides other laws when in conflict
+- Alternate sentencing for child offenders
+- Government's power to make rules
+
+## Types of Offences Defined
+
+### 1. Penetrative Sexual Assault (Section 3-4)
+**Definition**: Any act involving penetration
+- Includes: Penis, object, or any body part
+- Into: Vagina, mouth, urethra, anus
+- Or making child do the same to another person
+**Punishment**: Minimum 10 years, can extend to life + fine
+**Trial**: By Special Court only
+
+### 2. Aggravated Penetrative Sexual Assault (Section 5-6)
+**When assault becomes "aggravated"**:
+- Committed by police officer, armed forces, public servant
+- Relative, guardian, teacher, or person of trust
+- On child with mental/physical disability
+- Causes grievous hurt, injury, harm
+- During communal violence
+- Repeatedly on same child
+- Child under 16 years
+- Causes pregnancy
+- Inflicts child with life-threatening disease
+**Punishment**: Minimum 20 years, can extend to life or DEATH + fine
+
+### 3. Sexual Assault (Section 7-8)
+**Definition**: Sexual contact without penetration
+- Touching private parts with sexual intent
+- Making child touch someone's private parts
+- Any sexual act without penetration
+**Punishment**: Minimum 3 years, can extend to 5 years + fine
+
+### 4. Aggravated Sexual Assault (Section 9-10)
+Same aggravating circumstances as penetrative assault
+**Punishment**: Minimum 5 years, can extend to 7 years + fine
+
+### 5. Sexual Harassment (Section 11-12)
+**Includes**:
+- Showing pornography to child
+- Repeatedly following or contacting child
+- Threatening to view child's body parts
+- Any act with sexual intent
+**Punishment**: 3 years + fine
+
+### 6. Child Pornography Offences (Section 13-15)
+- **Using child for pornography**: 5-7 years + fine
+- **Storage of child pornography**: 3-5 years + fine (2019 amendment)
+- Includes digital storage (computer, phone, cloud)
+
+## Key Features
+
+### Child-Friendly Procedures
+1. **No direct contact** with accused during trial
+2. **Screen/video link** for testimony
+3. **Frequent breaks** during testimony
+4. **Support person** allowed during testimony
+5. **In-camera trials** (closed to public)
+6. **No aggressive cross-examination**
+7. **Child not to see accused** if traumatic
+
+### Mandatory Reporting
+- **Everyone must report**: Teachers, doctors, parents, any person
+- Includes institutional heads (schools, hospitals)
+- Failure to report: 6 months imprisonment + fine
+- Creates legal obligation to protect children
+
+### Medical Examination
+- Must be done within 24 hours of report
+- By female doctor (if possible)
+- In presence of parent/guardian
+- Child's consent important
+- Free treatment in government hospitals
+
+### Police Procedure
+- Record statement at child's home or chosen place
+- By woman police officer (preferably)
+- In presence of parents/guardian
+- In child's language
+- Audio-video recording mandatory
+- FIR to be recorded immediately
+
+### Special Courts
+- Designated courts for POCSO cases
+- Child-friendly environment
+- Trial within 1 year from cognizance
+- Can extend by 6 months with reasons
+- Judge trained in child psychology
+
+### Media Restrictions
+- **Cannot disclose identity** of child victim
+- No photos, videos, or personal details
+- Punishment: 6 months to 1 year + fine
+- Exception: With written permission of Special Court
+
+## Presumption of Guilt
+**Section 29-30**: When sexual assault is proved, court presumes accused committed offence
+- Burden shifts to accused to prove innocence
+- Reversal of usual criminal law presumption
+
+## Important Amendments
+
+### 2019 Amendment
+1. **Death penalty** added for aggravated penetrative sexual assault
+2. **Minimum punishment increased** for some offences
+3. **Time limit reduced**: Trial to complete in 6 months (from 1 year)
+4. **Child pornography storage** made explicit offence
+5. **No anticipatory bail** for certain offences
+
+## Compensation to Victim
+- Mandatory under Section 33
+- For physical/mental trauma, medical expenses, rehabilitation
+- Interim compensation during trial
+- Final compensation after conviction
+- State government's responsibility
+
+## Overriding Effect
+**Section 42A**: POCSO overrides any other law if there's conflict
+- Takes precedence over IPC/BNS
+- Takes precedence over Juvenile Justice Act
+- More stringent provisions of POCSO apply
+
+## Common Scenarios Covered
+
+### School/Educational Institutions
+- Teacher-student abuse
+- Abuse by school staff
+- Bullying with sexual intent
+- Showing obscene material
+
+### Family/Home
+- Abuse by relatives
+- Abuse by guardians
+- Incest
+- Domestic abuse
+
+### Online/Digital
+- Child pornography
+- Online grooming
+- Sexual harassment via social media
+- Sharing obscene content to minors
+
+### Public Places
+- Molestation in public
+- Stalking children
+- Eve-teasing minors
+- Photography with sexual intent
+
+## Important Case Law Principles
+1. Statement of child victim given most weight
+2. Minor contradictions don't invalidate testimony
+3. Medical evidence corroborative, not conclusive
+4. Benefit of doubt to victim, not accused
+5. Age determination critical (below 18)
+
+## Related Laws
+- **Works with IPC/BNS**: For general criminal provisions
+- **Juvenile Justice Act**: For child offenders
+- **Information Technology Act**: For online child abuse
+- **Child Labor Act**: For overall child protection
+- **POCSO overrides** when there's conflict
+
+## Search Keywords
+POCSO, child sexual abuse, minor, rape of minor, child pornography, sexual harassment of child, penetrative assault, aggravated assault, mandatory reporting, special court, child protection, below 18 years, pedophilia, child exploitation, in-camera trial
+
+## Common User Queries
+- "What is POCSO Act?"
+- "What is the punishment for child sexual abuse?"
+- "Who can file POCSO case?"
+- "Is child pornography illegal?"
+- "What if I don't report child abuse?"
+- "How is POCSO trial conducted?"
+- "Can media report child victim's name?"
+- "What is the age limit in POCSO?"
+- "Is there death penalty under POCSO?"
+- "How long does POCSO trial take?"
+
+## Critical Points for RAG System
+1. **Age is Critical**: Must be below 18 years
+2. **Gender Neutral**: Protects boys and girls equally
+3. **Mandatory Reporting**: Failure to report is crime
+4. **Stringent Punishment**: Much harsher than regular crimes
+5. **Child-Friendly**: Special procedures for child victims
+6. **Fast Track**: 1 year trial completion mandate
+7. **Overriding Effect**: Takes precedence over other laws
+8. **No Bail**: Limited anticipatory bail for accused
+
+## Limitations and Criticisms
+1. Low conviction rates despite strict law
+2. Delayed trials despite time limits
+3. Insufficient special courts
+4. Secondary victimization during trial
+5. Misuse allegations in some cases
+6. Need for better implementation
+
+## Implementation Bodies
+- **National Commission for Protection of Child Rights (NCPCR)**
+- **State Commissions for Protection of Child Rights**
+- **Child Welfare Committees**
+- **Special Juvenile Police Units**
+- **Special Courts under POCSO**

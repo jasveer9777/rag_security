@@ -1,0 +1,1658 @@
+# Code of Criminal Procedure, 1973 (CrPC)
+
+## Basic Information
+- **Full Name**: The Code of Criminal Procedure
+- **Short Name**: CrPC or Cr.P.C.
+- **Year of Enactment**: 1973
+- **Effective Date**: April 1, 1974
+- **Status**: REPLACED by Bharatiya Nagarik Suraksha Sanhita (BNSS) on July 1, 2024
+- **Jurisdiction**: All of India (except Jammu & Kashmir had its own until 2019)
+- **Type**: Procedural Criminal Law (Adjective Law)
+- **Total Sections**: 484 sections
+- **Chapters**: 37 chapters
+- **Schedules**: 5 schedules
+- **PDF Source**: https://www.indiacode.nic.in/bitstream/123456789/15272/1/the_code_of_criminal_procedure%2C_1973.pdf
+
+## Purpose and Scope
+The Code of Criminal Procedure (CrPC) is the procedural law that governs the administration of criminal justice in India. It is the machinery through which the substantive criminal law (IPC/BNS) is implemented.
+
+### Fundamental Principle
+- **IPC/BNS**: Defines WHAT crimes are and their punishments (Substantive Law)
+- **CrPC/BNSS**: Defines HOW to investigate, prosecute, try, and punish (Procedural Law)
+- **Evidence Act**: Defines HOW to prove crimes (Rules of Evidence)
+
+## What CrPC Governs
+
+### 1. Police Investigation
+- How crimes are investigated
+- FIR registration procedures
+- Powers of search and seizure
+- Arrest procedures
+- Evidence collection
+
+### 2. Court Procedures
+- Which court has jurisdiction
+- How cases are filed and tried
+- Trial procedures
+- Evidence recording
+- Judgment delivery
+
+### 3. Rights Framework
+- Rights of accused persons
+- Rights of victims
+- Rights of witnesses
+- Bail provisions
+
+### 4. Judicial Powers
+- Powers of different courts
+- Sentencing authority
+- Appellate powers
+- Revisional jurisdiction
+
+### 5. Execution
+- How sentences are executed
+- Remission and commutation
+- Parole and furlough
+
+## Structure Overview
+- **37 Chapters**: Organized by procedural stages
+- **484 Sections**: Covering entire criminal justice journey
+- **5 Schedules**: Forms, classifications, and supplementary provisions
+- **Flow**: From crime occurrence to final execution of sentence
+
+## Key Chapters in Detail
+
+### Chapter I: Preliminary (Sections 1-5)
+
+**Section 1**: Short title, extent, commencement
+**Section 2**: Definitions (CRITICAL)
+- **Court of Session**: Court presided by Sessions Judge
+- **Cognizable offence**: Police can arrest without warrant
+- **Non-cognizable offence**: Police cannot arrest without warrant
+- **Bailable offence**: Accused has right to bail
+- **Non-bailable offence**: Bail at court's discretion
+- **Complaint**: Allegation to magistrate (not FIR)
+- **Investigation**: Collection of evidence by police
+- **Inquiry**: Judicial inquiry by magistrate
+- **Trial**: Proceedings before court
+- **Warrant case**: Offence punishable with 2+ years
+- **Summons case**: Offence punishable with less than 2 years
+
+**Section 3**: Construction with other laws
+**Section 4**: Trial of offences under IPC and other laws
+**Section 5**: Saving of powers of High Court
+
+### Chapter II: Constitution of Criminal Courts (Sections 6-35)
+
+**Court Hierarchy in India**:
+```
+Supreme Court (Article 124-147)
+        ↓
+High Courts (Article 214-231)
+        ↓
+Courts of Session (Section 9)
+        ↓
+Magistrates Courts:
+    - Chief Judicial Magistrate
+    - Judicial Magistrate First Class (JMFC)
+    - Judicial Magistrate Second Class
+```
+
+**Important Sections**:
+- **Section 6**: Classes of criminal courts
+- **Section 9**: Court of Session
+- **Section 11**: Subordinate to Sessions Judge
+- **Section 16-24**: Powers of Judicial Magistrates
+- **Section 25-28**: Special courts and executive magistrates
+
+### Chapter III: Powers of Courts (Sections 26-35)
+
+**Sentencing Powers**:
+- **Supreme Court**: All punishments
+- **High Court**: All punishments (original and appellate)
+- **Court of Session**: Death, life imprisonment, any term of imprisonment, unlimited fine
+- **Magistrate First Class**: Max 3 years imprisonment + fine
+- **Magistrate Second Class**: Max 1 year imprisonment + fine up to ₹5,000
+- **Special courts**: As specified by statute
+
+**Section 28**: Sentences in cases of conviction of several offences at one trial
+**Section 29-35**: Various sentencing provisions
+
+### Chapter IV: Jurisdiction of Courts (Sections 177-189)
+
+**Section 177**: Ordinary place of inquiry/trial
+- Where offence committed
+- Where consequence ensued
+- Where act was done
+
+**Section 178**: Place of inquiry/trial in certain cases
+**Section 179**: Offence triable where act is done or consequence ensues
+**Section 180-188**: Special jurisdiction provisions
+**Section 189**: Offences committed on journey
+
+### Chapter V: Powers of Arrest (Sections 41-60A)
+**ONE OF THE MOST IMPORTANT CHAPTERS**
+
+#### Section 41: When Police May Arrest Without Warrant
+Police officer can arrest without warrant:
+1. **Cognizable offence** committed in presence
+2. Reasonable complaint/information of cognizable offence
+3. In possession of stolen property
+4. Obstructs police officer
+5. Proclaimed offender
+6. Any person for whom reasonable suspicion exists
+7. Released convict breaking conditions
+8. Deserter from armed forces
+9. Outside India offence
+
+**Conditions** (added by amendment):
+- For offences with punishment less than 7 years or only fine:
+  - Cannot arrest if:
+    - Person gives name and residence
+    - No reason to believe false
+    - No reason to believe person will abscond
+
+#### Section 41A: Notice of Appearance (Added 2009)
+- For offences punishable with less than 7 years
+- Police officer shall issue **notice to appear**
+- Person must appear before police officer
+- If fails to appear without reasonable cause: Can be arrested
+- **Major reform** to reduce unnecessary arrests
+
+#### Section 41B: Procedure for arrest and duties of officer
+- Officer making arrest must:
+  1. Bear accurate, visible identification
+  2. Prepare memo of arrest
+  3. Get attested by witness (family member or respectable person)
+  4. Counter-sign by arrested person
+  5. Inform person of right to have someone informed
+
+#### Section 41C: Offence against police by arrested person
+**Section 41D**: Procedure for arrested female persons
+
+#### Section 46: How to Arrest
+- Actual touching or confining body
+- Submission by word or action
+- Can use force if necessary
+- **Cannot cause death** (unless person accused of death penalty offence resisting arrest)
+
+#### Section 47: Search of place entered by person sought to be arrested
+
+#### Section 48: Pursuit of offenders into other jurisdictions
+
+#### Section 49: No Unnecessary Restraint
+- Person arrested **not subjected to more restraint than necessary**
+- Cannot be handcuffed unnecessarily
+- Important protection
+
+#### Section 50: Rights of Arrested Person (CRITICAL)
+Person arrested must be informed:
+1. **Grounds of arrest** (full particulars)
+2. **Right to bail** (if bailable offence)
+3. **Right to have someone informed** of arrest
+4. **Right to consult legal practitioner**
+5. Can request examination by medical practitioner
+
+#### Section 50A: Obligation of Person Making Arrest (Added 2009)
+Police arresting person must inform:
+- A friend, relative, or person named by arrested person
+- Of the arrest and place of detention
+- **Within 8-12 hours** of arrest
+
+#### Section 51: Search of Arrested Persons
+Can search arrested person and seize:
+- Articles necessary for investigation
+- Anything that can be used as evidence
+- Dangerous weapons
+
+#### Section 52: Power to seize offensive weapons
+
+#### Section 53: Examination of Accused by Medical Practitioner
+- At request of police officer
+- To ascertain marks of injury
+- Reasonable belief examination will provide evidence
+
+#### Section 53A: DNA profiling (Added 2006)
+
+#### Section 54: Examination of Person Arrested (At Own Request)
+- Arrested person can request examination
+- By medical officer
+- **To record injuries** at time of arrest
+- Important protection against police torture allegations
+
+#### Section 55: Health screening of arrested person (Added 2009)
+- To ascertain fitness for detention
+
+#### Section 56: Person Arrested to be Taken Before Magistrate
+- Person arrested **without warrant**:
+  - Must be taken before magistrate **within 24 hours**
+  - Excludes journey time
+- Cannot be detained beyond 24 hours without magistrate's authority
+
+#### Section 57: Detention Limit Without Magistrate's Order
+- Person arrested cannot be detained **beyond 24 hours**
+- Without magistrate's order
+- **Constitutional mandate** (Article 22)
+
+#### Section 58: Police custody only in cognizable cases
+
+#### Section 59: Arrest by magistrate
+
+#### Section 60: Arrest by Private Person (Citizen's Arrest)
+- Any person can arrest:
+  1. Person committing non-bailable cognizable offence in presence
+  2. Proclaimed offender
+- Must hand over to police immediately
+
+#### Section 60A: Arrest of person subject to preventive detention order
+
+### Chapter VI: Processes to Compel Appearance (Sections 61-90)
+
+#### Summons (Sections 61-69)
+**Section 61**: Summons to appear before court
+- Written order signed by presiding officer
+- Requiring person to appear
+
+**Section 62**: Service of summons
+**Section 63**: Service when person cannot be found
+**Section 64**: Proof of service
+**Section 65**: Summons disobeyed - procedure
+**Section 66**: Person released on bail appearing
+**Section 67**: Warrant if person fails to appear
+**Section 68**: Proclamation if person absconds
+**Section 69**: Attachment if person absconds
+
+#### Warrants of Arrest (Sections 70-81)
+**Section 70**: Form of warrant of arrest
+- Signed by presiding officer
+- Directed to police
+- Can be executed anywhere in India
+
+**Section 71**: Notification of substance of warrant
+**Section 72**: Warrant to whom directed
+**Section 73**: Warrant may be directed to any person
+**Section 74**: Warrant directed to police
+**Section 75**: Warrant for fine default
+**Section 76**: Warrant duration
+**Section 77**: Warrant executable where issued
+**Section 78**: Executing outside jurisdiction - procedure
+**Section 79**: Return of warrant
+**Section 80**: Person arrested to be brought before court
+**Section 81**: General provisions regarding warrants
+
+#### Proclamation and Attachment (Sections 82-86)
+**Section 82**: Proclamation for Person Absconding
+- If person absconding or concealing
+- Written proclamation requiring appearance
+- Published in prescribed manner
+
+**Section 83**: Attachment of Property
+- If person doesn't appear after proclamation
+- Property may be attached
+
+**Section 84**: Investigation cannot be stayed
+**Section 85**: Release of attachment
+**Section 86**: Service of summons outside India
+
+### Chapter VII: Processes to Compel Production of Things (Sections 91-105)
+
+**Section 91**: Summons to Produce Documents/Things
+**Section 92**: Court may issue search warrant
+**Section 93**: Search by police officer (with warrant)
+**Section 94**: When search warrant may be issued
+**Section 95**: Search warrants for forfeited articles
+**Section 96**: Seizure of property
+**Section 97**: Search by police without warrant
+**Section 98**: Power of telegraph authorities to search
+**Section 99-105**: Disposal of property, forfeiture, etc.
+
+### Chapter VIII: Security for Keeping the Peace (Sections 106-124)
+
+**Section 107**: Security for Good Behavior from Suspected Persons
+- If magistrate receives information:
+  - Person likely to commit breach of peace
+  - Disturb public tranquility
+- Can require such person to execute bond
+- For good behavior
+
+**Section 108**: Security from habitual offenders
+**Section 109**: Security from persons showing inclination to commit offences
+**Section 110**: Security from persons likely to commit cognizable offences
+**Section 111-124**: Procedure for obtaining security
+
+### Chapter IX: Order for Maintenance of Wives, Children and Parents (Sections 125-128)
+
+#### Section 125: Order for Maintenance (VERY IMPORTANT)
+**One of most invoked sections**
+
+**Who Can Claim**:
+1. **Wife** unable to maintain herself
+2. **Legitimate/illegitimate minor children** (below 18)
+3. **Major children** (if disabled/unable to maintain)
+4. **Parents** unable to maintain themselves
+
+**Against Whom**:
+- Husband (for wife maintenance)
+- Father (for children maintenance)
+- Children (for parent maintenance)
+
+**When Claim Can Be Made**:
+- Wife:
+  - Husband neglecting to maintain
+  - Refusing to maintain
+  - Has sufficient means but not maintaining
+- Children: Father not maintaining
+- Parents: Children not maintaining
+
+**Amount**:
+- Monthly allowance as magistrate thinks fit
+- Not exceeding ₹500 per month (can be higher by state amendment)
+- Considering means of husband/father/children
+
+**Important Points**:
+- Wife not entitled if:
+  - Living in adultery
+  - Refuses to live with husband without sufficient reason
+  - Living separately by mutual consent
+- Magistrate First Class can order
+- Civil remedy in criminal court
+- Quick and accessible
+
+**Section 125(3)**: If husband fails to pay
+- Warrant to levy amount
+- Imprisonment: 1 month for each month default (max 6 months per order)
+
+**Section 125(4)**: Alteration of allowance
+
+#### Section 126: Procedure
+**Section 127**: Alteration in allowance
+**Section 128**: Enforcement of maintenance order
+
+### Chapter X: Maintenance of Public Order and Tranquility (Sections 129-148)
+
+**Section 129**: Dispersing Unlawful Assembly
+- Executive magistrate or police officer can:
+  - Command unlawful assembly to disperse
+  - If doesn't disperse, can arrest and disperse by force
+
+**Section 130**: Use of Armed Forces
+- If unlawful assembly cannot be dispersed
+- Can requisition armed forces
+
+**Section 131**: Power of armed forces
+**Section 132**: Protection from prosecution
+
+**Section 133**: Conditional Order for Removal of Nuisance
+- If public nuisance, magistrate can order removal
+
+**Section 144: Power to Prohibit Assembly (EXTREMELY FAMOUS)
+
+#### Section 144: Emergency Orders
+**Most frequently invoked preventive power**
+
+**When Used**:
+- Sufficient grounds for immediate prevention or speedy remedy
+- Likely danger to human life, health, safety
+- Disturbance of public tranquility
+- Riot or affray
+
+**What Magistrate Can Order**:
+1. Prohibit assembly of **5 or more persons**
+2. Prohibit carrying weapons
+3. Prohibit certain acts
+4. Can be for person or general public
+
+**Duration**:
+- Not exceeding **2 months** initially
+- Can extend up to **6 months** (with reasons)
+- Cannot exceed 6 months total
+
+**Violation**:
+- Punishment: **6 months imprisonment + fine**
+- Cognizable offence
+
+**Famous Uses**:
+- Prohibiting processions
+- Curfew-like situations
+- Preventive detention
+- Law and order situations
+
+**Section 145**: Procedure when dispute about land/water
+**Section 146-148**: Disputes about property
+
+### Chapter XI: Preventive Action of Police (Sections 149-153)
+
+**Section 149**: Preventing cognizable offences
+**Section 150**: Police to prevent cognizable offences
+**Section 151**: Arrest to prevent cognizable offences
+- Can arrest person about to commit cognizable offence
+- Preventive arrest
+**Section 152**: Prevention of injury to public property
+**Section 153**: Inspection of weights and measures
+
+### Chapter XII: Information to Police and Investigation (Sections 154-176)
+**MOST CRITICAL CHAPTER - Core of Criminal Justice System**
+
+#### Section 154: First Information Report (FIR)
+**MOST IMPORTANT SECTION IN CrPC**
+
+**What is FIR**:
+- First Information of cognizable offence
+- Received by police station
+- Reduced to writing
+- Foundation of criminal investigation
+
+**Procedure**:
+1. Any person gives information of cognizable offence orally
+2. Officer in charge **must reduce to writing**
+3. Read over to informant
+4. Informant **signs**
+5. Substance entered in book (General Diary)
+6. **Free copy** given to informant
+
+**Key Points**:
+- Can be filed by anyone (victim, witness, or any person)
+- Police cannot refuse to register FIR for cognizable offence
+- FIR is not substantive evidence but can corroborate/contradict
+- Can be registered on phone call in emergencies
+- Time and date of registration critical
+
+**What if Police Refuses**:
+- Approach Superintendent of Police
+- Send written complaint by post (deemed FIR)
+- Approach Magistrate under Section 156(3)
+- File writ in High Court
+
+**Non-Cognizable Cases**:
+- Police enters in diary
+- Refers to magistrate
+- Cannot investigate without magistrate's order
+
+#### Section 155: Information About Non-Cognizable Offences
+- Police cannot investigate
+- Must refer to magistrate
+- Informant can approach magistrate directly
+
+#### Section 156: Power of Police to Investigate
+**Critical provision**
+
+**Section 156(1)**: Police officer can investigate cognizable offence:
+- Without order from magistrate
+- Independent power
+- Cannot be prevented
+
+**Section 156(3)**: Magistrate empowered under Section 190:
+- Can order investigation by police
+- Into cognizable offence
+- Even if no FIR filed
+- **Powerful tool for complainants** if police refuses FIR
+
+#### Section 157: Procedure for Investigation
+On receiving information of cognizable offence:
+1. **Proceed in person** to spot (or depute subordinate)
+2. If no sufficient ground: Do not investigate
+3. If sufficient ground: Investigate
+
+Steps:
+- Ascertain facts and circumstances
+- Take measures to discover and arrest offender
+
+Report to magistrate:
+- Immediately if crime committed
+- Details of offence
+
+#### Section 158**: Dispatch of copy of entry to magistrate
+
+#### Section 159**: Power of police officer to require attendance
+**Section 160: Police Officer's Power to Require Attendance of Witnesses
+
+**Who Can Be Summoned**:
+- Any person acquainted with facts/circumstances
+- Whose attendance necessary
+
+**Obligation**:
+- Person **must attend**
+- At place and time specified
+- Failure can lead to arrest
+
+**Protections**:
+- Woman not required to attend police station
+- Officer must go to her residence
+- Cannot require attendance of person under 15 years at police station
+
+#### Section 161: Examination of Witnesses by Police
+**VERY IMPORTANT**
+
+**Procedure**:
+- Police can examine **orally** any person:
+  - Acquainted with facts of case
+  - During investigation
+
+**Important Points**:
+1. Person **bound to answer** all questions (except incriminating)
+2. **Not on oath**
+3. Statement **cannot be signed** by person
+4. Person cannot be arrested for refusing to answer (unless already arrestable)
+
+**Section 161(2)**: Person cannot be compelled to answer if:
+- Answer would expose him to criminal charge
+- Right against self-incrimination
+
+**Use of Statement**:
+- Not substantive evidence
+- Can be used to **contradict witness** in court (Section 162)
+- Can be used to corroborate
+
+#### Section 162: Statements to Police Not to Be Signed
+**Protection against manipulation**
+
+**Rule**: Statement made to police during investigation:
+- Shall **not be signed**
+- Cannot be used as evidence (except for contradiction)
+
+**Exception**: Statement to magistrate admissible (if Section 164)
+
+#### Section 163: No Inducement to Be Offered
+- Police/authority cannot offer:
+  - Inducement
+  - Threat
+  - Promise
+- To get confession/statement
+
+**If violated**: Statement inadmissible
+
+#### Section 164: Recording of Confessions and Statements
+**By Magistrate**
+
+**Who Can Record**:
+- Metropolitan Magistrate
+- Judicial Magistrate
+- During investigation or after
+- Before commencement of inquiry/trial
+
+**Procedure**:
+1. **Must explain** to person:
+   - Not bound to make confession
+   - If confesses, can be used as evidence
+2. **Must ask** if confession voluntary
+3. If appears involuntary: Cannot record
+4. Record in question-answer form
+5. Magistrate **signs**
+6. Person **signs**
+7. Magistrate must forward to concerned magistrate
+
+**Important**:
+- Protects voluntariness
+- Such confession admissible (unlike police confession)
+- Used in serious cases
+
+#### Section 165: Search by Police Officer
+During investigation, can search:
+- Any place entered by person sought to be arrested
+- Any place where stolen property suspected
+- Within jurisdiction or with warrant outside
+
+#### Section 166: Information to be Given of Grounds of Search
+Must inform person before search:
+- Grounds of search
+- Right to have witnesses
+
+#### Section 167: Procedure When Investigation Cannot Be Completed in 24 Hours
+**CRITICAL SECTION - REMAND PROVISION**
+
+**The Problem**: Section 57 says cannot detain beyond 24 hours
+**The Solution**: Section 167 provides for magistrate's remand
+
+**Procedure**:
+If investigation not completed within 24 hours:
+1. Police produces accused before magistrate
+2. Magistrate may authorize **detention** (remand)
+3. Two types:
+   - **Police custody**: For investigation
+   - **Judicial custody**: In jail, no investigation
+
+**Police Custody Limits**:
+- Maximum **15 days at a time**
+- Magistrate can grant in parts
+- Total police custody as per overall limits
+
+**Total Detention Limits**:
+- **60 days** for offences punishable with less than 10 years
+- **90 days** for offences punishable with:
+  - Death penalty
+  - Life imprisonment
+  - 10 years or more
+
+**After 60/90 Days**:
+- If charge sheet not filed
+- Accused entitled to **default bail** (bail as of right)
+- Magistrate must release on bail
+
+**Important Points**:
+- Magistrate must record reasons for remand
+- Cannot be mechanical
+- Must apply mind
+- Accused can be heard
+- First remand usually 14-15 days
+- Subsequent remands scrutinized more
+
+#### Section 168: Report of Investigation by Police**
+**Section 169: Release of Accused When Evidence Deficient
+
+If insufficient evidence:
+- Cannot forward accused to magistrate
+- Shall release on **bond**
+- To appear when required
+- Bond with or without sureties
+
+#### Section 170: Charge Sheet When Evidence Sufficient
+If sufficient evidence:
+- Forward accused to magistrate
+- With **charge sheet/police report**
+- Accused produced before magistrate
+
+#### Section 171: Imprisonment of accused in default of security
+
+#### Section 172: Diary of Proceedings in Investigation
+- Police must maintain **case diary**
+- Daily proceedings of investigation
+- Not evidence
+- But court can use for limited purposes
+
+#### Section 173: Report of Police Investigation (Charge Sheet/Final Report)
+**FINAL STEP OF INVESTIGATION**
+
+**Completion**:
+After investigation completed:
+- Police submits **report** to magistrate
+- With or without delay
+
+**Contents**:
+1. Names of parties
+2. Nature of information
+3. Names of persons acquainted with circumstances
+4. Whether offence committed
+5. If yes, by whom
+
+**Types of Reports**:
+1. **Charge Sheet**: If sufficient evidence, accused charge-sheeted
+2. **Final Report/Closure Report**: If insufficient evidence, case closed
+
+**Documents Forwarded**:
+- All statements recorded (Section 161)
+- Confessions (Section 164)
+- Documents seized
+- Reports of forensic experts
+
+**Important**:
+- No time limit in Section 173 itself
+- But Section 167 limits: 60/90 days for remand
+- So charge sheet generally filed within 60/90 days
+
+**Section 173(2)**: Further investigation possible
+- Even after filing charge sheet/final report
+- With or without taking notice from court
+- Police can conduct further investigation
+- Additional evidence can be filed
+
+#### Section 174: Police to Inquire and Report on Suicide
+- When person commits suicide
+- Police must inquire and report
+
+#### Section 175**: Police inquiry into unnatural death
+
+#### Section 176: Inquiry by Magistrate into cause of death
+- Magistrate can hold inquiry
+- Into unnatural death
+- Especially custodial deaths
+
+### Chapter XIII: Jurisdiction of Criminal Courts in Inquiries and Trials (Sections 177-189)
+
+**Section 177**: Ordinary place of inquiry and trial
+- Where offence committed
+- Where act done
+- Where consequence ensued
+
+**Section 178-188**: Special jurisdiction rules
+**Section 189**: Offences on journey or voyage
+
+### Chapter XIV: Conditions Requisite for Initiation of Proceedings (Sections 190-199)
+
+#### Section 190: Cognizance of Offences by Magistrates
+**CRITICAL SECTION**
+
+**How Cognizance Taken**:
+Magistrate can take cognizance of offence:
+1. Upon receiving **complaint**
+2. Upon **police report** (charge sheet)
+3. Upon **information** received from any person
+4. Upon **own knowledge or suspicion**
+
+**Cognizance Meaning**:
+- Taking judicial notice of offence
+- Deciding to proceed with case
+- Not just receiving complaint
+- Application of mind to proceed
+
+**Important**:
+- Chief Judicial Magistrate can take cognizance of any offence
+- Magistrate First Class: cognizance of any offence (within jurisdiction)
+- Magistrate Second Class: limited cognizance
+
+#### Section 191**: Transfer on application of accused
+
+#### Section 192-195**: Cognizance of offences by courts of session
+
+#### Section 196**: Prosecution for offences against state
+- Requires sanction of state/central government
+
+#### Section 197: Prosecution of Judges and Public Servants
+**IMPORTANT PROTECTION**
+
+**Provision**:
+- When public servant accused
+- Of offence alleged to be committed:
+  - **While acting in official capacity**
+  - **In discharge of official duty**
+- No court can take cognizance **without sanction**
+
+**Who Grants Sanction**:
+- Central Government (for central employees)
+- State Government (for state employees)
+- Appropriate authority
+
+**Purpose**:
+- Protect public servants from frivolous prosecution
+- Allow fearless discharge of duty
+- Not blanket immunity
+
+**When Not Required**:
+- Acts done outside official capacity
+- Purely private acts
+- Acts not in discharge of duty
+
+#### Section 198: Prosecution for Offences Against Marriage
+- Offences like bigamy, cruelty
+- Requires complaint from:
+  - Aggrieved party (husband/wife)
+  - Parent or relative if person unable
+- Magistrate cannot take cognizance otherwise
+
+#### Section 199: Prosecution for Defamation
+- Requires complaint from:
+  - Person defamed
+  - If dead: certain relatives can complain
+- Court cannot take cognizance suo moto
+
+### Chapter XV: Complaints to Magistrates (Sections 200-203)
+
+**Section 200**: Examination of Complainant
+- Magistrate receives complaint
+- Examines complainant on oath
+- Can examine witnesses
+
+**Section 201**: Procedure by magistrate not competent
+**Section 202**: Postponement of issue of process
+- Magistrate can:
+  - Dismiss complaint
+  - Direct investigation by police
+  - Issue process (summons/warrant)
+  
+**Section 203**: Dismissal of complaint
+
+### Chapter XVI: Commencement of Proceedings Before Magistrates (Sections 204-210)
+
+**Section 204**: Issue of Process
+- If magistrate satisfied: offence appears committed
+- Issues summons or warrant for accused
+
+**Section 205**: Magistrate may dispense with personal attendance
+**Section 206-210**: Various provisions
+
+### Chapter XVII: Jurisdiction of Criminal Courts in Inquiries and Trials (Sections 211-224)
+
+**Section 211-224**: Powers of Sessions Courts and Magistrates
+
+### Chapter XVIII: Trial Before Court of Session (Sections 225-237)
+
+#### Sessions Trial Procedure
+
+**Section 225**: Cases Triable by Sessions Court
+- Offences punishable with:
+  - Death
+  - Life imprisonment
+  - Imprisonment exceeding 10 years
+- Cannot try without committal (from magistrate)
+
+**Section 226**: Commitment Procedure
+- Magistrate commits case to Sessions Court
+
+**Section 227**: Discharge
+- If no sufficient ground for trial
+- Sessions Judge can **discharge** accused
+- Case closed
+
+**Section 228**: Framing of Charge
+- If sufficient ground to proceed
+- Judge frames **charge**
+- Charge read and explained to accused
+
+**Section 229**: Charge contents
+**Section 230**: Joinder of charges
+**Section 231-232**: Separate charges for distinct offences
+**Section 233**: Framing of charge procedure
+
+**Section 233-237**: Trial procedure
+- Prosecution presents evidence
+- Examination, cross-examination
+- Defense evidence
+- Arguments
+- Judgment
+
+### Chapter XIX: Trial of Warrant-Cases by Magistrates (Sections 238-250)
+
+**Warrant Cases**: Offences punishable with **2 years or more**
+
+**Two Types**:
+1. Cases instituted on **police report** (Sections 238-243)
+2. Cases instituted **otherwise** (complaint) (Sections 244-250)
+
+#### Cases on Police Report (Sections 238-243)
+
+**Section 238**: Procedure
+**Section 239**: Discharge if no sufficient ground
+**Section 240**: Framing of charge
+**Section 241**: Charge procedure
+**Section 242**: Evidence and judgment
+**Section 243**: Procedure after framing charge
+
+#### Cases on Complaint (Sections 244-250)
+
+**Section 244**: Evidence of complainant
+**Section 245**: Discharge if no case
+**Section 246**: Process if sufficient ground
+**Section 247**: Framing charge procedure
+**Section 248**: Acquittal if no case
+**Section 249**: Discharge in certain cases
+**Section 250**: Compensation for frivolous/vexatious proceedings
+
+### Chapter XX: Trial of Summons-Cases by Magistrates (Sections 251-259)
+
+**Summons Cases**: Offences punishable with **less than 2 years**
+
+**Simplified Procedure**:
+**Section 251**: Substance of accusation
+- Magistrate states substance to accused
+- Asks if pleads guilty
+
+**Section 252**: Conviction on plea of guilty
+**Section 253**: Procedure if not guilty plea
+**Section 254**: Acquittal or conviction
+**Section 255-259**: Other provisions
+
+### Chapter XXI: Summary Trials (Sections 260-265)
+
+**Summary Trial**: Even more simplified for petty offences
+
+**Section 260**: Power to try summarily
+- Magistrate First Class can try summarily:
+  - Offences not punishable with more than **2 years**
+  - Theft, receiving stolen property
+  - Assisting in concealment
+  - Certain property offences
+
+**Section 261**: Enhanced punishment after previous conviction
+**Section 262**: Procedure for summary trials
+- Quick procedure
+- Limited recording
+- Simplified
+
+**Section 263**: Language of record
+**Section 264**: Non-summary trial after summary trial begins
+**Section 265**: Procedure if completed summarily
+
+### Chapter XXII: Trial of Juveniles (Sections 27-28)
+**Now replaced by Juvenile Justice Act**
+
+### Chapter XXIII: Provisions as to Accused Persons of Unsound Mind (Sections 328-339)
+
+**Section 328-339**: Procedure when accused of unsound mind
+- Inquiry into fitness to stand trial
+- If unfit: Safe custody and treatment
+- When fit: Trial proceeds
+
+### Chapter XXIV: Provisions as to Offences Affecting Administration of Justice (Sections 340-352)
+
+**Section 340**: Procedure when court believes offence committed
+- If perjury, fabrication
+- Court can initiate proceedings
+
+**Section 345**: Procedure in certain cases of contempt
+**Section 346-352**: Other provisions
+
+### Chapter XXV: General Provisions as to Inquiries and Trials (Sections 353-365)
+
+#### Section 353-354: Judgment
+
+**Section 353**: Judgment procedure
+
+**Section 354: Judgment (CRITICAL SECTION)**
+**Most important post-trial provision**
+
+**Contents of Judgment**:
+Must contain:
+1. **Point for determination**
+2. **Decision thereon**
+3. **Reasons for decision**
+4. If conviction:
+   - Offence of which convicted
+   - Section number
+   - Punishment awarded
+
+**Delivery**:
+- In **open court**
+- Immediately after trial conclusion
+- Or some subsequent day (if complex)
+- Accused must be present (if convicted)
+
+**Language**:
+- Language of court
+- Or if accused doesn't understand: Explained in language he understands
+
+**Special Points**:
+- Judgment must be reasoned
+- Cannot be cryptic
+- Must discuss evidence
+- Must give clear findings
+
+**Section 354(3)**: Reasons for sentence
+- When awarding sentence
+- Special reasons if:
+  - Awarding less than minimum
+  - Awarding death instead of life
+  - Not awarding compensation to victim
+
+**Section 355**: Judgment copies
+**Section 356**: Judgment procedure in other cases
+**Section 357**: Order to pay compensation (see below)
+**Section 358-365**: Other judgment provisions
+
+### Section 357: Compensation to Victims (VERY IMPORTANT)
+
+#### Section 357: Order to Pay Compensation and Expenses
+**Victim Relief Provision**
+
+**When Court Can Order**:
+- When imposing fine
+- In addition to or in lieu of fine
+- Court can order:
+  1. Whole or part of fine as **compensation to victim**
+  2. For any loss/injury caused
+  3. Payment for medical expenses
+
+**Who Can Get**:
+- Person who suffered loss/injury
+- Legal representative if person died
+
+**Amount**:
+- From fine amount collected
+- Reasonable amount
+- Considering loss/injury
+
+**Default**:
+- If fine not paid: Compensation not paid
+- But can recover as fine
+
+**Important**:
+- **Immediate relief to victim**
+- No separate civil suit needed
+- Quick and accessible
+
+#### Section 357A: Victim Compensation Scheme (Added 2009)
+**Major Reform**
+
+**State Must Prepare Scheme**:
+- Every state must prepare scheme
+- For compensation to victims/dependents
+- Who suffered loss/injury as result of crime
+- Who require rehabilitation
+
+**When Compensation**:
+1. **Court recommends** (Section 357A(1))
+2. Where accused not traced/identified
+3. Where trial ends in acquittal/discharge
+4. Compensation not awarded under Section 357
+
+**Who Pays**:
+- **State government** from Victim Compensation Fund
+
+**Process**:
+- Court may recommend
+- Or victim can apply to District/State Legal Services Authority
+- Authority decides compensation
+
+**Types of Compensation**:
+- Medical expenses
+- Rehabilitation
+- Loss of earning
+- Pain and suffering
+
+**Important**:
+- Compensation even if accused not convicted
+- State's duty to compensate victims
+- Welfare state obligation
+
+### Chapter XXVI: Provisions as to Bonds (Sections 360-371)
+
+**Section 360: Order to Release on Probation of Good Conduct**
+**REFORMATIVE JUSTICE**
+
+**When Applicable**:
+If person convicted of offence:
+- Punishable with fine only, OR
+- Not punishable with death or life imprisonment
+- And person:
+  - Under 21 years of age, OR
+  - First offender
+  - Court believes not to imprison having regard to:
+    - Youth, character, antecedents
+    - Circumstances of offence
+    - Any extenuating circumstances
+
+**What Court Can Do**:
+1. **Release on probation** (instead of sentencing)
+2. Release after **admonition** (warning)
+3. Release on executing **bond** (with or without sureties)
+4. For good behavior
+5. For period as court thinks fit
+
+**Conditions**:
+- Good behavior bond
+- Can impose conditions (report to probation officer, avoid certain places, etc.)
+- If violates: Can be brought back and sentenced
+
+**Purpose**:
+- **Avoid jail** for young/first offenders
+- Give chance for reform
+- Avoid stigma of imprisonment
+- Reformative approach
+
+**Section 361**: Power to require security for good behavior
+**Section 362-371**: Bond procedures
+
+### Chapter XXVII: Provisions as to Bail (Sections 436-450)
+**ONE OF THE MOST IMPORTANT CHAPTERS**
+
+#### Fundamental Concepts
+
+**Bail**: Provisional release of accused person
+- On executing bond (with or without sureties)
+- That person will appear before court when required
+- And comply with conditions
+
+**Types of Bail**:
+1. **Regular Bail** (Section 437): After arrest
+2. **Anticipatory Bail** (Section 438): Before arrest
+3. **Default Bail** (Section 167): After 60/90 days in custody
+
+**Bond**: Written undertaking
+**Surety**: Person who guarantees accused will appear
+
+#### Section 436: Bail in Bailable Offences
+**Bail as of Right**
+
+**Rule**: If person arrested or detained **without warrant**:
+- For **bailable offence**
+- And appears before officer/court
+- Shall be **released on bail** (officer/court must release)
+
+**When Bailable**:
+- Offences in Schedule I marked as "bailable"
+- Generally: Offences punishable with less than 3 years or fine only
+
+**No Discretion**:
+- Court/police cannot refuse bail
+- Must release on bail
+- If person executes bond (with or without sureties)
+
+**Amount of Bond**:
+- Reasonable
+- Not excessive
+- Considering circumstances
+
+**Section 436A**: Maximum period for detention of undertrial prisoner
+- If person undergone detention (as undertrial):
+- For period extending up to **half of maximum sentence**
+- Shall be released on **personal bond**
+
+#### Section 437: Bail in Non-Bailable Offences
+**Bail at Court's Discretion**
+
+**General Rule**: No automatic right to bail
+
+**When Court May Grant Bail**:
+If reasonable grounds to believe:
+- Accused **not guilty** of such offence
+- Not likely to commit another offence while on bail
+
+**When Court May Not Grant Bail**:
+If there are reasonable grounds to believe accused guilty of offence:
+- Punishable with **death or life imprisonment**
+
+**Special Cases** (Section 437(1) Proviso):
+Court may grant bail even in death/life imprisonment cases if accused is:
+1. **Woman**
+2. **Child** (below 16 years)
+3. **Sick or infirm**
+4. Accusation appears **doubtful**
+
+**Factors to Consider** (not exhaustive):
+1. Nature and gravity of offence
+2. Character of accused
+3. Severity of punishment
+4. Danger of accused absconding
+5. Likelihood of offence being repeated
+6. Reasonable apprehension of witness being tampered
+7. Larger interest of public/state
+
+**Conditions**:
+Court can impose conditions:
+- Deposit passport
+- Not to leave city/state
+- Report to police station
+- Not contact witnesses
+- Not leave country
+- Any other reasonable condition
+
+**Section 437(2)**: Person released on bail
+- If fails to comply with conditions
+- Or is involved in similar offence
+- Bail can be cancelled
+
+**Section 437(3)**: Special provision for offences under Section 376, 376A, 376B (rape)
+- Generally bail difficult
+- Court must hear Public Prosecutor
+
+**Section 437(4)**: Power to impose special conditions
+**Section 437(5)**: Release of poor person unable to furnish bail
+**Section 437(6)**: Conditions while granting bail (security for good behavior)
+
+#### Section 438: Anticipatory Bail
+**PRE-ARREST BAIL - UNIQUE PROVISION**
+
+**When Applicable**:
+- Person has reason to believe:
+  - May be arrested for **non-bailable offence**
+  - For accusation of having committed offence
+
+**Where to Apply**:
+1. **High Court**, OR
+2. **Court of Session**
+(Cannot apply to Magistrate)
+
+**What Court Can Do**:
+- If satisfied
+- May issue direction:
+  - If person arrested: shall be released on bail
+
+**Conditions**:
+Court can impose conditions:
+1. Make himself available for interrogation
+2. Not leave India without permission
+3. Not directly/indirectly contact witnesses
+4. Any other condition as court thinks fit
+
+**Duration**:
+- Generally until charge sheet filed
+- But can be for longer period
+- Or even throughout trial (rare)
+
+**Important Points**:
+- **Protection from arrest**
+- Person gets bail immediately upon arrest
+- Very useful for anticipating arrest
+- Prevents custodial interrogation
+- Prevents harassment
+
+**When Not Granted** (Generally):
+- Serious offences
+- Likelihood of tampering with evidence
+- Likelihood of absconding
+- Past criminal record
+- Gravity of accusation
+
+**Section 438(2)**: Conditions of such bail
+**Section 438(3)**: When person released on anticipatory bail
+**Section 438(4)**: Anticipatory bail direction can be canceled
+
+#### Section 439: Special Powers of High Court or Court of Session
+**Superior Courts' Bail Powers**
+
+**Powers**:
+High Court or Sessions Court has power:
+1. To grant **bail** to person:
+   - In custody
+   - For non-bailable offence
+2. To **cancel bail** granted by:
+   - Itself
+   - Lower court
+   - Police
+
+**Special Features**:
+- Can grant bail in **any case**
+- Even if Magistrate refused
+- Even in most serious cases
+- Discretionary power
+- Appeal against Magistrate's bail refusal
+
+**Section 439(2)**: Power to cancel bail
+- If person released on bail:
+  - Misuses liberty
+  - Commits another offence
+  - Tampers with evidence
+  - Threatens witnesses
+- High Court/Sessions Court can cancel bail
+
+#### Section 440: Bond Amount
+**Section 441**: Bond with Sureties
+**Section 442**: Sufficient Surety
+**Section 443**: Cash for Bail
+**Section 444-445**: Discharge from custody
+**Section 446**: Conditions of bond
+**Section 447**: Procedure when surety dies/becomes insolvent
+**Section 448**: Duties of sureties
+**Section 449**: Discharge of sureties
+**Section 450**: Forfeiture of bond (if conditions violated)
+
+### Chapter XXVIII: Disposal of Property (Sections 451-459)
+
+**Section 451-459**: Procedure for disposal of property seized during investigation
+- Order for custody/disposal
+- Return to rightful owner
+- Pending trial disposal
+
+### Chapter XXIX: Appeals (Sections 372-394)
+**RIGHT TO APPEAL**
+
+#### Section 372-373: No Appeal in Certain Cases
+**Section 374: Appeal from Convictions (CRITICAL)
+
+**Who Can Appeal**:
+Any person convicted by:
+1. **Sessions Court or Additional Sessions Judge**: Appeal to **High Court**
+2. **Magistrate**: Appeal to **Sessions Court**
+
+**Time Limit**:
+- **30 days** from date of conviction
+- Can be extended if sufficient cause (up to 90 days)
+- Beyond 90 days: Need special leave
+
+**What Can Be Appealed**:
+- Conviction
+- Sentence
+- Both
+
+**On What Grounds**:
+- Error of law
+- Error of fact
+- Error in procedure
+- Sentence excessive
+- Any ground that made trial unfair
+
+#### Section 377: Appeal by State Against Acquittal
+**State's Right to Appeal**
+
+**When State Can Appeal**:
+1. Against **acquittal** order
+2. Against **inadequate sentence**
+3. To High Court
+
+**Who Can File**:
+- State Government
+- Through Public Prosecutor
+
+**Important**:
+- State can challenge acquittal
+- But acquitted person already free
+- If High Court convicts: Person recalled
+
+#### Section 378**: Appeal by victim (limited)
+Through state government
+
+#### Section 379-394**: Appeal procedures, powers of appellate court, etc.
+
+**Section 389: Suspension of Sentence Pending Appeal**
+- If person appeals against conviction
+- Can apply for **suspension of sentence**
+- Appellate court may:
+  1. Suspend execution of sentence
+  2. Release appellant on bail
+- Very important for convicted persons
+
+### Chapter XXX: Reference and Revision (Sections 395-405)
+
+#### Section 395-396: Reference to High Court
+**Section 397: Calling for Records to Exercise Powers of Revision (IMPORTANT)
+
+**High Court/Sessions Court Power**:
+- Can call for records of any proceedings
+- Before any inferior court
+- For purpose of:
+  1. Satisfying itself as to **correctness**
+  2. **Legality**
+  3. **Propriety** of any finding, sentence, order
+
+**Suo Moto** (On its own):
+- Court can take suo moto cognizance
+- On reading news report
+- On complaint
+- On own knowledge
+
+#### Section 401: High Court/Sessions Court Powers of Revision
+
+**Powers** (Section 401(1)):
+Can:
+1. **Enhance or reduce** sentence
+2. **Alter nature** of sentence
+3. **Set aside** finding/sentence
+4. **Order retrial**
+5. **Modify** any order
+
+**Limitation**:
+- Cannot enhance sentence or reverse acquittal:
+  - Unless parties heard
+  - Or had opportunity to be heard
+
+**Important**:
+- **Supervisory jurisdiction**
+- Ensures correctness of orders
+- Can correct errors
+
+**Section 401(3)**: Sessions Court limitation
+- Cannot enhance sentence beyond its powers
+
+**Section 401(4-5)**: Other provisions
+
+#### Section 482: Saving of Inherent Powers of High Court (MOST POWERFUL)
+
+**Inherent Powers**:
+Nothing in this Code shall limit:
+- **Inherent powers** of High Court
+- To make such orders as necessary:
+  1. To give effect to any order under this Code
+  2. To **prevent abuse of process** of any court
+  3. To **secure the ends of justice**
+
+**When Used**:
+- To quash FIR (if frivolous, vexatious, or no offence)
+- To quash proceedings (if gross abuse)
+- To prevent miscarriage of justice
+- To protect innocent persons
+- When no case made out
+
+**Famous Uses**:
+1. **Quashing FIR** if:
+   - No cognizable offence made out
+   - Allegations don't constitute offence
+   - Complaint frivolous/vexatious
+   - Civil dispute, not criminal
+   - Complaint for private vendetta
+   - Settlement reached between parties (in compoundable cases)
+
+2. **Quashing charge sheet/proceedings**
+3. **Staying proceedings** (in exceptional cases)
+4. **Preventing abuse of process**
+
+**Important Points**:
+- **Most frequently invoked**
+- Very wide powers
+- Can be used at any stage
+- No limitation on powers
+- Purpose: Secure justice
+
+**Cannot Be Used**:
+- To appreciate evidence (that's trial court's job)
+- To usurp appellate powers
+- For fishing and roving inquiries
+- When disputed questions of fact
+
+### Chapter XXXI: Transfer of Criminal Cases (Sections 406-412)
+
+**Section 406: Power of Supreme Court to Transfer Cases**
+**Section 407: Power of High Court to Transfer Cases**
+- From one court to another (within state)
+- For fair trial
+- For convenience
+- For ends of justice
+
+**Section 408-412**: Transfer procedures
+
+### Chapter XXXII: Execution, Suspension, Remission of Sentences (Sections 413-435)
+
+**Section 413**: Execution of sentence of death
+**Section 414-431**: Execution, suspension, remission procedures
+**Section 432**: Power to Commute or Remit Sentences
+- State Government can:
+  1. Suspend execution
+  2. Remit (reduce) whole or part of punishment
+  3. Commute (change nature) of punishment
+
+**Section 433**: Power to Commute Sentence
+- Death → Life imprisonment
+- Life imprisonment → 14 years imprisonment
+- Other commutations
+
+**Section 433A**: Restriction on powers of remission/commutation (life sentence)
+- Life imprisonment for certain offences:
+  - Person must serve **minimum 14 years** before remission
+
+**Section 434-435**: Other provisions
+
+### Chapter XXXIII: Provisions as to Bonds (Sections 436-450)
+**Covered above in Bail section**
+
+### Chapter XXXIV: Disposal of Property (Sections 451-459)
+**Covered above**
+
+### Chapter XXXV: Irregular Proceedings (Sections 460-467)
+
+**Section 460-465**: Effect of errors, omissions, irregularities
+**Section 461**: No error or irregularity shall vitiate proceedings
+- If not resulted in failure of justice
+- Or miscarriage of justice
+
+**Section 462**: Stay of proceedings on error/irregularity
+
+### Chapter XXXVI: Limitation for Taking Cognizance (Sections 467-473)
+
+**Section 468: Bar to Taking Cognizance After Lapse of Period of Limitation
+
+**Time Limits**:
+1. **6 months**: For offences punishable with fine only
+2. **1 year**: For offences punishable with imprisonment up to 1 year
+3. **3 years**: For offences punishable with imprisonment 1-3 years
+4. **No limit**: For offences punishable with more than 3 years
+
+**When Time Starts**:
+- From date of offence
+- Or if continuing offence: from date it ceased
+
+**Extension**:
+- Period of limitation can be extended by:
+  - Delay in filing complaint (if sufficient cause)
+  - Section 469 (special cases)
+
+**Section 469**: Commencement of period of limitation
+**Section 470-473**: Other limitation provisions
+
+### Chapter XXXVII: Miscellaneous (Sections 474-484)
+
+**Section 474-484**: Various miscellaneous provisions
+- Service of summons
+- Forms
+- Language of courts
+- Rules and notifications
+- Repeal and savings
+
+## Five Schedules (Critical Reference)
+
+### Schedule I: Classification of Offences (MOST IMPORTANT)
+**Essential reference for every investigation**
+
+**Columns in Schedule I**:
+1. **Offence** (description)
+2. **Section** of IPC
+3. **Whether cognizable or non-cognizable**
+4. **Whether bailable or non-bailable**
+5. **By what court triable**
+6. **Whether compoundable or non-compoundable** (and by whom)
+
+**Examples**:
+| Offence | Section | Cognizable | Bailable | Court | Compoundable |
+|---------|---------|------------|----------|-------|--------------|
+| Murder | 302 | Cognizable | Non-bailable | Sessions | Non-compoundable |
+| Theft | 379 | Cognizable | Non-bailable (if value >₹5000) | Magistrate First Class | Compoundable (by person from whom property stolen) |
+| Simple hurt | 323 | Cognizable | Bailable | Magistrate First Class | Compoundable (by person hurt) |
+| Defamation | 500 | Non-cognizable | Bailable | Magistrate First Class | Compoundable (by person defamed) |
+
+### Schedule II: Powers of Officers to Hold Inquiries/Trials
+**Sentencing powers of different magistrates**
+
+### Schedule III: Forms
+**Standard forms for various procedures**:
+- Form of FIR
+- Form of warrant of arrest
+- Form of summons
+- Form of bail bond
+- Form of charge
+- Form of judgment
+- Many others
+
+### Schedule IV: Forms of Appeals and Revisions
+### Schedule V: Fees (Court fees and costs)
+
+## Summary of Important Sections (Quick Reference)
+
+### Investigation
+- **Section 154**: FIR
+- **Section 156**: Police investigation power
+- **Section 161**: Police examination of witnesses
+- **Section 164**: Magistrate recording confession
+- **Section 167**: Remand
+- **Section 173**: Charge sheet
+
+### Arrest
+- **Section 41**: Arrest without warrant
+- **Section 41A**: Notice of appearance
+- **Section 50**: Rights of arrested person
+- **Section 57**: 24-hour limit
+
+### Bail
+- **Section 436**: Bailable offences bail (right)
+- **Section 437**: Non-bailable offences bail (discretion)
+- **Section 438**: Anticipatory bail
+- **Section 439**: High Court/Sessions bail powers
+
+### Trial
+- **Section 190**: Cognizance
+- **Section 228/244**: Framing of charge
+- **Section 313**: Accused examination
+- **Section 354**: Judgment
+
+### Victim Rights
+- **Section 125**: Maintenance
+- **Section 357**: Compensation from fine
+- **Section 357A**: State compensation scheme
+
+### Special Powers
+- **Section 144**: Prohibitory orders
+- **Section 197**: Sanction for public servant prosecution
+- **Section 319**: Power to add accused during trial
+- **Section 482**: High Court inherent powers
+
+### Post-Conviction
+- **Section 360**: Probation
+- **Section 374**: Appeal
+- **Section 389**: Suspension of sentence pending appeal
+- **Section 397-401**: Revision powers
+
+## Related Laws
+- **Works With**: IPC/BNS (defines crimes)
+- **Works With**: Indian Evidence Act/BSA (evidence rules)
+- **Replaced By**: BNSS 2023 (effective July 1, 2024)
+- **Special Procedures**: POCSO, NDPS, Prevention of Corruption have their own procedural provisions
+
+## Search Keywords
+CrPC, Code of Criminal Procedure, criminal procedure 1973, FIR, Section 154, police investigation, arrest, Section 41, bail, Section 437, anticipatory bail, Section 438, remand, Section 167, charge sheet, Section 173, cognizance, Section 190, trial procedure, framing of charge, Section 313, judgment, Section 354, appeal, Section 374, victim compensation, Section 357, maintenance, Section 125, Section 144, inherent powers, Section 482, default bail, 60/90 days, Schedule I
+
+## Common User Queries (Historical Reference - Pre-July 2024)
+- "How to file FIR under CrPC?"
+- "What is Section 154 CrPC?"
+- "How to get bail in non-bailable offence?"
+- "What is anticipatory bail Section 438?"
+- "What are rights of arrested person Section 50?"
+- "How long can police keep in custody Section 167?"
+- "What is remand procedure?"
+- "When does accused get default bail?"
+- "What is Section 313 CrPC examination?"
+- "How to appeal conviction Section 374?"
+- "What is Section 482 CrPC inherent powers?"
+- "Can I get compensation as victim Section 357?"
+- "What is Section 125 maintenance?"
+- "What is Section 144 prohibitory order?"
+- "How does investigation proceed?"
+- "What is cognizable vs non-cognizable offence?"
+- "What is bailable vs non-bailable offence?"
+
+## Critical Points for RAG System
+
+1. **Historical Reference Only**: CrPC for cases filed before July 1, 2024
+2. **Procedural Law**: Answers "how to" questions about criminal justice
+3. **Section 154 Most Searched**: FIR is starting point
+4. **Bail Critical**: Sections 436-438 heavily referenced
+5. **Investigation Procedure**: Sections 154-176 form core
+6. **Trial Stages**: Understanding entire flow important
+7. **Victim Rights**: Section 357, 125 important
+8. **Special Powers**: Section 144, 482 frequently invoked
+9. **Remand**: Section 167 and 60/90-day rule critical
+10. **Replaced by BNSS**: All new cases after July 1, 2024 under BNSS
+
+## Transition to BNSS
+
+### Critical Date: July 1, 2024
+
+**Before July 1, 2024**:
+- All procedures under CrPC
+- CrPC sections cited
+- CrPC forms used
+
+**On/After July 1, 2024**:
+- All NEW procedures under BNSS
+- BNSS sections cited
+- BNSS forms used
+
+### For Ongoing Cases
+- **FIR filed before July 1**: CrPC procedures continue till case ends
+- **Investigation started**: Complete under CrPC
+- **Trials ongoing**: Continue under CrPC
+- **Appeals pending**: CrPC applies
+
+## Advantages CrPC Had
+1. **50 years of jurisprudence**: Extensive case law
+2. **Well-understood**: Lawyers, police, judges familiar
+3. **Tested provisions**: Worked in various scenarios
+4. **Comprehensive**: Covered all aspects
+
+## Limitations That Led to BNSS
+1. **No technology integration**: Manual processes
+2. **No fixed timelines**: Led to delays
+3. **Not victim-friendly**: Limited victim rights
+4. **Colonial era law**: Needed modernization
+5. **No forensic mandate**: Quality issues in investigation
+
+## Legislative History
+- **Enacted**: 1973
+- **Effective**: April 1, 1974
+- **Replaced**: Code of Criminal Procedure, 1898
+- **Based On**: British criminal procedure with Indian modifications
+- **Replaced By**: Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023 on July 1, 2024 (after 50 years of operation)
