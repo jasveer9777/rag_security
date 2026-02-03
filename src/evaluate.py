@@ -70,7 +70,8 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--qa", required=True)
     p.add_argument("--out", default="eval_report.csv")
-    p.add_argument("--model", default="ollama:ggml-mistral-7b")
+    p.add_argument("--model", default="anthropic:claude-sonnet-4-5-saarathi02")  # NEW: Azure Claude
+    # p.add_argument("--model", default="ollama:ggml-mistral-7b")  # OLD: Ollama (commented)
     p.add_argument("--k", type=int, default=5)
     args = p.parse_args()
 

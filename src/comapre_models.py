@@ -6,8 +6,9 @@ import argparse, csv
 from serve_query import serve
 
 MODELS = [
-    "openai:gpt-4o-mini",
-    "ollama:ggml-mistral-7b"
+    "anthropic:claude-sonnet-4-5-saarathi02",  # NEW: Azure Claude (primary)
+    # "openai:gpt-4o-mini",  # OLD: OpenAI (commented)
+    # "ollama:ggml-mistral-7b"  # Ollama local model (commented)
 ]
 
 def compare(question, out_csv, k, cutoff, min_sim, strict):

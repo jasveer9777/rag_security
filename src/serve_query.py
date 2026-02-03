@@ -19,6 +19,7 @@ Usage (examples):
 import argparse
 import json
 import os
+import sys
 import time
 import pickle
 import faiss
@@ -26,8 +27,17 @@ import re
 from pathlib import Path
 from sentence_transformers import SentenceTransformer
 
+# Add project root to path
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+# Load .env file
+from dotenv import load_dotenv
+load_dotenv(ROOT / ".env")
+
 from models.openai_client import openai_chat
 from models.ollama_client import ollama_generate
+from models.anthropic_client import anthropic_chat
 
 INDEX_DIR = "index"
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
@@ -284,7 +294,15 @@ def build_prompt(context: str, question: str, cutoff: str = None, strict: bool =
 # ---------------------------- Model Caller -----------------------------------
 def call_model(prompt: str, model_choice: str, temperature: float = 0.0, max_tokens: int = 512):
     start = time.time()
-    if model_choice.startswith("openai:"):
+    if model_choice.startswith("anthropic:"):
+        # NEW: Azure-hosted Claude models
+        model = model_choice.split(":", 1)[1] if ":" in model_choice else None
+        out = anthropic_chat(prompt, model=model, temperature=temperature, max_tokens=max_tokens)
+        elapsed = time.time() - start
+        text = out.get("text") if isinstance(out, dict) else str(out)
+        return text, elapsed
+    elif model_choice.startswith("openai:"):
+        # OLD: OpenAI models (kept for backward compatibility)
         model = model_choice.split(":", 1)[1]
         out = openai_chat(prompt, model=model, temperature=temperature, max_tokens=max_tokens)
         elapsed = time.time() - start
@@ -297,13 +315,14 @@ def call_model(prompt: str, model_choice: str, temperature: float = 0.0, max_tok
         text = out.get("text") if isinstance(out, dict) else str(out)
         return text, elapsed
     else:
-        raise ValueError("Model must start with openai: or ollama:")
+        raise ValueError("Model must start with anthropic:, openai:, or ollama:")
 
 
 # ---------------------------- Main Handler ----------------------------------
 def serve(
     question: str,
-    model_choice: str = "openai:gpt-4o-mini",
+    model_choice: str = "anthropic:claude-sonnet-4-5-saarathi02",  # NEW: Using Azure Claude
+    # model_choice: str = "openai:gpt-4o-mini",  # OLD: OpenAI (commented)
     k: int = 5,
     min_sim: float = 0.15,
     cutoff: str = None,
@@ -355,7 +374,8 @@ def serve(
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--question", type=str, required=True)
-    p.add_argument("--model", type=str, default="openai:gpt-4o-mini")
+    p.add_argument("--model", type=str, default="anthropic:claude-sonnet-4-5-saarathi02")  # NEW: Azure Claude
+    # p.add_argument("--model", type=str, default="openai:gpt-4o-mini")  # OLD: OpenAI (commented)
     p.add_argument("--k", type=int, default=5)
     p.add_argument("--min_sim", type=float, default=0.15)
     p.add_argument("--cutoff", type=str, default=None)

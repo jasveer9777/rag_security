@@ -8,7 +8,8 @@ tqdm
 pyyaml
 
 # === Model Clients ===
-openai
+openai  # Keep for backward compatibility
+anthropic  # For Azure-hosted Claude models
 requests
 python-dotenv
 
