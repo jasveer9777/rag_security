@@ -10,6 +10,11 @@ import time
 import requests
 
 
+
+# ANTHROPIC_API_KEY=
+# ANTHROPIC_ENDPOINT=
+# ANTHROPIC_DEPLOYMENT=
+
 def anthropic_chat(prompt, model="claude-sonnet-4-5-saarathi02", temperature=0.0, max_tokens=512):
     """
     Send `prompt` to Azure-hosted Claude model.
