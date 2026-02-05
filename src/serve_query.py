@@ -292,7 +292,7 @@ def call_model(prompt: str, model_choice: str, temperature: float = 0.0, max_tok
         return text, elapsed
     elif model_choice.startswith("ollama:"):
         model = model_choice.split(":", 1)[1]
-        out = ollama_generate(prompt, model=model, max_tokens=max_tokens)
+        out = ollama_generate(prompt, model=model, max_tokens=max_tokens, temperature=temperature)
         elapsed = time.time() - start
         text = out.get("text") if isinstance(out, dict) else str(out)
         return text, elapsed
@@ -303,7 +303,7 @@ def call_model(prompt: str, model_choice: str, temperature: float = 0.0, max_tok
 # ---------------------------- Main Handler ----------------------------------
 def serve(
     question: str,
-    model_choice: str = "openai:gpt-4o-mini",
+    model_choice: str = "ollama:gpt-oss:20b",
     k: int = 5,
     min_sim: float = 0.15,
     cutoff: str = None,
@@ -355,7 +355,7 @@ def serve(
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--question", type=str, required=True)
-    p.add_argument("--model", type=str, default="openai:gpt-4o-mini")
+    p.add_argument("--model", type=str, default="ollama:gpt-oss:20b")
     p.add_argument("--k", type=int, default=5)
     p.add_argument("--min_sim", type=float, default=0.15)
     p.add_argument("--cutoff", type=str, default=None)

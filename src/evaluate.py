@@ -70,7 +70,7 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--qa", required=True)
     p.add_argument("--out", default="eval_report.csv")
-    p.add_argument("--model", default="ollama:ggml-mistral-7b")
+    p.add_argument("--model", default="ollama:gpt-oss:20b")
     p.add_argument("--k", type=int, default=5)
     args = p.parse_args()
 

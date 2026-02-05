@@ -209,7 +209,7 @@ def interactive_loop(model_choice, k, min_sim, cutoff, strict):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default="openai:gpt-4o-mini")
+    parser.add_argument("--model", default="ollama:gpt-oss:20b")
     parser.add_argument("--k", type=int, default=5)
     parser.add_argument("--min_sim", type=float, default=0.15)
     parser.add_argument("--cutoff", type=str, default=None)
