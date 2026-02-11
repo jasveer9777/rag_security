@@ -1,0 +1,273 @@
+
+**Files & responsibilities (quick map)**  
+- data — raw docs (PDFs, .txt metadata).  
+- ingest_with_metadata.py — parse data files, chunk text, attach metadata, produce chunks.jsonl.  
+- embed_index.py — load chunks.jsonl, compute sentence-transformer embeddings, build FAISS index (index.faiss) and save metas.pkl.  
+- serve_query.py — core retrieval, re-ranking, context & prompt building, model dispatch (`call_model`), logging. Exposes `serve()` for programmatic use and CLI for one-off queries.  
+- interactive_openai.py — interactive REPL that uses `serve_query` helpers: retrieve → prompt → call model → pretty-print and log. Also extracts text robustly from different client response shapes.  
+- test_retrieve.py — minimal FAISS retrieval sanity-check.  
+- comapre_models.py — runs same question across configured models and writes comparison CSV.  
+- openai_client.py — wrapper for OpenAI API (supports new openai>=1.0 style or older ChatCompletion fallback). Expects `OPENAI_API_KEY` in env/.env.  
+- ollama_client.py — simple HTTP client to local Ollama generation endpoint (uses `OLLAMA_URL`).  
+- chunks.jsonl — generated chunk entries consumed by embed_index.py.  
+- index — contains `index.faiss` + `metas.pkl` after embeddings are built.  
+- logs — JSON logs from interactive/serve runs.
+
+Detailed end-to-end flow (step-by-step)
+1. Ingest documents into chunked JSONL
+   - Script: ingest_with_metadata.py
+   - Input: files in data (PDF, .txt, .md)
+   - Output: chunks.jsonl — one JSON per chunk with fields like `id`, `doc_id`, `source_path`, `chunk_index`, `chunk_text` and parsed metadata (from paired `.txt`).
+   - Chunking: default chunk size 1200, overlap 300 (configurable CLI args).
+
+2. Build embeddings & FAISS index
+   - Script: embed_index.py
+   - Embedding model: `sentence-transformers/all-MiniLM-L6-v2` by default (variable `DEFAULT_MODEL`).
+   - Embeddings computed with `SentenceTransformer.encode(..., convert_to_numpy=True)` then normalized with `faiss.normalize_L2`.
+   - Index type: `faiss.IndexFlatIP` (inner product on L2-normalized vectors → cosine similarity).
+   - Saved outputs: index.faiss and metas.pkl (pickle list of chunk metadata in same order as vectors).
+
+3. Query-time retrieval & re-ranking
+   - Script / module: serve_query.py (function `retrieve(query, index, metas, embed_model, k=5, fetch_k_mult=6)`).
+   - Steps:
+     - Query rewrite/normalization for common legal shorthand (map like `crpc` → `code of criminal procedure 1973`).
+     - Encode query with the same `SentenceTransformer` model (variable `EMBED_MODEL`).
+     - FAISS search: fetch many candidates (k * fetch_k_mult) to increase recall then re-rank.
+     - Re-ranking signals:
+       - base embedding similarity (from FAISS)
+       - filename-match score (how many tokens overlap between filename and query)
+       - exact-phrase boost if a phrase from the query appears in the chunk
+       - metadata keyword scores
+       - `PDF_BOOST` for PDF/trusted sources
+       - optional demotion of untrusted `.txt` sources (to reduce poisoning)
+       - filter out chunks flagged as prompt-injection patterns (via `INJECTION_PATTERNS`)
+     - Final `combined_score = base_sim + weighted_signals - penalties`. Returns top-k by `combined_score`.
+
+4. Build context and prompt
+   - `build_context(retrieved, min_sim, max_chars)` collects selected chunks, prepends a header per chunk, and concatenates until `max_chars` is reached.
+   - `build_prompt(context, question, cutoff, strict)` constructs a SYSTEM instruction that:
+     - Puts the model in "legal assistant" role
+     - When `strict`, instructs to answer ONLY from context and respond "I don't know" if not present
+     - Appends a safety note telling the model to ignore any instructions found inside the context (defense vs prompt injection)
+     - Includes `CONTEXT` and finally `QUESTION` and an ANSWER section that asks to cite sources.
+
+5. Model call (vendor dispatch)
+   - `call_model(prompt, model_choice, ...)` expects `model_choice` string that begins with `openai:` or `ollama:`. Examples:
+     - `"openai:gpt-4o-mini"` → calls `models.openai_client.openai_chat(...)` with `model="gpt-4o-mini"`.
+     - `"ollama:ggml-mistral-7b"` → calls `models.ollama_client.ollama_generate(...)` with that model string.
+   - openai_client.py:
+     - If `openai.OpenAI` (v1) is importable, uses `client.chat.completions.create(...)` with `messages=[system,user]`.
+     - Else falls back to `openai.ChatCompletion.create(...)` older API.
+     - Expects environment variable `OPENAI_API_KEY` (use .env and python-dotenv loads it in interactive_openai.py).
+   - ollama_client.py:
+     - Posts to `OLLAMA_URL` (default is `http://localhost:11434/api/generate`), with JSON payload `{"model":..., "prompt":..., "max_tokens":...}`.
+     - Expects local Ollama service running if `ollama:` models are used.
+
+6. Response extraction & logging
+   - interactive_openai.py includes a robust `extract_response_text(response_obj)` to handle many vendor response shapes (openai v1 object, legacy ChatCompletion dict, ollama dicts, or plain strings).
+   - Logging: runs save JSON to logs with query, prompt, retrieved snippets, answer, model, timing, etc.
+
+Where model names are set (and how to enable Claude Haiku 4.5)
+- Default CLI defaults:
+  - interactive_openai.py parser default: `--model` default `"openai:gpt-4o-mini"`.
+  - serve_query.py `serve(..., model_choice="openai:gpt-4o-mini", ...)` default.
+  - comapre_models.py MODELS list currently contains `"openai:gpt-4o-mini"` and `"ollama:ggml-mistral-7b"`.
+- Client support:
+  - `openai_client.openai_chat(prompt, model=...)` simply passes the `model` string to the OpenAI API client. If your OpenAI account supports a model named `claude-haiku-4.5` or if you're using a proxy that exposes Anthropic models via OpenAI-compatible interface, you can call it by supplying `model="claude-haiku-4.5"` and using the `openai:` prefix in `model_choice` (e.g., `openai:claude-haiku-4.5`).
+  - `ollama_client.ollama_generate()` posts model names to Ollama; if you have a Claude Haiku 4.5 model available via Ollama under some name, you can call `ollama:<model_name>` accordingly.
+- Minimal change to "enable Claude Haiku 4.5 for all clients":
+  - Option A (recommended, non-invasive): Update CLI defaults and the `compare_models` list to include `"openai:claude-haiku-4.5"` (or `ollama:claude-haiku-4.5` depending on where the model is hosted). No functional code changes needed elsewhere.
+  - Option B (enforce for every call): change default parameters in serve_query.py and interactive_openai.py to `"openai:claude-haiku-4.5"`, and update comapre_models.py MODELS to use that model for all runs.
+- Important: I will not change code yet — I need you to confirm which provider/prefix you want:
+  - Should I set the default to `openai:claude-haiku-4.5` ?
+  - Or to `ollama:claude-haiku-4.5` (only valid if Ollama hosts that model locally)?
+  - Or do you want me to update comapre_models.py MODELS only (so all comparisons use Claude) but leave CLI defaults intact?
+
+How to run the pipeline locally (quick commands, PowerShell)
+- Ingest files (produces chunks.jsonl):
+```powershell
+python src/ingest_with_metadata.py --data_dir data --out_file chunks.jsonl
+```
+- Build embeddings + index:
+```powershell
+python src/embed_index.py --chunks chunks.jsonl --model sentence-transformers/all-MiniLM-L6-v2 --index_dir index
+```
+- Quick retrieval test:
+```powershell
+python src/test_retrieve.py --query "When did CRPC come into effect?" --k 5
+```
+- Serve a single query:
+```powershell
+python src/serve_query.py --question "When did CRPC come into effect?" --model openai:gpt-4o-mini --k 5
+```
+- Interactive REPL:
+```powershell
+python src/interactive_openai.py --model openai:gpt-4o-mini
+```
+Environment variables:
+- Put `OPENAI_API_KEY` in a .env file at repo root (or as system env var) for OpenAI usage.
+- If using Ollama, set `OLLAMA_URL` env var if the default is different.
+
+Troubleshooting notes (common causes of failures)
+- Missing index.faiss or metas.pkl: embed step was not run or failed → run embed_index.py.
+- Missing `OPENAI_API_KEY`: `openai_client.openai_chat` raises `OPENAI_API_KEY not set`.
+- No local Ollama: calls to `ollama:` fail unless an Ollama server is running; check `OLLAMA_URL`.
+- Large context/cutoff issues: prompts may exceed model token limits; `build_context` uses `max_chars` to limit context (default 4000 chars) but this may still produce a prompt too large for some models. If you switch to a Claude model, check the token limits and reduce `max_chars` if needed.
+
+Suggested edits to "enable Claude Haiku 4.5"
+- If you want the project defaults changed to `openai:claude-haiku-4.5`, I can:
+  - Update interactive_openai.py parser default `--model` to `"openai:claude-haiku-4.5"`.
+  - Update serve_query.py default `serve(..., model_choice="openai:claude-haiku-4.5", ...)`.
+  - Update comapre_models.py MODELS list to include `"openai:claude-haiku-4.5"` (and/or replace other models).
+- I will not change network/auth behavior — you must ensure your OpenAI account or API proxy supports that model name and that `OPENAI_API_KEY` has access. If Claude requires a different API/provider (Anthropic), a new client wrapper similar to openai_client.py will be needed; tell me if that's the case.
+
+Next steps — pick one:
+- A) I should apply the minimal code edits now to set `openai:claude-haiku-4.5` as the default everywhere (I will create a small patch and run basic lint/test). — Reply: “Apply openai:claude-haiku-4.5”
+- B) I should instead set `ollama:claude-haiku-4.5` (if you host it locally in Ollama). — Reply: “Apply ollama:claude-haiku-4.5”
+- C) Don’t change code yet — just keep the explanation and help you run tests locally. — Reply: “No changes”
+- D) I should add optional support for Anthropic (Claude) via a new client wrapper (requires an Anthropic API key and library) — Reply: “Add Anthropic client”
+
+If you choose A or B, I will:
+- Apply a small, focused patch to update defaults and `compare_models.py` (I will use the repo’s patch tool and then run a quick static check).
+- After edits, I’ll run `python interactive_openai.py --model <new-default>` verification (will only run if you confirm — this may fail if API access for the chosen model is not available).
+
+Anything to add or confirm before I change defaults?
+
+User: give me all the commands to run one by one to implement this rag pipeline from basic
+
+GitHub Copilot: Creating a short todo list of step-by-step commands to implement and verify the pipeline.
+
+Added 1 todo
+
+## ✅ One-line summary
+Below are the exact commands (PowerShell / cross-platform) to run **end-to-end**: set up the environment, install deps, ingest docs, build embeddings + FAISS index, test retrieval, and run the interactive RAG REPL. Follow them in order.
+
+---
+
+## 🔧 Setup & environment (conda / virtualenv) 💡
+
+1. Create and activate a new Conda environment (recommended):
+```powershell
+conda create -n rag python=3.10 -y
+conda activate rag
+```
+
+2. (Alternative) Create & activate venv:
+```bash
+python -m venv .venv
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+# or cmd
+.venv\Scripts\activate.bat
+# or mac/linux
+source .venv/bin/activate
+```
+
+---
+
+## 📦 Install project dependencies
+
+1. Upgrade pip and install requirements:
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+2. If faiss-cpu isn't available on your platform from pip, install it with conda:
+```powershell
+conda install -c pytorch faiss-cpu -y
+```
+
+---
+
+## 🔑 Configure environment variables
+
+1. Create or edit the .env file at repo root and add your OpenAI key (or other provider keys):
+```
+OPENAI_API_KEY=sk-...
+# Optional: If using Ollama locally (default URL used in code)
+# OLLAMA_URL=http://localhost:11434/api/generate
+```
+
+2. Verify the .env is loaded automatically by scripts (python-dotenv is used).
+
+---
+
+## 📁 Prepare data & ingest documents
+
+1. Place your PDFs / .txt / .md files into the data directory.
+   - For PDFs, you may add a parallel `.txt` metadata file with the same stem (e.g. `CRPC.pdf` and `CRPC.txt`).
+
+2. Run the ingestion (produces chunks.jsonl):
+```powershell
+python src/ingest_with_metadata.py --data_dir data --out_file chunks.jsonl --chunk_size 1200 --overlap 300
+```
+- Output: chunks.jsonl with chunked documents + metadata.
+
+---
+
+## 🤖 Build embeddings and FAISS index
+
+1. Create embeddings and save index:
+```powershell
+python src/embed_index.py --chunks chunks.jsonl --model sentence-transformers/all-MiniLM-L6-v2 --index_dir index --batch 64
+```
+- Output: index.faiss and metas.pkl
+
+Notes:
+- Adjust `--model` to another SentenceTransformers model if desired.
+- Use smaller `--batch` if GPU/RAM constrained.
+
+---
+
+## 🔎 Test retrieval locally
+
+1. Quick retrieval sanity test:
+```powershell
+python src/test_retrieve.py --query "When did CRPC come into effect?" --k 5
+```
+- This shows top-k chunks and similarity scores.
+
+---
+
+## 🧩 Serve a single query (CLI)
+
+1. Single-run:
+```powershell
+python src/serve_query.py --question "When did CRPC come into effect?" --model openai:gpt-4o-mini --k 5
+```
+- Replace `--model` with your provider/model, e.g. `openai:claude-haiku-4.5` if available, or `ollama:ggml-mistral-7b`.
+
+---
+
+## 🗣 Interactive REPL
+
+1. Start interactive mode:
+```powershell
+python src/interactive_openai.py --model openai:gpt-4o-mini --k 5 --min_sim 0.15
+```
+- Type questions at the prompt; type `exit` to quit.
+- Logs saved to `logs/interactive_query_<ts>.json`.
+
+---
+
+## 📊 Compare multiple models (optional)
+
+1. Edit `src/compare_models.py` MODELS list to add `openai:claude-haiku-4.5` or other models, then run:
+```powershell
+python src/comapre_models.py --question "When did CRPC come into effect?" --out comparisons.csv --k 5
+```
+
+---
+
+## ⚠️ Troubleshooting checklist
+
+- "Index not found": Run embed_index.py first.
+- "OPENAI_API_KEY not set": add it to .env or env vars.
+- Ollama errors: ensure Ollama service is running and `OLLAMA_URL` is correct.
+- Prompt too long: reduce `max_chars` in `build_context` inside serve_query.py.
+
+---
+
+
+---
