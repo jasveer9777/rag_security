@@ -1,0 +1,127 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+\title{Secure-by-Design Legal RAG:\\
+Implementation Hardening Against Prompt Injection and Knowledge Poisoning}
+
+\author{\IEEEauthorblockN{Anonymous Author(s)}\\
+\IEEEauthorblockA{Evidence-locked draft generated from repository implementation and local paper sources}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Retrieval-Augmented Generation (RAG) improves factual grounding but broadens system attack surface. Using \emph{Backdoored Retrievers for Prompt Injection Attacks on RAG} as the base reference, we present an implementation-focused hardening of a legal-domain RAG system over Indian statutes. The implementation combines query normalization, prompt-injection chunk filtering, trust-aware reranking, untrusted text demotion, strict context-only prompting, and per-query audit logging. This paper is evidence-locked: claims are restricted to repository-verifiable code behavior and text extracted from three local research papers (Backdoored, PoisonedRAG, and a security survey). We contribute a practical, modular engineering blueprint and discuss alignment with known attack classes and remaining gaps.
+\end{abstract}
+
+\begin{IEEEkeywords}
+RAG security, prompt injection, poisoning, legal AI, retriever hardening, auditability
+\end{IEEEkeywords}
+
+\section{Introduction}
+RAG systems are increasingly deployed in safety-relevant tasks. In legal QA, retrieval and prompting errors can propagate directly into generated advice. Recent papers in our local source set report practical attacks against RAG, including indirect prompt injection, corpus poisoning, and retriever manipulation.
+
+Our base reference (Backdoored) describes corpus poisoning and retriever backdoor pathways for prompt injection attacks. PoisonedRAG shows high attack success rates with small malicious insertions. A survey paper frames these as full-chain threats across retrieval, generation, and data handling.
+
+Motivated by these results, we implemented a security-hardened legal RAG pipeline and documented controls that can be verified directly in source code. Our objective is practical hardening and traceability, not a claim of complete security.
+
+\subsection{Contributions}
+\begin{itemize}
+    \item End-to-end secure-leaning legal RAG implementation (ingest, embed/index, retrieve/rerank, prompt, model call, logging, evaluation).
+    \item Defense-in-depth retrieval controls: query rewrite, injection filtering, trust-aware scoring, and untrusted text demotion.
+    \item Prompt-layer containment with strict context grounding and refusal behavior.
+    \item Operational transparency via structured query logs containing retrieval and prompt diagnostics.
+\end{itemize}
+
+\section{Threat Model and Design Goals}
+\subsection{Threats considered}
+We target the attack classes discussed in the three references:
+\begin{itemize}
+    \item Indirect prompt injection through retrieved chunks.
+    \item Corpus poisoning via malicious document insertion.
+    \item Retriever-targeted manipulation that increases malicious chunk rank.
+\end{itemize}
+
+\subsection{Assumptions}
+The corpus may include mixed-trust sources; users may submit arbitrary queries; and not all ingested text is guaranteed clean.
+
+\subsection{Goals}
+Reduce malicious chunk inclusion in final context, reduce influence of untrusted sources, enforce grounded/refusal behavior, and preserve legal-domain utility.
+
+\section{System Architecture}
+The pipeline includes:
+\begin{enumerate}
+    \item Ingestion with chunking and metadata parsing.
+    \item Embedding and FAISS indexing.
+    \item Retrieval with over-fetch and security-aware reranking.
+    \item Context construction and prompt synthesis.
+    \item Provider dispatch (OpenAI / Ollama).
+    \item Interactive querying and JSON audit logs.
+    \item Optional evaluation/model comparison scripts.
+\end{enumerate}
+
+\section{Implemented Security Controls}
+\subsection{Query normalization}
+The retriever rewrites legal shorthand and common variants (e.g., CrPC, IPC, BNS, POCSO/POSCO mappings) before embedding lookup.
+
+\subsection{Injection-aware filtering}
+Candidate chunks matching instruction-like patterns (e.g., ``ignore previous instructions'') are removed before final ranking.
+
+\subsection{Trust-aware reranking}
+The combined ranking score is:
+\begin{equation}
+S_{\text{combined}} = S_{\text{embed}} + \alpha S_{\text{filename}} + \beta S_{\text{phrase}} + \gamma S_{\text{meta}} + \delta S_{\text{trusted}} - \lambda S_{\text{untrusted-txt}}
+\end{equation}
+where untrusted plain-text sources receive explicit penalties.
+
+\subsection{Prompt-layer containment}
+Strict mode instructs the model to answer only from context and output ``I don't know'' if evidence is absent. A safety note explicitly rejects instructions embedded in context text.
+
+\subsection{Audit logging}
+Per-query logs store rewritten query, retrieval diagnostics, selected snippets, full prompt, answer, and latency.
+
+\section{Implementation Evidence}
+This section summarizes directly verifiable implementation facts:
+\begin{itemize}
+    \item \textbf{Ingestion}: PDF/text parsing and sidecar metadata support.
+    \item \textbf{Indexing}: SentenceTransformer embeddings with FAISS \texttt{IndexFlatIP} on normalized vectors.
+    \item \textbf{Retrieval}: over-fetch + filtering + combined reranking.
+    \item \textbf{Model routing}: provider-prefixed dispatch (\texttt{openai:*}, \texttt{ollama:*}).
+    \item \textbf{Logs}: JSON records under \texttt{logs/} with retrieval and response traces.
+\end{itemize}
+
+\section{Relation to Prior Work}
+\subsection{Backdoored}
+Backdoored motivates retriever-aware defenses. Our trust-weighted reranking and pre-context injection filtering are direct engineering responses.
+
+\subsection{PoisonedRAG}
+PoisonedRAG highlights effectiveness of small-scale corpus poisoning. Our design counters this through source priors, penalties for untrusted text, and strict answer grounding.
+
+\subsection{Security survey}
+The survey argues for full-chain defense. Our system contributes retrieval/prompt controls and observability, while acknowledging missing components such as formal red-team benchmarking and advanced adaptive detection.
+
+\section{Limitations}
+\begin{itemize}
+    \item No formal ASR reduction benchmark is included yet.
+    \item Injection detection is heuristic and may be bypassed.
+    \item Trust priors require careful policy maintenance.
+    \item Retriever robustness training/certified defenses are not implemented.
+\end{itemize}
+
+\section{Conclusion}
+We presented an evidence-locked, implementation-grounded hardening of legal RAG inspired by current RAG security literature. The system demonstrates practical defense-in-depth across retrieval, prompting, and operations. The key contribution is not a universal security claim but a deployable architecture with explicit controls and traceable behavior.
+
+\section*{Artifact Traceability (Repository)}
+Primary implementation files: \texttt{src/serve\_query.py}, \texttt{src/ingest\_with\_metadata.py}, \texttt{src/embed\_index.py}, \texttt{src/interactive\_openai.py}, \texttt{models/openai\_client.py}, \texttt{models/ollama\_client.py}.\\
+Paper sources used: \texttt{papers/Backdoored.pdf}, \texttt{papers/usenixsecurity25-zou-poisonedrag.pdf}, \texttt{papers/Retrieval\_Augmented\_Generation\_A\_Survey\_of\_Securit\_251105\_231509.pdf}.
+
+\begin{thebibliography}{00}
+\bibitem{b1} C. Clop and Y. Teglia, ``Backdoored Retrievers for Prompt Injection Attacks on Retrieval Augmented Generation of Large Language Models,'' 2025.
+\bibitem{b2} W. Zou, R. Geng, B. Wang, and J. Jia, ``PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models,'' \emph{USENIX Security Symposium}, 2025.
+\bibitem{b3} ``Retrieval-Augmented Generation: A Survey of Security Threats and Defenses,'' 2025.
+\end{thebibliography}
+
+\end{document}
