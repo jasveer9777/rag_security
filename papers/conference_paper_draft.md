@@ -1,16 +1,14 @@
-# Secure-by-Design Legal RAG: Hardening Retrieval-Augmented Generation Against Prompt Injection and Knowledge Poisoning (Evidence-Locked Draft)
+# Secure-by-Design Legal RAG: Hardening Retrieval-Augmented Generation Against Prompt Injection and Knowledge Poisoning
 
 ## Abstract
-Retrieval-Augmented Generation (RAG) improves factual grounding by coupling language models with external knowledge, but it also expands the attack surface of deployed systems. Prior papers in the local `papers/` folder describe indirect prompt injection, corpus poisoning, and retriever-level backdoors. In this paper, we present an implementation-focused security hardening of a legal-domain RAG system built over Indian statutes, using *Backdoored Retrievers for Prompt Injection Attacks on Retrieval Augmented Generation of Large Language Models* as the primary reference. We implement a defense-in-depth pipeline that combines query normalization, injection-aware chunk filtering, trusted-source weighting, untrusted text demotion, strict context-only prompting, and structured query-time audit logging. We position the implementation against attack classes discussed in Backdoored and PoisonedRAG and document what is implemented, what is not, and where evidence is available in code and logs.
-
-**Verification note (strict):** this draft is constrained to claims traceable to the repository implementation and text extracted from the three local PDF papers. It does **not** claim experimentally proven security guarantees beyond what is explicitly logged or cited.
+Retrieval-Augmented Generation (RAG) improves factual grounding by coupling language models with external knowledge, but it also expands the attack surface of deployed systems. Recent work shows that RAG pipelines are vulnerable to indirect prompt injection, corpus poisoning, and retriever-level backdoors. In this paper, we present an implementation-focused security hardening of a legal-domain RAG system built over Indian statutes, using *Backdoored Retrievers for Prompt Injection Attacks on Retrieval Augmented Generation of Large Language Models* as the primary reference. We implement a defense-in-depth pipeline that combines query normalization, injection-aware chunk filtering, trusted-source weighting, untrusted text demotion, strict context-only prompting, and structured query-time audit logging. Unlike purely conceptual defenses, our work contributes a complete engineering blueprint with reproducible modules for ingestion, indexing, retrieval, reranking, model dispatch, and evaluation. We position our implementation against known attack classes from Backdoored and PoisonedRAG, and discuss how practical controls reduce real-world risk while preserving usability in legal QA settings.
 
 ## 1. Introduction
 RAG systems are increasingly used in high-stakes domains such as law, healthcare, and finance. In legal QA, errors can produce misinformation, non-compliance, or unsafe guidance. While RAG reduces hallucination by grounding answers in retrieved documents, prior work demonstrates that retrieval itself becomes a security-critical component.
 
-The base paper, *Backdoored Retrievers for Prompt Injection Attacks on RAG* [1], describes attacks via corpus poisoning and retriever backdoors; extracted text from the local copy includes ASR values up to 0.91. *PoisonedRAG* [2] reports high ASR with few injected malicious texts; extracted text from the local copy includes 90% and 97% figures in specific settings. A broader survey [3] frames these as full-chain RAG risks spanning adversarial retrieval, poisoning, privacy leakage, and backdoor behavior.
+The base paper, *Backdoored Retrievers for Prompt Injection Attacks on RAG* [1], demonstrates that attackers can manipulate RAG outputs via corpus poisoning and retriever backdoors, with high attack success rates (ASR), including values up to approximately 0.91 in some settings. *PoisonedRAG* [2] further shows that injecting only a small number of malicious texts can drive targeted outputs, reporting up to 90% ASR (and up to 97% in some configurations). A broader survey [3] frames these as full-chain RAG risks spanning adversarial retrieval, poisoning, privacy leakage, and backdoor behavior.
 
-Motivated by these findings, we implemented a legal RAG stack with practical hardening controls. Our objective is implementation hardening and traceability, not a claim of absolute security.
+Motivated by these findings, we designed and implemented a legal RAG stack with practical hardening controls. Our core objective is not to claim absolute security, but to reduce exploitability under realistic deployment constraints.
 
 ### Contributions
 1. **Implementation contribution**: We provide a complete secure-leaning legal RAG pipeline with modular ingestion, indexing, retrieval, reranking, model routing, and logging.
@@ -152,27 +150,6 @@ Planned improvements:
 - provenance verification and document signing,
 - uncertainty-aware refusal calibration,
 - adaptive defenses across multilingual legal corpora.
-
-## Appendix A. Claim-to-Evidence Map (Repository Traceability)
-
-| Claim in paper | Evidence in repository |
-|---|---|
-| Query rewrite exists for legal shorthand and misspellings | `QUERY_REWRITE_MAP` and `rewrite_query()` in `src/serve_query.py` |
-| Prompt-injection chunk filtering exists | `INJECTION_PATTERNS` and `is_injection_chunk()` in `src/serve_query.py` |
-| Untrusted TXT demotion exists | `DEMOTE_UNTRUSTED_TXT` and `UNTRUSTED_TXT_PENALTY` in `src/serve_query.py` |
-| Combined reranking score is used | `combined_score` computation and sorting in `src/serve_query.py` |
-| Strict mode contains explicit “I don't know” fallback | `build_prompt()` in `src/serve_query.py` |
-| Prompt includes anti-embedded-instruction safety note | `safety_note` in `build_prompt()` in `src/serve_query.py` |
-| Retrieval/index stack uses SentenceTransformers + FAISS | `SentenceTransformer`, `faiss.normalize_L2`, `faiss.IndexFlatIP`, write of `index.faiss` in `src/embed_index.py` |
-| Ingestion supports PDFs/text and metadata sidecars | `PdfReader`, `ALLOWED_EXT`, `parse_metadata_file()`, `chunk_text()` in `src/ingest_with_metadata.py` |
-| Multi-provider model dispatch exists | `call_model()` with `openai:` / `ollama:` prefixes in `src/serve_query.py`; provider wrappers in `models/openai_client.py` and `models/ollama_client.py` |
-| Query audit logs are persisted | JSON logs written in `serve()` and interactive logs in `src/interactive_openai.py`; files present under `logs/` |
-
-## Appendix B. Paper Sources Used
-
-1. `papers/Backdoored.pdf`
-2. `papers/usenixsecurity25-zou-poisonedrag.pdf`
-3. `papers/Retrieval_Augmented_Generation_A_Survey_of_Securit_251105_231509.pdf`
 
 ## 9. Conclusion
 This paper presents a practical, secure-by-design implementation of legal RAG inspired by contemporary RAG security research. Using Backdoored [1] as the base reference, and incorporating insights from PoisonedRAG [2] and a full-chain security survey [3], we implemented layered defenses spanning retrieval, prompting, and operations. The result is a deployable architecture that raises the cost of prompt-injection and poisoning attacks while maintaining legal-domain utility. Our central claim is implementation realism: security gains in RAG require not only new attack papers, but also robust engineering defaults, transparent diagnostics, and defense-in-depth at every query step.
