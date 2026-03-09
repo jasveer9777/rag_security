@@ -24,7 +24,7 @@ from sentence_transformers import SentenceTransformer
 # Import from the RAG pipeline (ensure these exist)
 from src.serve_query import (
     load_index, retrieve, build_context,
-    build_prompt, call_model, EMBED_MODEL
+    build_prompt, call_model, EMBED_MODEL, FlowTracer
 )
 
 LOG_DIR = ROOT / "logs"
@@ -117,15 +117,18 @@ def interactive_loop(model_choice, k, min_sim, cutoff, strict):
             continue
 
         t0 = time.time()
+        query_id = str(int(t0 * 1000))
+        tracer = FlowTracer(query_id)
+        tracer.log("interactive_loop(): received user query")
 
         # 1. Retrieve chunks
-        retrieved = retrieve(q, index, metas, embed_model, k=k)
+        retrieved = retrieve(q, index, metas, embed_model, k=k, tracer=tracer)
 
         # 2. Build context from filtered chunks
-        context = build_context(retrieved, min_sim=min_sim)
+        context = build_context(retrieved, min_sim=min_sim, tracer=tracer)
 
         # 3. Build final prompt
-        prompt = build_prompt(context, q, cutoff=cutoff, strict=strict)
+        prompt = build_prompt(context, q, cutoff=cutoff, strict=strict, tracer=tracer)
 
         # ====================================================================
         # DISPLAY FORMAT AS REQUESTED
@@ -160,7 +163,7 @@ def interactive_loop(model_choice, k, min_sim, cutoff, strict):
         try:
             # Suppress any prints from call_model function
             with contextlib.redirect_stdout(io.StringIO()):
-                response_obj, latency = call_model(prompt, model_choice)
+                response_obj, latency = call_model(prompt, model_choice, tracer=tracer)
         except Exception as e:
             print(f"\n[ERROR] LLM call failed: {e}\n")
             continue
@@ -193,6 +196,7 @@ def interactive_loop(model_choice, k, min_sim, cutoff, strict):
         ]
         log_data = {
             "timestamp": ts,
+            "query_id": query_id,
             "query": q,
             "model": model_choice,
             "k": k,
