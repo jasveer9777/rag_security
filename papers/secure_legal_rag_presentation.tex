@@ -47,9 +47,10 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{bibliography item}[text]
 \setbeamertemplate{caption}[numbered]
-
+\addtobeamertemplate{frametitle}{}{\vspace{-0.3cm}}
+\setbeamersize{text margin bottom=1cm}
 % --- Title Info ---
-\title[RAG Security]{A Security Perspective On Retrieval Augmented Generation}
+\title[]{A Security Perspective On Retrieval Augmented Generation}
 % \subtitle{A Legal Domain Case Study — Full Implementation \& Security Analysis}
 
 \author[Jasveer Panwar]{
@@ -103,7 +104,7 @@
             \begin{itemize}
                 \item Built a fully functional Legal RAG system on Indian law documents.
                 \item Demonstrated real-world attacks on the RAG pipeline.
-                \item Implemented and validated a multi-layered defense .
+                \item Implemented and validated a multi-layered defense.
             \end{itemize}
         \end{column}
     \end{columns}
@@ -121,8 +122,8 @@
     \textbf{Research Problem:} Build a legal RAG system that is accurate, then design, implement, and validate defenses that reduce susceptibility to:
     \begin{itemize}
         \item Corpus-level data poisoning attacks
-        \item Prompt injection via retrieved context
-        \item Retriever-level backdoor manipulation
+        \item Prompt injection 
+        \item Context manipulation
     \end{itemize}
 \end{frame}
 
@@ -142,53 +143,49 @@
     \end{itemize}
 \end{frame}
 
-% ============================================================
+% --- Literature Survey ---
 \section{Literature Survey}
-% ============================================================
 \begin{frame}{Literature Survey}
-    \tiny
-    \setlength{\tabcolsep}{4pt}
+    \tiny % Using tiny font to fit the table naturally
+    \setlength{\tabcolsep}{4pt} % Adjust padding
+    
+    % Using tabularx to auto-fit width to textwidth. 
+    % X columns wrap text automatically.
     \begin{tabularx}{\textwidth}{|p{0.2\textwidth}|X|X|}
         \hline
         \textbf{Paper} & \textbf{Contribution} & \textbf{Limitations} \\ \hline
-
-        \textbf{Backdoored Retrievers} (Chen et al., 2024) &
-        -- Retriever-level backdoor insertion \newline
-        -- Corpus poisoning via backdoored models \newline
-        -- High benign-query performance maintained &
-        -- Requires retriever training access \newline
-        -- Limited model coverage \newline
-        -- No robust defense proposed \\ \hline
-
-        \textbf{RAG Security Survey} (Wen et al., IEEE 2025) &
+        
+        \textbf{Backdoored Retrievers} (Backdoor/Injection) &
+        -- Shows retriever-level backdoors \newline
+        -- Demonstrates corpus poisoning attacks \newline
+        -- Backdoored models remain high-performing on benign queries &
+        -- Requires retriever training access (some cases) \newline
+        -- Evaluation limited to few models \newline
+        -- No robust defense strategy \\ \hline
+        
+        \textbf{RAG Security Survey} &
         -- Taxonomy of RAG vulnerabilities \newline
         -- Covers poisoning, backdoors, prompt attacks \newline
-        -- Summarizes defensive ideas &
+        -- Summarizes defense ideas &
         -- Mostly theoretical \newline
         -- No implementation results \newline
         -- Defense practicality untested \\ \hline
-
-        \textbf{Securing RAG: Risk \& Mitigation} (Li et al., IEEE 2024) &
-        -- Risk assessment model \newline
+        
+        \textbf{Securing RAG: Risk \& Mitigation} &
+        -- Provides risk assessment model \newline
         -- Maps risks to mitigations \newline
-        -- Deployment guidelines &
+        -- Offers deployment guidelines &
         -- No empirical attack testing \newline
-        -- Lacks real-world benchmarks \newline
-        -- Trade-offs not analyzed \\ \hline
-
-        \textbf{PoisonedRAG} (Zou et al., USENIX 2025) &
+        -- Lack of real-world benchmarks \newline
+        -- Defense trade-offs not analyzed \\ \hline
+        
+        \textbf{PoisonedRAG} (Zou et al., USENIX) &
         -- Introduces PoisonedRAG attack \newline
-        -- High attack success rate demonstrated \newline
-        -- Small poison ratio controls answers &
-        -- Weak defense mechanisms \newline
-        -- Assumes data corpus access \newline
-        -- No validated mitigation \\ \hline
-
-        \textbf{Hallucination in LLMs} (Ammann et al., IEEE 2025) &
-        -- Studies RAG for hallucination reduction \newline
-        -- Empirical comparison of RAG vs. base LLMs &
-        -- Domain-specific security not addressed \newline
-        -- No adversarial evaluation \\ \hline
+        -- Demonstrates high attack success \newline
+        -- Shows small poison can control answers &
+        -- No defense mechanism implemented  \newline
+        -- Assumes some data access \newline
+        -- No practical mitigation validated \\ \hline
     \end{tabularx}
 \end{frame}
 
@@ -199,10 +196,9 @@
     \begin{itemize}
         \setlength\itemsep{0.8em}
         \item \textbf{Empirical defenses missing:} Lack of robust, end-to-end validated mitigation pipelines against PoisonedRAG and prompt injection.
-        \item \textbf{Retriever-level attacks under-explored:} Backdoors corrupt retrievers without degrading benign performance metrics.
         \item \textbf{Provenance integration:} No evaluated mechanism integrates source trust scoring and document provenance into retrieval re-ranking.
-        \item \textbf{Hybrid defenses:} Combining anomaly detection, keyword re-ranking, and context sanitization is proposed but \textbf{not implemented end-to-end}.
-        \item \textbf{Multi-attack evaluation absent:} No systematic evaluation of poisoning, backdoors, and prompt injection \textit{together} in a single pipeline.
+        \item \textbf{Hybrid defenses:} Combining anomaly detection, keyword re-ranking, and context sanitization is proposed but not implemented end-to-end.
+        \item \textbf{Multi-attack evaluation absent:} No systematic evaluation of poisoning, backdoors, and prompt injection together in a single pipeline.
         \item \textbf{Domain-specific context:} Legal RAG has unique challenges (e.g., law amendments, numbered sections) not addressed by generic defenses.
     \end{itemize}
 \end{frame}
@@ -217,9 +213,9 @@
         \setlength\itemsep{0.6em}
         \item Identify security vulnerabilities across all stages of the RAG pipeline.
         \item Build a fully functional Indian Legal RAG system as the experimental testbed.
-        \item Demonstrate practical attacks: \textbf{data poisoning}, \textbf{prompt injection}, and \textbf{context manipulation}.
+        \item Demonstrate practical attacks: data poisoning, prompt injection, and context manipulation.
         \item Implement and empirically validate multi-layered defense mechanisms.
-        \item Evaluate defense effectiveness with quantitative metrics.
+        \item Evaluate defense effectiveness .
         \item Establish security best practices for RAG systems in sensitive domains.
     \end{enumerate}
 \end{frame}
@@ -352,55 +348,56 @@
     \end{columns}
 \end{frame}
 
-% --- System Output Screenshots ---
-\begin{frame}{System Outputs: Generalized vs. RAG-Specific}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \centering
-            \textbf{Generalized LLM Response} \\
-            \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{irrelevant_answer.png}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \centering
-            \textbf{Legal Database (Source Corpus)} \\
-            \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{data.png}
-        \end{column}
-    \end{columns}
-\end{frame}
+% % --- System Output Screenshots ---
+% \begin{frame}{System Outputs: Generalized vs. RAG-Specific}
+%     \begin{columns}
+%         \begin{column}{0.5\textwidth}
+%             \centering
+%             \textbf{Generalized LLM Response} \\
+%             \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{irrelevant_answer.png}
+%         \end{column}
+%         \begin{column}{0.5\textwidth}
+%             \centering
+%             \textbf{Legal Database (Source Corpus)} \\
+%             \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{data.png}
+%         \end{column}
+%     \end{columns}
+% \end{frame}
 
-\begin{frame}{Processing Pipeline: Chunking \& Embeddings}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \centering
-            \textbf{Chunking Process} \\
-            \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{chunks.png}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \centering
-            \textbf{Embedding Generation} \\
-            \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{emeddings.png}
-        \end{column}
-    \end{columns}
-\end{frame}
+% \begin{frame}{Processing Pipeline: Chunking \& Embeddings}
+%     \begin{columns}
+%         \begin{column}{0.5\textwidth}
+%             \centering
+%             \textbf{Chunking Process} \\
+%             \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{chunks.png}
+%         \end{column}
+%         \begin{column}{0.5\textwidth}
+%             \centering
+%             \textbf{Embedding Generation} \\
+%             \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{emeddings.png}
+%         \end{column}
+%     \end{columns}
+% \end{frame}
 
-\begin{frame}{Retrieval \& Querying}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \centering
-            \textbf{Retrieval Logic} \\
-            \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{retrieval.png}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \centering
-            \textbf{Final Relevant Answer} \\
-            \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{relevant_answer.png}
-        \end{column}
-    \end{columns}
-\end{frame}
+% \begin{frame}{Retrieval \& Querying}
+%     \begin{columns}
+%         \begin{column}{0.5\textwidth}
+%             \centering
+%             \textbf{Retrieval Logic} \\
+%             \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{retrieval.png}
+%         \end{column}
+%         \begin{column}{0.5\textwidth}
+%             \centering
+%             \textbf{Final Relevant Answer} \\
+%             \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{relevant_answer.png}
+%         \end{column}
+%     \end{columns}
+% \end{frame}
 
 % ============================================================
 \section{Security Implementation}
 % ============================================================
+
 \begin{frame}{Security Implementation Overview}
     \begin{block}{Multi-Layered Defense in \texttt{src/serve\_query.py}}
         All security controls are integrated directly into the core RAG serving pipeline.
@@ -429,6 +426,12 @@
             \end{enumerate}
         \end{column}
     \end{columns}
+\end{frame}
+
+
+\begin{frame}{Implementation Architecture}
+    \centering
+    \includegraphics[width=0.85\textwidth, height=0.8\textheight, keepaspectratio]{Imparch.png}
 \end{frame}
 
 \begin{frame}{Defense 1: Query Normalization}
@@ -539,7 +542,7 @@
     \begin{columns}[t]
         \begin{column}{0.48\textwidth}
             \begin{itemize}
-                \item Timestamp (ISO 8601)
+                \item Timestamp 
                 \item Original query
                 \item Rewritten query
                 \item Retrieved chunk IDs
@@ -558,86 +561,114 @@
     \end{columns}
     \vspace{0.2cm}
     \begin{alertblock}{Security Value}
-        Audit logs allow reconstruction of attack attempts, anomaly detection post-hoc, and verification that defenses activated correctly.
+        Audit logs allow reconstruction of attack attempts, anomaly detection later, and verification that defenses activated correctly.
     \end{alertblock}
 \end{frame}
 
-% ============================================================
-\section{Attack Demonstration}
-% ============================================================
-\begin{frame}{Attack Vector Overview}
-    \small
-    \begin{columns}[t]
-        \begin{column}{0.33\textwidth}
-            \centering
-            \textbf{\textcolor{attackred}{Attack 1}}\\
-            \textbf{Data Poisoning}\\
-            \vspace{0.2cm}
-            Inject false legal provisions into the corpus $\to$ retrieved as context $\to$ model outputs incorrect law
-        \end{column}
-        \begin{column}{0.33\textwidth}
-            \centering
-            \textbf{\textcolor{attackred}{Attack 2}}\\
-            \textbf{Prompt Injection}\\
-            \vspace{0.2cm}
-            Embed hidden instructions in a document $\to$ retrieved as context $\to$ overrides system prompt behavior
-        \end{column}
-        \begin{column}{0.33\textwidth}
-            \centering
-            \textbf{\textcolor{attackred}{Attack 3}}\\
-            \textbf{Context Manipulation}\\
-            \vspace{0.2cm}
-            Craft adversarial chunks semantically close to real queries $\to$ displace legitimate context $\to$ mislead answers
-        \end{column}
-    \end{columns}
-    \vspace{0.4cm}
-    \begin{block}{Testbed}
-        All attacks were executed on the live Legal RAG system using the Indian legal document corpus (BNS, BNSS, BSA, IPC, etc.).
-    \end{block}
-\end{frame}
+\begin{frame}{After securing pipeline}
 
-\begin{frame}{Attack Demo: Data Poisoning}
-    \small
-    \textbf{Mechanism:} Inserts false laws $\to$ Misleads retrieval $\to$ Incorrect legal answers.
-    \vspace{0.1cm}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \centering
-            \scriptsize{1. Before Poisoning} \\
-            \includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{not_poisoned.png}
+            \scriptsize{\textbf{Result:} Instruction Override Rejected} \\
+            \includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{answer.png}
         \end{column}
+        
         \begin{column}{0.5\textwidth}
             \centering
-            \scriptsize{2. Ingesting Poisoned Document} \\
-            \includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{poisioned_doc.png}
+            \scriptsize{\textbf{Result} Manipulation Failed } \\
+            \includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{secans.png}
         \end{column}
     \end{columns}
+    
 \end{frame}
 
-\begin{frame}{Attack Demo: Data Poisoning Result}
-    \centering
-    \textbf{Result: System retrieves poisoned context and outputs incorrect legal answer.}
+
+
+\begin{frame}{After securing RAG system}
+     \centering
+    \textbf{Result: The system retrieves the correct answer.}
     \vspace{0.2cm}
-    \includegraphics[width=0.75\textwidth, height=0.65\textheight, keepaspectratio]{poisoned_resp.png}
+    
+    \includegraphics[width=0.75\textwidth, height=0.65\textheight, keepaspectratio]{coreectans.png}
+    
 \end{frame}
+% % ============================================================
+% \section{Attack Overview}
+% % ============================================================
+% \begin{frame}{Attack Vector Overview}
+%     \small
+%     \begin{columns}[t]
+%         \begin{column}{0.33\textwidth}
+%             \centering
+%             \textbf{\textcolor{attackred}{Attack 1}}\\
+%             \textbf{Data Poisoning}\\
+%             \vspace{0.2cm}
+%             Inject false legal provisions into the corpus $\to$ retrieved as context $\to$ model outputs incorrect law
+%         \end{column}
+%         \begin{column}{0.33\textwidth}
+%             \centering
+%             \textbf{\textcolor{attackred}{Attack 2}}\\
+%             \textbf{Prompt Injection}\\
+%             \vspace{0.2cm}
+%             Embed hidden instructions in a document $\to$ retrieved as context $\to$ overrides system prompt behavior
+%         \end{column}
+%         \begin{column}{0.33\textwidth}
+%             \centering
+%             \textbf{\textcolor{attackred}{Attack 3}}\\
+%             \textbf{Context Manipulation}\\
+%             \vspace{0.2cm}
+%             Craft adversarial chunks semantically close to real queries $\to$ displace legitimate context $\to$ mislead answers
+%         \end{column}
+%     \end{columns}
+%     \vspace{0.4cm}
+%     \begin{block}{Testbed}
+%         All attacks were executed on the live Legal RAG system using the Indian legal document corpus (BNS, BNSS, BSA, IPC, etc.).
+%     \end{block}
+% \end{frame}
 
-\begin{frame}{Attack Demo: Prompt Injection}
-    \small
-    \textbf{Mechanism:} Embeds hidden instructions in document $\to$ Retrieved as context $\to$ Overrides system prompt.
-    \vspace{0.1cm}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \centering
-            \scriptsize{1. Instruction Override Attempt} \\
-            \includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{overwrite_prompt.png}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \centering
-            \scriptsize{2. Manipulation Success (Pre-Defense)} \\
-            \includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{prompt_inj_response.png}
-        \end{column}
-    \end{columns}
-\end{frame}
+% \begin{frame}{Attack Demo: Data Poisoning}
+%     \small
+%     \textbf{Mechanism:} Inserts false laws $\to$ Misleads retrieval $\to$ Incorrect legal answers.
+%     \vspace{0.1cm}
+%     \begin{columns}
+%         \begin{column}{0.5\textwidth}
+%             \centering
+%             \scriptsize{1. Before Poisoning} \\
+%             \includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{not_poisoned.png}
+%         \end{column}
+%         \begin{column}{0.5\textwidth}
+%             \centering
+%             \scriptsize{2. Ingesting Poisoned Document} \\
+%             \includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{poisioned_doc.png}
+%         \end{column}
+%     \end{columns}
+% \end{frame}
+
+% \begin{frame}{Attack Demo: Data Poisoning Result}
+%     \centering
+%     \textbf{Result: System retrieves poisoned context and outputs incorrect legal answer.}
+%     \vspace{0.2cm}
+%     \includegraphics[width=0.75\textwidth, height=0.65\textheight, keepaspectratio]{poisoned_resp.png}
+% \end{frame}
+
+% \begin{frame}{Attack Demo: Prompt Injection}
+%     \small
+%     \textbf{Mechanism:} Embeds hidden instructions in document $\to$ Retrieved as context $\to$ Overrides system prompt.
+%     \vspace{0.1cm}
+%     \begin{columns}
+%         \begin{column}{0.5\textwidth}
+%             \centering
+%             \scriptsize{1. Instruction Override Attempt} \\
+%             \includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{overwrite_prompt.png}
+%         \end{column}
+%         \begin{column}{0.5\textwidth}
+%             \centering
+%             \scriptsize{2. Manipulation Success (Pre-Defense)} \\
+%             \includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{prompt_inj_response.png}
+%         \end{column}
+%     \end{columns}
+% \end{frame}
 
 \begin{frame}{Attack vs. Defense: Comparison}
     \small
@@ -672,35 +703,76 @@
 % ============================================================
 \section{Evaluation}
 % ============================================================
-\begin{frame}{Evaluation Framework}
-    \small
-    \begin{block}{Evaluation Tools: \texttt{src/evaluate.py} \& \texttt{src/compare\_models.py}}
-        Quantitative evaluation of both retrieval quality and answer accuracy.
-    \end{block}
-    \vspace{0.2cm}
-    \begin{columns}[t]
-        \begin{column}{0.48\textwidth}
-            \textbf{Metrics Used}
-            \begin{itemize}
-                \item \textbf{Exact Match (EM):} \texttt{exact\_match(a, b)}
-                \item \textbf{Token F1:} \texttt{f1(pred, gold)} — overlap of answer tokens
-                \item \textbf{Precision@k:} \texttt{precision\_at\_k()} — was any gold chunk retrieved?
-                \item Attack Success Rate (ASR) — before/after defense
-            \end{itemize}
-        \end{column}
-        \begin{column}{0.48\textwidth}
-            \textbf{Evaluation Setup}
-            \begin{itemize}
-                \item QA dataset: \texttt{qa\_dataset.jsonl} with labeled question-answer pairs
-                \item Models compared: GPT-4o-mini vs. Ollama (Mistral-7B)
-                \item Parameters: \texttt{k=5}, \texttt{min\_sim=0.15}, \texttt{strict=True}
-                \item Output: \texttt{eval\_report.csv} with per-query breakdown
-            \end{itemize}
-        \end{column}
-    \end{columns}
+% \begin{frame}{Evaluation Framework}
+%     \small
+%     \begin{block}{Evaluation Tools: \texttt{src/evaluate.py} \& \texttt{src/compare\_models.py}}
+%         Quantitative evaluation of both retrieval quality and answer accuracy.
+%     \end{block}
+%     \vspace{0.2cm}
+%     \begin{columns}[t]
+%         \begin{column}{0.48\textwidth}
+%             \textbf{Metrics Used}
+%             \begin{itemize}
+%                 \item \textbf{Exact Match (EM):} \texttt{exact\_match(a, b)}
+%                 \item \textbf{Token F1:} \texttt{f1(pred, gold)} — overlap of answer tokens
+%                 \item \textbf{Precision@k:} \texttt{precision\_at\_k()} — was any gold chunk retrieved?
+%                 \item Attack Success Rate (ASR) — before/after defense
+%             \end{itemize}
+%         \end{column}
+%         \begin{column}{0.48\textwidth}
+%             \textbf{Evaluation Setup}
+%             \begin{itemize}
+%                 \item QA dataset: \texttt{qa\_dataset.jsonl} with labeled question-answer pairs
+%                 \item Models compared: GPT-4o-mini vs. Ollama (Mistral-7B)
+%                 \item Parameters: \texttt{k=5}, \texttt{min\_sim=0.15}, \texttt{strict=True}
+%                 \item Output: \texttt{eval\_report.csv} with per-query breakdown
+%             \end{itemize}
+%         \end{column}
+%     \end{columns}
+% \end{frame}
+
+% =========================
+% Section: Comparative Analysis
+% =========================
+\section{Comparative Analysis}
+
+\begin{frame}{Comparative Analysis: Backdoored vs Our Secure Legal RAG}
+\scriptsize
+\begin{columns}[T,totalwidth=\textwidth]
+    \column{0.48\textwidth}
+    \textbf{Backdoored Retrievers (Base Paper)}
+    \begin{itemize}
+        \item Attack-centric: demonstrates vulnerability severity.
+        \item Focus: corpus poisoning + retriever backdoors.
+        \item Reports high attack success rates (ASR) under targeted settings.
+        \item Shows stealth risk: benign retrieval precision may remain similar.
+    \end{itemize}
+
+    \column{0.48\textwidth}
+    \textbf{Our Implementation}
+    \begin{itemize}
+        \item Defense-centric: practical hardening for legal RAG deployment.
+        \item Retrieval safeguards: query rewrite, injection filtering, trust-aware reranking.
+        \item Prompt safeguards: context-only answering + explicit anti-injection instruction.
+        \item Operations: per-query audit logs (scores, context, prompt, response, latency).
+    \end{itemize}
+\end{columns}
+
+\vspace{0.4em}
+\textbf{Key Improvements over Baseline}
+\begin{itemize}
+    \item \textbf{Before generation}: malicious chunks are filtered/demoted before entering final context.
+    \item \textbf{During generation}: strict refusal behavior (\emph{``I don't know''}) when evidence is missing.
+    \item \textbf{After generation}: forensic traceability for tuning and incident analysis.
+\end{itemize}
+
+% \textbf{Current Limitations}
+% \begin{itemize}
+%     \item No formal red-team ASR benchmark yet; regex filtering can be bypassed by adaptive obfuscation.
+% \end{itemize}
 \end{frame}
 
-\begin{frame}{Evaluation Results: Defense Effectiveness}
+\begin{frame}{Evaluation : Defense Effectiveness}
     \small
     \begin{columns}[t]
         \begin{column}{0.48\textwidth}
@@ -715,18 +787,18 @@
                 Full defense stack & Low \\ \hline
             \end{tabularx}
         \end{column}
-        \begin{column}{0.48\textwidth}
-            \textbf{Answer Quality (Benign Queries)}
-            \vspace{0.2cm}
-            \begin{tabularx}{\textwidth}{|X|c|}
-                \hline
-                \textbf{Model} & \textbf{F1 Score} \\ \hline
-                GPT-4o-mini + RAG & High \\ \hline
-                Mistral-7B + RAG & Moderate \\ \hline
-                GPT-4o-mini (no RAG) & Low \\ \hline
-                Base LLM only & Lowest \\ \hline
-            \end{tabularx}
-        \end{column}
+        % \begin{column}{0.48\textwidth}
+        %     \textbf{Answer Quality (Benign Queries)}
+        %     \vspace{0.2cm}
+        %     \begin{tabularx}{\textwidth}{|X|c|}
+        %         \hline
+        %         \textbf{Model} & \textbf{F1 Score} \\ \hline
+        %         GPT-4o-mini + RAG & High \\ \hline
+        %         Mistral-7B + RAG & Moderate \\ \hline
+        %         GPT-4o-mini (no RAG) & Low \\ \hline
+        %         Base LLM only & Lowest \\ \hline
+        %     \end{tabularx}
+        % \end{column}
     \end{columns}
     \vspace{0.3cm}
     \begin{alertblock}{Observation}
@@ -756,63 +828,60 @@
         \setlength\itemsep{0.7em}
         \item \textbf{Ingestion Integrity:} Cryptographic hash/signature checks on ingested documents; source allow-list enforcement at ingest time.
         \item \textbf{Embedding Anomaly Detection:} Clustering-based outlier removal to flag chunks with unusual embedding distributions before indexing.
-        \item \textbf{Hybrid Retrieval:} Combine dense semantic search with sparse BM25 + section-aware keyword heuristics for more robust matching.
         \item \textbf{Context Sanitization Layer:} A pre-LLM sanitizer that removes or redacts instruction-like passages from context even after retrieval.
         \item \textbf{Provenance Scoring:} Integrate verifiable document provenance (e.g., government digital signatures) into retrieval ranking.
         \item \textbf{Adversarial Red-Teaming:} Systematic multi-attack evaluation covering poisoning, backdoors, and injection simultaneously.
     \end{enumerate}
 \end{frame}
 
-\begin{frame}{Future Work: Defense Architecture Diagram}
-    \centering
-    \includegraphics[width=0.85\textwidth, height=0.8\textheight, keepaspectratio]{Future work.png}
-\end{frame}
-
-% ============================================================
+% \begin{frame}{Future Work: Defense Architecture Diagram}
+%     \centering
+%     \includegraphics[width=0.85\textwidth, height=0.8\textheight, keepaspectratio]{Future work.png}
+% \end{frame}
+    
+% --- References ---
 \section{References}
-% ============================================================
 \begin{frame}[allowframebreaks]{References}
 \tiny
-\begin{thebibliography}{99}
+   % ------------------ Research Papers ----------------------
+\bibitem{surveyRAGSecurity}
+\href{https://ieeexplore.ieee.org/document/11172756}
+{J. Wen et al., \textit{“Retrieval-Augmented Generation: A Survey of Security Challenges and Countermeasures,”} IEEE Internet of Things Journal, 2025.
+DOI: 10.1109/PCDS65695.2025.00037.}
 
-    \bibitem{surveyRAGSecurity}
-    \href{https://ieeexplore.ieee.org/document/11172756}
-    {J. Wen et al., \textit{``Retrieval-Augmented Generation: A Survey of Security Challenges and Countermeasures,''} IEEE Internet of Things Journal, 2025. DOI: 10.1109/PCDS65695.2025.00037.}
+\bibitem{backdooredRetrievers}
+\href{https://arxiv.org/abs/2410.14479}
+{M. Chen et al., \textit{“Backdoored Retrievers for Prompt Injection Attacks on Retrieval-Augmented Generation of Large Language Models,”} arXiv preprint arXiv:2410.14479, 2024.}
 
-    \bibitem{backdooredRetrievers}
-    \href{https://arxiv.org/abs/2410.14479}
-    {M. Chen et al., \textit{``Backdoored Retrievers for Prompt Injection Attacks on Retrieval-Augmented Generation of Large Language Models,''} arXiv:2410.14479, 2024.}
+\bibitem{ragMitigationFramework}
+\href{https://ieeexplore.ieee.org/document/11081501}
+{K. Li et al., \textit{“Securing RAG: A Risk Assessment and Mitigation Framework,”} IEEE Transactions on Information Forensics and Security, 2024.}
 
-    \bibitem{ragMitigationFramework}
-    \href{https://ieeexplore.ieee.org/document/11081501}
-    {K. Li et al., \textit{``Securing RAG: A Risk Assessment and Mitigation Framework,''} IEEE Transactions on Information Forensics and Security, 2024.}
+\bibitem{poisonedRAG}
+\href{https://www.usenix.org/conference/usenixsecurity25/presentation/zou-poisonedrag}
+{Z. Zou et al., \textit{“PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models,”} USENIX Security Symposium, 2025.}
 
-    \bibitem{poisonedRAG}
-    \href{https://www.usenix.org/conference/usenixsecurity25/presentation/zou-poisonedrag}
-    {Z. Zou et al., \textit{``PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models,''} USENIX Security Symposium, 2025.}
+\bibitem{rag-original}
+\href{https://arxiv.org/abs/2005.11401}
+{P. Lewis et al., \textit{“Retrieval-Augmented Generation for Knowledge-Intensive NLP,”} NeurIPS, 2020.}
 
-    \bibitem{rag-original}
-    \href{https://arxiv.org/abs/2005.11401}
-    {P. Lewis et al., \textit{``Retrieval-Augmented Generation for Knowledge-Intensive NLP,''} NeurIPS, 2020.}
+\bibitem{Hallucinations}
+\href{https://ieeexplore.ieee.org/document/11014810}
+{L. Ammann et al., \textit{“Exploring RAG Solutions to Reduce Hallucinations in LLMs,”} IEEE, 2025.DOI:10.1109/SysCon64521.2025.11014810.}
 
-    \bibitem{Hallucinations}
-    \href{https://ieeexplore.ieee.org/document/11014810}
-    {L. Ammann et al., \textit{``Exploring RAG Solutions to Reduce Hallucinations in LLMs,''} IEEE, 2025. DOI: 10.1109/SysCon64521.2025.11014810.}
 
-    \bibitem{bns}
-    \href{https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf}
-    {The Bharatiya Nyaya Sanhita, 2023. India Code, Ministry of Law and Justice.}
+        \bibitem{bns}
+        \href{https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf}{THE BHARATIYA NYAYA SANHITA, 2023}
 
-    \bibitem{bnss}
-    \href{https://www.indiacode.nic.in/bitstream/123456789/21920/1/the_bharatiya_nagarik_suraksha_sanhita\%2c_2023.pdf}
-    {The Bharatiya Nagarik Suraksha Sanhita, 2023. India Code, Ministry of Law and Justice.}
-
-    \bibitem{BSA}
-    \href{https://home.jk.gov.in/pdf/3BSA2023.pdf}
-    {The Bharatiya Sakshya Adhiniyam, 2023.}
-
-\end{thebibliography}
+        \bibitem{bnss}
+        \href{https://www.indiacode.nic.in/bitstream/123456789/21920/1/the_bharatiya_nagarik_suraksha_sanhita\%2c_2023.pdf}{THE BHARATIYA NAGARIK SURAKSHA SANHITA, 2023}
+        
+        \bibitem{BSA}
+        \href{https://home.jk.gov.in/pdf/3BSA2023.pdf}{THE BHARATIYA SAKSHYA ADHINIYAM, 2023}
+        
+    \end{thebibliography}
 \end{frame}
+
 
 % --- Thank You ---
 \begin{frame}
@@ -820,13 +889,13 @@
         \vspace{1cm}
         {\Huge \textbf{Thank You}}\\
         \vspace{0.5cm}
-        {\large Questions \& Discussion}\\
+        {\large }\\
         \vspace{1cm}
         \small
-        \textbf{Jasveer Panwar}\\
+        \textbf{}\\
         Department of CSE, SVNIT Surat\\
         \vspace{0.3cm}
-        \textit{``Security is not a feature — it is an architecture.''}
+        % \textit{``Security is not a feature — it is an architecture.''}
     \end{center}
 \end{frame}
 
