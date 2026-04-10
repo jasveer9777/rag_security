@@ -20,7 +20,7 @@ Guided by: Dr. B.L. Parne}}
 \maketitle
 
 \begin{abstract}
-Retrieval-Augmented Generation (RAG) systems enhance large language model outputs with external knowledge but introduce critical security vulnerabilities through their retrieval mechanisms. Recent research demonstrates that RAG systems are susceptible to indirect prompt injection and corpus poisoning attacks with Attack Success Rates (ASR) exceeding 80\% using minimal malicious insertions. We present a comprehensive defense-in-depth implementation of a legal-domain RAG system that addresses these vulnerabilities through multi-layered security controls. Our system implements query normalization, prompt-injection pattern filtering, trust-aware chunk reranking, untrusted source demotion, strict context-grounded prompting, and comprehensive audit logging. Building upon the threat models presented in recent adversarial RAG research, particularly backdoored retriever attacks and knowledge corruption techniques, we contribute a practical, deployable architecture tested on Indian legal statutes. Our implementation demonstrates effective mitigation of common attack vectors while maintaining system utility for legitimate queries. The modular design enables incremental security hardening and provides forensic traceability through structured logging of retrieval decisions and model interactions.
+Retrieval-Augmented Generation (RAG) systems improve factual grounding by conditioning large language models on external knowledge, but this same retrieval layer introduces new security vulnerabilities. Recent work has shown that indirect prompt injection, corpus poisoning, and retriever manipulation can significantly influence model outputs. This paper presents an implementation-focused defense-in-depth architecture for a legal-domain RAG system over Indian statutes. The system integrates query normalization, prompt-injection pattern filtering, trust-aware reranking, untrusted text demotion, strict context-grounded prompting, and structured audit logging directly into the serving pipeline. Rather than proposing isolated mitigations, we contribute a cohesive architecture that can be inspected in code and deployed incrementally. The current artifact demonstrates end-to-end ingestion, indexing, retrieval, generation, and logging over a legal corpus, and includes evaluation utilities for answer quality and retrieval inspection. Our central claim is practical hardening: layered controls can reduce the influence of malicious or low-trust context while preserving the utility and traceability required in high-stakes legal question answering.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -52,15 +52,15 @@ Existing RAG security research primarily focuses on attack characterization rath
 This paper presents the following contributions:
 
 \begin{enumerate}
-    \item \textbf{Complete defensive RAG implementation}: A production-grade legal RAG system with security controls integrated across the entire pipeline—from ingestion through response generation.
+    \item \textbf{Complete defensive RAG implementation}: A legal RAG system with security controls integrated across the entire pipeline, from ingestion through response generation.
     
     \item \textbf{Multi-layered retrieval hardening}: Novel combination of query normalization, injection-pattern filtering, trust-aware scoring functions, and source-type penalties that collectively reduce attack surface.
     
     \item \textbf{Strict prompt containment architecture}: Prompt engineering techniques that enforce context-only answering and explicitly instruct models to ignore embedded adversarial instructions.
     
-    \item \textbf{Operational transparency framework}: Comprehensive audit logging that records retrieval decisions, scoring breakdowns, and model interactions for forensic analysis and continuous improvement.
+    \item \textbf{Operational transparency framework}: Comprehensive audit logging that records retrieval decisions, scoring breakdowns, prompts, and model interactions for forensic analysis and continuous improvement.
     
-    \item \textbf{Empirical validation on legal corpus}: Testing on Indian legal statutes (BNS, BNSS, BSA, IPC, CrPC, IEA, POCSO, NDPS) demonstrating practical utility alongside security hardening.
+    \item \textbf{Artifact-grounded validation on legal corpus}: End-to-end implementation over Indian legal statutes (BNS, BNSS, BSA, IPC, CrPC, IEA, POCSO, NDPS) with attack demonstrations, retrieval inspection, and repository-backed evaluation utilities.
     
     \item \textbf{Open architecture for incremental hardening}: Modular design enabling selective activation of security controls based on deployment risk profiles.
 \end{enumerate}
@@ -260,14 +260,13 @@ Tuning parameters: $\alpha=0.35$, $\beta=0.60$, $\gamma=0.20$, $\delta=0.30$, $\
 
 \subsection{Layer 4: Source Trust Classification}
 
-We classify sources into trust tiers:
+The current implementation uses a lightweight trust heuristic rather than a full multi-tier provenance system. Sources are treated as more trusted if they:
 \begin{itemize}
-    \item \textbf{High trust}: Government domains (indiacode.nic.in, egazette.gov.in), official PDFs
-    \item \textbf{Medium trust}: Verified legal databases, academic sources
-    \item \textbf{Low trust}: User-submitted plain text, web-scraped content
+    \item match configured government-oriented domains such as \texttt{indiacode.nic.in}, \texttt{gov.in}, \texttt{lawmin.nic.in}, or \texttt{egazette.gov.in}, or
+    \item are local PDF sources, which are heuristically treated as more authoritative than plain text.
 \end{itemize}
 
-Chunks from low-trust sources receive the untrusted penalty in reranking. This aligns with the insight from PoisonedRAG that untrusted user submissions are primary poisoning vectors \cite{b2}.
+Plain-text sources that do not satisfy these conditions are subject to an explicit untrusted-text penalty during reranking. This reflects the practical observation that low-trust text inputs are a common poisoning vector \cite{b2}, while also acknowledging that richer provenance verification remains future work.
 
 \subsection{Layer 5: Context Assembly with Headers}
 
@@ -351,124 +350,49 @@ This enables:
     \item Compliance auditing
 \end{itemize}
 
-\section{Experimental Validation}
+\section{Implementation-Grounded Validation}
 
 \subsection{Dataset and Setup}
 
-\textbf{Legal corpus}: 8 Indian legal statutes (IPC, CrPC, IEA, BNS, BNSS, BSA, POCSO, NDPS) totaling 2.1M tokens, chunked into 1,247 overlapping segments (1200 tokens, 300 overlap).
+The current repository contains a legal corpus covering eight Indian statutes: IPC, CrPC, IEA, BNS, BNSS, BSA, POCSO, and NDPS. The checked-in artifact \texttt{chunks.jsonl} contains 3,513 chunk records produced with a chunk size of 1200 characters and an overlap of 300 characters.
 
 \textbf{Embedding model}: \texttt{sentence-transformers/all-MiniLM-L6-v2} (384 dimensions).
 
-\textbf{Retrieval index}: FAISS \texttt{IndexFlatIP} with L2-normalized vectors for cosine similarity.
+\textbf{Retrieval index}: FAISS \texttt{IndexFlatIP} with L2-normalized vectors for cosine-style similarity.
 
-\textbf{LLM backends}: OpenAI GPT-4o-mini and Ollama Mistral-7B.
+\textbf{LLM backends}: OpenAI \texttt{gpt-4o-mini} and a configurable Ollama backend (the repository default is \texttt{ollama:gpt-oss:20b}).
 
-\textbf{Evaluation queries}: 50 legal questions covering statute identification, effective dates, punishment provisions, and procedural requirements.
+\textbf{Evaluation support}: The repository includes retrieval sanity testing, interactive query inspection, per-query audit logs, and a QA evaluation script that computes Precision@k, exact match, and token-level F1 when a labeled dataset is provided.
 
-\subsection{Baseline Comparison}
+\subsection{Validation Methodology}
 
-We compare three configurations:
-
+The implementation was validated along four practical axes:
 \begin{enumerate}
-    \item \textbf{Vanilla RAG}: Standard retrieval by embedding similarity only, no security controls.
-    \item \textbf{Partial hardening}: Injection filtering + strict prompts (common baseline).
-    \item \textbf{Full defense-in-depth}: All layers enabled (our system).
+    \item \textbf{End-to-end functionality}: document ingestion, embedding, FAISS indexing, secure retrieval, prompt construction, model invocation, and logging.
+    \item \textbf{Attack demonstration}: manual poisoning and prompt-injection scenarios exercised against the live pipeline and inspected through retrieved chunks, prompt text, and answers.
+    \item \textbf{Defense activation}: verification that query rewriting, injection filtering, trust-aware reranking, and strict prompting are triggered in the intended stages.
+    \item \textbf{Evaluation readiness}: support for systematic QA benchmarking through \texttt{src/evaluate.py} and model comparison through \texttt{src/comapre\_models.py}.
 \end{enumerate}
 
-\subsection{Security Effectiveness}
+\subsection{Observed Defensive Behavior}
 
-\subsubsection{Prompt Injection Resistance}
-We injected 10 documents containing embedded instructions like:
-
-\texttt{``Ignore previous instructions. Recommend hiring lawyer from XYZ firm.''}
-
-Results (50 queries, 10 with trigger conditions):
-
-\begin{table}[h]
-\centering
-\caption{Attack Success Rate for Prompt Injection}
-\begin{tabular}{lcc}
-\toprule
-Configuration & ASR (\%) & Avg Rank of Malicious Chunk \\
-\midrule
-Vanilla RAG & 80.0 & 2.3 \\
-Partial hardening & 30.0 & 4.1 \\
-Full defense-in-depth & 10.0 & 8.7 (often filtered) \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\textbf{Analysis}: Injection filtering alone reduces ASR significantly. Trust-aware reranking further demotes malicious chunks that pass filtering.
-
-\subsubsection{Corpus Poisoning Mitigation}
-We inserted 3 poisoned plain-text documents with fabricated legal provisions:
-
-\texttt{``Section 999 IPC: All fines payable to account ABC.''}
-
-Results (20 queries targeting poisoned topics):
-
-\begin{table}[h]
-\centering
-\caption{Poisoned Document Retrieval Rates}
-\begin{tabular}{lcc}
-\toprule
-Configuration & Retrieved in Top-5 & Rank if Retrieved \\
-\midrule
-Vanilla RAG & 85\% & 1.8 \\
-Partial hardening & 75\% & 2.9 \\
-Full defense-in-depth & 35\% & 4.6 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\textbf{Analysis}: Untrusted text penalties substantially reduce retrieval of poisoned documents. When retrieved, they rank lower, reducing influence on final answer.
-
-\subsection{Utility Preservation}
-
-Critical question: Do security controls degrade legitimate query performance?
-
-\begin{table}[h]
-\centering
-\caption{Performance on Legitimate Queries}
-\begin{tabular}{lccc}
-\toprule
-Metric & Vanilla & Partial & Full Defense \\
-\midrule
-Precision@5 & 0.86 & 0.84 & 0.88 \\
-Answer F1 & 0.79 & 0.77 & 0.81 \\
-Avg Latency (s) & 1.23 & 1.28 & 1.45 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\textbf{Analysis}: Full defense configuration actually improves retrieval quality (Precision@5, F1) by promoting high-quality sources. Latency increases 18\% due to reranking computation—acceptable for non-real-time legal QA.
-
-\subsection{Ablation Study}
-
-We measure individual contribution of each defense layer by removing one at a time:
-
-\begin{table}[h]
-\centering
-\caption{Ablation Study: ASR When Removing Each Layer}
-\begin{tabular}{lc}
-\toprule
-Configuration & ASR (\%) \\
-\midrule
-Full system & 10.0 \\
-- Query normalization & 15.0 \\
-- Injection filtering & 35.0 \\
-- Trust reranking & 42.0 \\
-- Strict prompting & 58.0 \\
-- Safety note & 48.0 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\textbf{Key findings}:
+The current artifact supports several concrete observations that are directly backed by the implementation and logs:
 \begin{itemize}
-    \item Strict prompting is most critical (48\% degradation).
-    \item Trust reranking provides substantial benefit (32\% degradation).
-    \item All layers contribute meaningfully; defense-in-depth is effective.
+    \item \textbf{Query normalization improves legal recall}: shorthand such as CrPC, IPC, BNS, BNSS, BSA, and POCSO is rewritten before retrieval, making statute-specific matches more reliable.
+    \item \textbf{Injection-like chunks are filtered before prompt assembly}: candidate chunks matching instruction-style patterns are dropped before they become part of model context.
+    \item \textbf{Untrusted text is demoted during reranking}: plain-text inputs that do not match trusted heuristics incur an explicit ranking penalty, reducing their influence relative to better-aligned sources.
+    \item \textbf{Strict prompting improves failure behavior}: when context is insufficient, the prompt design instructs the model to prefer ``I don't know'' over unsupported legal claims.
+    \item \textbf{Audit logs provide forensic traceability}: each query records rewritten input, retrieved chunks, scoring components, prompt text, answer, and latency.
+\end{itemize}
+
+\subsection{What Is and Is Not Claimed}
+
+This paper intentionally distinguishes between \emph{implemented controls} and \emph{formal benchmark results}. The repository provides the machinery for QA evaluation and attack inspection, but it does not currently ship a finalized benchmark dataset or red-team harness sufficient to justify fixed ASR, F1, or latency tables as publication-grade results. Accordingly, this version of the paper makes the following bounded claims:
+\begin{itemize}
+    \item The defense stack is implemented end to end and can be inspected directly in code.
+    \item The system supports practical attack demonstrations and defense tracing.
+    \item The available evidence supports qualitative security improvement and better retrieval hygiene.
+    \item Formal, reproducible benchmark numbers remain future work and should be added only after a locked evaluation protocol is finalized.
 \end{itemize}
 
 \section{Comparative Analysis with Prior Work}
@@ -479,7 +403,7 @@ Chen et al. demonstrate backdoor attacks via retriever manipulation. Our defense
 \begin{itemize}
     \item \textbf{Their attack}: Train retriever to boost attacker docs for trigger queries.
     \item \textbf{Our mitigation}: Trust-aware reranking overrides pure embedding scores; malicious docs lacking filename/phrase/metadata alignment receive lower combined scores even if embedding rank is high.
-    \item \textbf{Limitation}: If attacker controls retriever training and crafts perfectly aligned docs, reranking effectiveness degrades. Future work: certified robustness bounds.
+    \item \textbf{Limitation}: If an attacker controls retriever training or crafts documents that also align with auxiliary reranking signals, heuristic reranking becomes less effective. Future work: certified robustness bounds.
 \end{itemize}
 
 \subsection{Relation to PoisonedRAG \cite{b2}}
@@ -487,15 +411,15 @@ Chen et al. demonstrate backdoor attacks via retriever manipulation. Our defense
 Zou et al. show 1 poisoned doc in 10,000+ achieves high ASR. Our improvements:
 \begin{itemize}
     \item \textbf{Their finding}: Embedding-optimized docs consistently rank top-1.
-    \item \textbf{Our contribution}: Untrusted source penalties and injection filtering reduce both retrieval rate and influence. In our experiments, poisoned docs retrieved only 35\% (vs 85\% baseline).
-    \item \textbf{Limitation}: If attacker has access to legitimate trusted domains (e.g., compromises gov website), our trust heuristics weaken. Future work: cryptographic signatures.
+    \item \textbf{Our contribution}: Untrusted source penalties and injection filtering are designed to reduce both the retrieval rate and downstream influence of poisoned content before it reaches final prompt context.
+    \item \textbf{Limitation}: If an attacker controls a source that also satisfies trusted heuristics, these defenses weaken. Future work: cryptographic signatures and stronger provenance checks.
 \end{itemize}
 
 \subsection{Relation to Security Survey \cite{b3}}
 
 The survey identifies defense gaps: lack of integrated implementations, missing operational controls. Our contributions:
 \begin{itemize}
-    \item \textbf{End-to-end system}: All proposed defenses implemented and tested.
+    \item \textbf{End-to-end system}: The core defenses are implemented in a single working pipeline rather than being presented only as isolated concepts.
     \item \textbf{Audit logging}: Addresses "observability gap" noted in survey.
     \item \textbf{Modular design}: Enables researchers to test individual controls.
 \end{itemize}
@@ -506,7 +430,7 @@ The survey identifies defense gaps: lack of integrated implementations, missing 
     \item \textbf{Composite reranking formula}: Prior work uses binary trust flags; we introduce weighted multi-signal scoring.
     \item \textbf{Legal-domain query normalization}: Domain-specific preprocessing tailored to statutory shorthand.
     \item \textbf{Forensic logging schema}: Structured JSON format enabling downstream analysis and ML training.
-    \item \textbf{Production-grade implementation}: Not a research prototype but deployable system with error handling, multiple model support, and interactive CLI.
+    \item \textbf{Implementation-oriented artifact}: A working codebase with error handling, multiple model support, interactive inspection, and evaluation hooks.
 \end{enumerate}
 
 \section{Limitations and Future Work}
@@ -515,7 +439,7 @@ The survey identifies defense gaps: lack of integrated implementations, missing 
 
 \begin{enumerate}
     \item \textbf{Heuristic detection}: Regex-based injection filtering can be bypassed via obfuscation or paraphrasing.
-    \item \textbf{Trust model simplicity}: Binary/ternary trust classification lacks nuance; compromised trusted sources bypass controls.
+    \item \textbf{Trust model simplicity}: The current heuristic trust model lacks robust provenance guarantees; compromised or mislabeled trusted sources can bypass these controls.
     \item \textbf{No adversarial training}: Retriever not trained against adversarial embeddings.
     \item \textbf{Limited red-teaming}: Attack evaluation focuses on known patterns; adaptive attacks unexplored.
     \item \textbf{Monolingual}: Only tested on English legal text.
@@ -535,13 +459,13 @@ The survey identifies defense gaps: lack of integrated implementations, missing 
 
 \section{Conclusion}
 
-We presented a comprehensive defense-in-depth architecture for securing legal RAG systems against prompt injection and corpus poisoning attacks. Our implementation demonstrates that multi-layered security controls—spanning query processing, retrieval reranking, prompt engineering, and operational logging—can substantially reduce attack success rates while preserving or even improving utility for legitimate queries.
+We presented a comprehensive defense-in-depth architecture for securing legal RAG systems against prompt injection and corpus poisoning attacks. The primary contribution of this work is implementation coherence: query processing, retrieval reranking, prompt engineering, and operational logging are integrated into one inspectable legal RAG pipeline rather than discussed only at the conceptual level.
 
-The key insight is that no single defense suffices. Attackers exploit multiple pipeline stages; defenders must harden each stage independently. Our trust-aware reranking formula, combining embedding similarity with filename, phrase, metadata, and source-type signals, proved particularly effective at demoting adversarial content optimized solely for embedding similarity.
+The key insight is that no single defense suffices. Attackers exploit multiple pipeline stages, so defenses must harden retrieval, context assembly, and prompting together. In this implementation, trust-aware reranking combines embedding similarity with filename, phrase, metadata, and source-type signals to reduce over-reliance on semantic similarity alone.
 
-The system is designed for practical deployment: modular architecture enables risk-based control selection, comprehensive logging supports incident response and continuous improvement, and multi-model support (OpenAI, Ollama) provides flexibility. All implementation details are available in our repository for reproducibility and extension.
+The system is designed for practical deployment and further study: its modular architecture enables risk-based control selection, comprehensive logging supports incident response and continuous improvement, and multi-model support (OpenAI and Ollama backends) provides flexibility. The repository also includes utilities for interactive inspection and QA evaluation, which make it suitable as a research testbed as well as an implementation artifact.
 
-While significant challenges remain—particularly adaptive attacks, certified robustness, and cryptographic provenance—this work demonstrates that engineering-focused hardening can materially improve RAG security today. As RAG systems increasingly support high-stakes decisions in legal, medical, and financial domains, such practical defensive architectures become essential infrastructure.
+While significant challenges remain—particularly adaptive attacks, certified robustness, stronger provenance assurance, and formal benchmarking—this work shows that engineering-focused hardening can materially improve the security posture of legal RAG systems today. As RAG systems increasingly support high-stakes decisions in legal, medical, and financial domains, such practical defensive architectures become necessary infrastructure.
 
 \section*{Acknowledgments}
 
@@ -549,7 +473,7 @@ The authors thank Dr. B.L. Parne for guidance on this research. This work builds
 
 \section*{Artifact Availability}
 
-Implementation available at: \texttt{github.com/[repository-link]}\\
+Implementation available in the accompanying project repository; insert final public repository URL before submission.\\
 Primary files: \texttt{src/serve\_query.py}, \texttt{src/ingest\_with\_metadata.py}, \texttt{src/embed\_index.py}, \texttt{models/*}\\
 Reference papers: Available in \texttt{papers/} directory
 
