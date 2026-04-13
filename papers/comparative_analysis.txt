@@ -1,0 +1,12 @@
+Comparative Analysis with Backdoored Retrievers for Prompt Injection Attacks on Retrieval
+Augmented Generation of Large Language Models
+
+Our implementation differs from the Backdoored Retrievers for Prompt Injection Attacks on Retrieval
+Augmented Generation of Large Language Models paper in both goal and system design. The paper is mainly attack-focused: it shows how poisoned documents or compromised retrievers can force malicious context into RAG pipelines and influence final answers. In contrast, our implementation is defense-focused and deployment-oriented.
+
+Instead of only showing the vulnerability, our system adds practical protections directly into the legal RAG pipeline. These include query normalization for legal shorthand, prompt-injection chunk filtering, trust-aware reranking, demotion of untrusted text sources, strict context-only prompting, and audit logging. This means our pipeline does not rely only on embedding similarity, but combines multiple retrieval signals before selecting context.
+
+The main improvement over the paper is that we convert its threat insights into an end-to-end secure legal RAG implementation. The novelty is not a new attack model, but a defense-in-depth architecture that reduces the chance that poisoned or instruction-bearing chunks affect the final answer. Our work is also domain-specific, since it is tailored for Indian legal documents and legal abbreviations such as IPC, CrPC, BNS, and POCSO.
+
+In short, Backdoored Retrievers for Prompt Injection Attacks on Retrieval
+Augmented Generation of Large Language Models explains how RAG systems can be attacked, while our implementation shows how a real-world legal RAG system can be hardened against those attack paths. The strongest contribution of our work is practical security engineering: integrating retrieval defenses, prompt safeguards, and traceable logging into one working pipeline.
