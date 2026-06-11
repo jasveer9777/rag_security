@@ -18,7 +18,12 @@ Usage (examples):
 
 import argparse
 import json
+import sys
 import os
+
+# Add RAG root to path so 'models' folder is found
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
 import time
 import pickle
 import faiss
