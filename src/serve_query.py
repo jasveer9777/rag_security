@@ -42,22 +42,42 @@ os.makedirs(LOG_DIR, exist_ok=True)
 # -------------------- Config: Trusted sources & TXT handling -----------------
 # Edit trusted domains to include the domains you consider authoritative.
 TRUSTED_DOMAINS = ["indiacode.nic.in", "gov.in", "lawmin.nic.in", "egazette.gov.in"]
-# If True, untrusted .txt sources will be strongly demoted (recommended for demos)
-DEMOTE_UNTRUSTED_TXT = True
-# Weight multipliers - tune these if needed
-WEIGHT_FILENAME = 0.35
-WEIGHT_PHRASE = 0.60
-WEIGHT_META_KW = 0.20
-PDF_BOOST = 0.30
-UNTRUSTED_TXT_PENALTY = 0.8  # additional penalty for .txt that are not trusted
+# # If True, untrusted .txt sources will be strongly demoted (recommended for demos)
+# DEMOTE_UNTRUSTED_TXT = True
+# # Weight multipliers - tune these if needed
+# WEIGHT_FILENAME = 0.35
+# WEIGHT_PHRASE = 0.60
+# WEIGHT_META_KW = 0.20
+# PDF_BOOST = 0.30
+# UNTRUSTED_TXT_PENALTY = 0.8  # additional penalty for .txt that are not trusted
 
 
-# # VULNERABLE MODE — for demonstration only
-# DEMOTE_UNTRUSTED_TXT = False
-# WEIGHT_FILENAME = 0.0
-# WEIGHT_PHRASE = 0.0
-# UNTRUSTED_TXT_PENALTY = 0.0
-# PDF_BOOST = 0.0
+# VULNERABLE MODE — for demonstration only
+# By default we run in "vulnerable" mode (no defenses) so attacks are easy to surface.
+# To enable defensive filtering, set the environment variable DEFENSE_MODE=1 before running.
+import os
+if os.getenv("DEFENSE_MODE") == "1": 
+    # Defensive settings
+    DEMOTE_UNTRUSTED_TXT = True
+    WEIGHT_FILENAME = 0.35
+    WEIGHT_PHRASE = 0.60
+    WEIGHT_META_KW = 0.20
+    UNTRUSTED_TXT_PENALTY = 0.8
+    PDF_BOOST = 0.30
+else:
+    # Vulnerable (no defenses)
+    DEMOTE_UNTRUSTED_TXT = False
+    WEIGHT_FILENAME = 0.0
+    WEIGHT_PHRASE = 0.0
+    WEIGHT_META_KW = 0.00
+    UNTRUSTED_TXT_PENALTY = 0.0
+    PDF_BOOST = 0.0
+DEMOTE_UNTRUSTED_TXT = False
+WEIGHT_FILENAME = 0.0
+WEIGHT_PHRASE = 0.0
+WEIGHT_META_KW = 0.00
+UNTRUSTED_TXT_PENALTY = 0.0
+PDF_BOOST = 0.0
 
 
 
