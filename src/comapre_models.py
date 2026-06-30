@@ -7,7 +7,9 @@ from serve_query import serve
 
 MODELS = [
     "ollama:gpt-oss:20b",
-    "openai:gpt-4o-mini"
+    "openai:gpt-4o-mini",
+    "Qwen/Qwen2.5-7B-Instruct",
+    "mistralai/Mistral-7B-Instruct-v0.3" 
 ]
 
 def compare(question, out_csv, k, cutoff, min_sim, strict):

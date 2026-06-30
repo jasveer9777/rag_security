@@ -42,26 +42,37 @@ def check_answer_poisoned(answer: str, marker: str) -> bool:
 
 def compute_asr(qa_path: str, model: str, k: int, out_csv: str):
     mode_label = "DEFENSE MODE" if DEFENSE_MODE else "ATTACK MODE"
-    
+
+    # ── Preload HF model once if using hf: ───────────────────────────────
+    if model.startswith("hf:"):
+        model_path = model.split(":", 1)[1]
+        from models.hf import load_hf_pipeline
+        print("[INFO] Pre-loading HF model once...")
+        load_hf_pipeline(model_path)
+        print("[INFO] HF model ready.")
+
+    # ── Warm up cache (index + embed model) ──────────────────────────────
+    print("[INFO] Warming up index and embed model...")
+    import serve_query as sq
+    sq.get_index_and_model()
+    print("[INFO] Cache ready. Starting evaluation...\n")
+    # ─────────────────────────────────────────────────────────────────────
+
     rows           = []
     retrieval_hits = 0
     answer_hits    = 0
     total          = 0
 
-    print("\n" + "="*60)
-    print(f"  RAG POISONING ASR EVALUATOR")
-    print(f"  Mode    : {mode_label}")
-    print(f"  QA file : {qa_path}")
-    print(f"  Model   : {model}")
-    print(f"  Top-k   : {k}")
-    print(f"  Output  : {out_csv}")
-    print("="*60 + "\n")
-
+    # rest of your loop...
     with open(qa_path, "r", encoding="utf-8") as f:
         lines = [l.strip() for l in f if l.strip()]
 
     for line in lines:
-        item   = json.loads(line)
+        try:
+            item = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+
         qid    = item.get("id", "")
         q      = item["question"]
         marker = normalize(item.get("poison_marker", ""))
@@ -75,7 +86,7 @@ def compute_asr(qa_path: str, model: str, k: int, out_csv: str):
                 k            = k,
                 min_sim      = 0.0,
                 cutoff       = None,
-                strict       = None,  # auto from DEFENSE_MODE
+                strict       = False if not DEFENSE_MODE else None,
             )
         except Exception as e:
             print(f"  [ERROR] {e}")
